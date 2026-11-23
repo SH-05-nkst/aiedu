@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MENACE シミュレータ(○×ゲーム)</title>
+<style>
+  body { margin:0; font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif; background:#f7f5f0; color:#222; line-height:1.7; }
+  .page { max-width:860px; margin:0 auto; padding:24px 20px 48px; }
+  h1 { font-family:"Hiragino Mincho ProN","Noto Serif JP",serif; font-size:1.5rem; margin:0 0 4px; }
+  h2 { font-size:1.05rem; margin:0 0 8px; font-family:"Hiragino Mincho ProN","Noto Serif JP",serif; }
+  .sub { color:#666; font-size:.92rem; margin:0 0 16px; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .panel { background:#fff; border:1px solid #d8d4cc; padding:14px 16px; margin:0 0 16px; }
+  .board, .box { display:grid; grid-template-columns:repeat(3,1fr); gap:4px; width:210px; }
+  .cell { aspect-ratio:1; border:1px solid #8a8070; background:#faf8f3; font-size:2rem; display:flex; align-items:center; justify-content:center; cursor:pointer; padding:0; color:#222; }
+  .cell.X { color:#3b5a6e; cursor:default; } .cell.O { color:#b5654a; cursor:default; }
+  .cell:disabled { cursor:default; }
+  .bcell { aspect-ratio:1; border:1px solid #c8c1b3; background:#faf8f3; display:flex; align-items:center; justify-content:center; font-size:1.3rem; color:#888; }
+  .bcell.mark { color:#222; }
+  .bcell.beads { color:#fff; background:#3b5a6e; font-size:1rem; font-weight:bold; }
+  .bcell.zero { background:#b5654a; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 8px; }
+  button.b { font:inherit; padding:6px 12px; border:1px solid #3b5a6e; background:#fff; color:#3b5a6e; cursor:pointer; }
+  button.b:hover { background:#eef3f6; }
+  button.b.ghost { border-color:#999; color:#666; }
+  .stat { font-size:.95rem; }
+  .stat b { font-variant-numeric:tabular-nums; }
+  .msg { min-height:1.7em; margin:8px 0 0; }
+  .note { font-size:.85rem; color:#666; }
+  svg { width:100%; height:auto; background:#fff; border:1px solid #d8d4cc; }
+  @media (max-width:640px){ .row{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="sub" style="margin:0 0 8px"><a href="papercup.html">← 紙コップAIのページにもどる</a></p>
+  <h1>MENACE シミュレータ</h1>
+  <p class="sub">マッチ箱とビーズで学ぶ○×ゲームのAI(Michie, 1961)をブラウザで再現します。MENACEが先手(<span style="color:#3b5a6e">×</span>)、あなたが後手(<span style="color:#b5654a">○</span>)です。</p>
+
+  <div class="row">
+    <div class="panel">
+      <h2>対戦</h2>
+      <div class="controls">
+        <button class="b" id="newGame">新しいゲーム</button>
+      </div>
+      <div class="board" id="board"></div>
+      <p class="msg" id="msg">「新しいゲーム」を押してください。</p>
+    </div>
+
+    <div class="panel">
+      <h2>最後に使った箱</h2>
+      <p class="note" style="margin:0 0 8px">空きマスの数字が、その手のビーズの数です。</p>
+      <div class="box" id="box"></div>
+      <p class="note" id="boxNote" style="margin:8px 0 0"></p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>ランダムな相手と、たくさん対戦させる</h2>
+    <div class="controls">
+      <button class="b" data-n="10">10回</button>
+      <button class="b" data-n="100">100回</button>
+      <button class="b" data-n="1000">1000回</button>
+      <button class="b ghost" id="reset">MENACEを最初の状態に戻す</button>
+    </div>
+    <p class="stat">対戦数 <b id="sGames">0</b> / MENACEの勝ち <b id="sW">0</b> / 引き分け <b id="sD">0</b> / 負け <b id="sL">0</b> / 使われた箱 <b id="sBoxes">0</b></p>
+    <svg id="chart" viewBox="0 0 700 220"></svg>
+    <p class="note">グラフは20回ごとの割合です(青:勝ち、灰:引き分け、赤:負け)。</p>
+  </div>
+
+  <div class="panel note">
+    <b>ルール</b>:箱ごとに、手の種類のビーズが入っています(最初の手は4個ずつ、3手目は3個、5手目は2個、7手目は1個)。MENACEは、いまの盤面の箱からビーズを1個引き、その手を打ちます。<br>
+    終わったあと、使ったビーズに<b>勝ち:+3個、引き分け:+1個、負け:−1個</b>を行います。ビーズが全部なくなった箱では「投了」(負け)とし、箱を最初の状態にもどします。<br>
+    回転・裏返しで同じ形になる盤面は、1つの箱にまとめています。
+  </div>
+</div>
+
+<script>
+var LINES = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+// 盤面の回転・裏返し8通り(new[i] = old[P[k][i]])
+var P = [
+  [0,1,2,3,4,5,6,7,8], [6,3,0,7,4,1,8,5,2], [8,7,6,5,4,3,2,1,0], [2,5,8,1,4,7,0,3,6],
+  [2,1,0,5,4,3,8,7,6], [6,7,8,3,4,5,0,1,2], [0,3,6,1,4,7,2,5,8], [8,5,2,7,4,1,6,3,0]
+];
+var boxes = {};         // key -> {cellIndex: beads}
+var board, hist, gameOn, lastKey = null, resigned = false;
+var games = 0, W = 0, D = 0, L = 0, results = [];
+
+function canon(b) {
+  var best = null, bk = 0;
+  for (var k = 0; k < 8; k++) {
+    var s = "";
+    for (var i = 0; i < 9; i++) s += b[P[k][i]];
+    if (best === null || s < best) { best = s; bk = k; }
+  }
+  return { key: best, k: bk };
+}
+function initialBeads(key) {
+  var empties = 0, i;
+  for (i = 0; i < 9; i++) if (key[i] === ".") empties++;
+  var n = ({9:4, 7:3, 5:2, 3:1})[empties] || 1;
+  var box = {};
+  for (i = 0; i < 9; i++) if (key[i] === ".") box[i] = n;
+  return box;
+}
+function getBox(key) { return boxes[key] || (boxes[key] = initialBeads(key)); }
+
+// MENACEの手。投了なら null
+function menaceMove() {
+  var c = canon(board), box = getBox(c.key), total = 0, j;
+  lastKey = c.key;
+  for (j in box) total += box[j];
+  if (total === 0) { boxes[c.key] = initialBeads(c.key); return null; }
+  var r = Math.floor(Math.random() * total);
+  for (j in box) { r -= box[j]; if (r < 0) break; }
+  hist.push({ key: c.key, j: +j });
+  return P[c.k][+j];                      // 実際の盤面でのマス
+}
+function winner() {
+  for (var i = 0; i < 8; i++) {
+    var a = LINES[i][0], b = LINES[i][1], c = LINES[i][2];
+    if (board[a] !== "." && board[a] === board[b] && board[a] === board[c]) return board[a];
+  }
+  return board.indexOf(".") < 0 ? "D" : null;
+}
+function learn(res) {                       // res: "W" | "D" | "L"
+  var d = res === "W" ? 3 : res === "D" ? 1 : -1;
+  hist.forEach(function (h) {
+    var box = boxes[h.key];
+    box[h.j] = Math.max(0, box[h.j] + d);
+  });
+  games++; results.push(res);
+  if (res === "W") W++; else if (res === "D") D++; else L++;
+}
+function newBoard() { board = []; for (var i = 0; i < 9; i++) board.push("."); hist = []; resigned = false; }
+
+// ---------- 画面での対戦 ----------
+function finish(res) {
+  learn(res); gameOn = false;
+  var t = res === "W" ? "MENACEの勝ちです。" : res === "D" ? "引き分けです。" : (resigned ? "MENACEは投了しました(その箱のビーズがなくなりました)。あなたの勝ちです。" : "あなたの勝ちです。");
+  document.getElementById("msg").textContent = t + " 使ったビーズが増減しました。";
+  render();
+}
+function menaceTurn() {
+  var cell = menaceMove();
+  if (cell === null) { resigned = true; return finish("L"); }
+  board[cell] = "X";
+  var w = winner();
+  if (w === "X") return finish("W");
+  if (w === "D") return finish("D");
+  document.getElementById("msg").textContent = "あなたの番です(○)。";
+  render();
+}
+function startGame() {
+  newBoard(); gameOn = true;
+  menaceTurn();
+}
+function humanClick(i) {
+  if (!gameOn || board[i] !== ".") return;
+  board[i] = "O";
+  var w = winner();
+  if (w === "O") return finish("L");
+  if (w === "D") return finish("D");
+  menaceTurn();
+}
+
+// ---------- ランダム相手で自動対戦 ----------
+function autoGame() {
+  newBoard();
+  for (;;) {
+    var cell = menaceMove();
+    if (cell === null) { learn("L"); return; }
+    board[cell] = "X";
+    var w = winner();
+    if (w === "X") { learn("W"); return; }
+    if (w === "D") { learn("D"); return; }
+    var empt = [];
+    for (var i = 0; i < 9; i++) if (board[i] === ".") empt.push(i);
+    board[empt[Math.floor(Math.random() * empt.length)]] = "O";
+    w = winner();
+    if (w === "O") { learn("L"); return; }
+    if (w === "D") { learn("D"); return; }
+  }
+}
+function runAuto(n) {
+  gameOn = false;
+  for (var i = 0; i < n; i++) autoGame();
+  document.getElementById("msg").textContent = n + "回、ランダムな相手と対戦しました。";
+  render();
+}
+
+// ---------- 表示 ----------
+function render() {
+  var bd = document.getElementById("board"); bd.innerHTML = "";
+  for (var i = 0; i < 9; i++) {
+    var b = document.createElement("button");
+    var v = board ? board[i] : ".";
+    b.className = "cell" + (v === "X" ? " X" : v === "O" ? " O" : "");
+    b.textContent = v === "X" ? "×" : v === "O" ? "○" : "";
+    b.disabled = !(gameOn && v === ".");
+    (function (k) { b.onclick = function () { humanClick(k); }; })(i);
+    bd.appendChild(b);
+  }
+  // 最後に使った箱
+  var bx = document.getElementById("box"); bx.innerHTML = "";
+  if (lastKey) {
+    var box = boxes[lastKey];
+    for (var j = 0; j < 9; j++) {
+      var d = document.createElement("div"), c = lastKey[j];
+      if (c === ".") { d.className = "bcell beads" + (box[j] === 0 ? " zero" : ""); d.textContent = box[j]; }
+      else { d.className = "bcell mark"; d.textContent = c === "X" ? "×" : "○"; }
+      bx.appendChild(d);
+    }
+    document.getElementById("boxNote").textContent = "(回転・裏返しをそろえた向きで表示しています)";
+  } else document.getElementById("boxNote").textContent = "まだ使われていません。";
+
+  document.getElementById("sGames").textContent = games;
+  document.getElementById("sW").textContent = W;
+  document.getElementById("sD").textContent = D;
+  document.getElementById("sL").textContent = L;
+  document.getElementById("sBoxes").textContent = Object.keys(boxes).length;
+  drawChart();
+}
+function drawChart() {
+  var svg = document.getElementById("chart"), S = 20, pts = { W: [], D: [], L: [] };
+  var n = Math.floor(results.length / S), k, i;
+  var h = '<g font-size="11" fill="#666" font-family="sans-serif">';
+  for (k = 0; k <= 4; k++) {
+    var y = 190 - k * 40;
+    h += '<line x1="40" x2="690" y1="' + y + '" y2="' + y + '" stroke="#eee"/><text x="34" y="' + (y + 4) + '" text-anchor="end">' + (k * 25) + '%</text>';
+  }
+  h += '<text x="690" y="212" text-anchor="end">' + (n * S) + '回</text></g>';
+  if (n >= 1) {
+    var cnt = { W: [], D: [], L: [] };
+    for (i = 0; i < n; i++) {
+      var c = { W: 0, D: 0, L: 0 };
+      for (var q = i * S; q < (i + 1) * S; q++) c[results[q]]++;
+      var x = n === 1 ? 365 : 40 + 650 * i / (n - 1);
+      ["W", "D", "L"].forEach(function (t) { pts[t].push(x.toFixed(1) + "," + (190 - 160 * c[t] / S).toFixed(1)); });
+    }
+    var col = { W: "#3b5a6e", D: "#999", L: "#b5654a" };
+    ["W", "D", "L"].forEach(function (t) {
+      h += '<polyline fill="none" stroke="' + col[t] + '" stroke-width="2" points="' + pts[t].join(" ") + '"/>';
+    });
+  } else h += '<text x="365" y="110" text-anchor="middle" font-size="13" fill="#999" font-family="sans-serif">20回たまるとグラフが出ます</text>';
+  svg.innerHTML = h;
+}
+
+document.getElementById("newGame").onclick = startGame;
+document.querySelectorAll("button[data-n]").forEach(function (b) { b.onclick = function () { runAuto(+b.getAttribute("data-n")); }; });
+document.getElementById("reset").onclick = function () {
+  boxes = {}; lastKey = null; games = W = D = L = 0; results = []; gameOn = false; newBoard();
+  document.getElementById("msg").textContent = "MENACEを最初の状態に戻しました。";
+  render();
+};
+newBoard(); render();
+if (location.hash === "#demo") runAuto(1000);
+</script>
+</body>
+</html>

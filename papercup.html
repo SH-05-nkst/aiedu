@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>紙コップAI:数取りゲームで学ぶ強化学習|中里彰吾</title>
+<meta name="description" content="紙コップと色ビーズで、AIが試行錯誤から強くなるしくみ(強化学習)を体験するアンプラグド教材の手順。">
+<meta name="theme-color" content="#3b5a6e">
+<link rel="stylesheet" href="style.css">
+<style>
+  .bead { display:inline-block; width:.9em; height:.9em; border-radius:50%; vertical-align:-.1em; margin:0 .15em; border:1px solid #999; }
+  .bead.r { background:#c0392b; border-color:#8e2a20; }
+  .bead.b { background:#2e5c8a; border-color:#1f405f; }
+  .bead.w { background:#fff; }
+  figure { margin: 20px 0; }
+  figure svg { width: 100%; height: auto; background: #fff; border: 1px solid var(--line); }
+  figcaption { font-size: .88rem; color: var(--sub); margin-top: 4px; }
+  table.data { border-collapse: collapse; width: 100%; font-size: .92rem; margin: 8px 0; background:#fff; }
+  table.data th, table.data td { border: 1px solid var(--line); padding: 4px 8px; text-align: center; }
+  table.data th { background: #efece5; font-weight: normal; }
+  table.data td.l { text-align: left; }
+  .crumb { font-size: .88rem; color: var(--sub); margin-bottom: 8px; }
+  .crumb a { color: var(--sub); }
+  ol.steps > li { margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="site-header">
+  <p class="site-name"><a href="index.html">中里 彰吾</a><small>Shogo Nakazato</small></p>
+</header>
+<nav class="site-nav">
+  <a href="index.html" class="current">教材・実践</a>
+  <a href="works.html">研究業績</a>
+  <a href="index.html#contact">連絡先</a>
+</nav>
+
+<main>
+<p class="crumb"><a href="index.html">教材・実践</a> › <a href="index.html#unplugged">アンプラグド</a> › 紙コップAI</p>
+<h1>紙コップAI <span class="tag">強化学習</span></h1>
+<p>紙コップと色ビーズで作った「AI」と、数取りゲームで対戦します。AIは、勝ったときの手を増やし、負けたときの手を減らしていきます。対戦をくり返すと、コップの中のビーズのかたよりが変わり、AIが強くなっていくようすが目で見えます。</p>
+
+<ul class="jump">
+  <li><a href="#overview">概要</a></li>
+  <li><a href="#materials">準備物</a></li>
+  <li><a href="#rule">ゲームのルール</a></li>
+  <li><a href="#setup">紙コップAIの作り方</a></li>
+  <li><a href="#play">対戦と学習の手順</a></li>
+  <li><a href="#result">学習が進むと</a></li>
+  <li><a href="#lesson">授業の流れの例</a></li>
+  <li><a href="#sim">デジタル版で試す</a></li>
+  <li><a href="#ref">関連発表</a></li>
+</ul>
+
+<h2 id="overview">概要</h2>
+<p class="facts">
+  <b>学ぶこと</b>:強化学習(報酬と罰による学習)のしくみ<br>
+  <b>対象</b>:小学校高学年(親子ワークショップでは低学年も参加)<br>
+  <b>時間</b>:50分程度<br>
+  <b>人数</b>:<!-- TODO -->(1セットを何人で使うかを記入)
+</p>
+<p>AIが選ぶ場面(状態)を9つにしぼっています。そのため、MENACEやHexapawnなど、これまでのマッチ箱やコップを使った教材より少ない対戦回数で、ビーズの変化を観察できます。</p>
+
+<h2 id="materials">準備物(1セット)</h2>
+<ul>
+  <li>紙コップ 9個(1〜9の番号を書く)</li>
+  <li>ビーズ 3色:<span class="bead r"></span>赤(1進む)、<span class="bead b"></span>青(2進む)、<span class="bead w"></span>白(3進む)
+    <br>各色 約30個(勝ったときに足す予備をふくむ)<!-- TODO: 実際の個数に合わせて修正 --></li>
+  <li>予備のビーズを入れる皿やトレー(「山場」)</li>
+  <li>数字カード、またはホワイトボード(いまの数を記録する)</li>
+  <li>記録用紙(勝ち負けとビーズの数の記録)</li>
+</ul>
+
+<h2 id="rule">ゲームのルール</h2>
+<ol>
+  <li>人間とAIが交互に、1から順に数字を進めます。</li>
+  <li>1回に進められるのは、1〜3つまでです。</li>
+  <li>最後に「10」を言ったほうが負けです。</li>
+  <li>いつも<strong>人間が先</strong>、AIが後です。</li>
+</ol>
+<p class="note">例:人間「1、2」→ AI「3、4、5」→ 人間「6」→ AI「7、8、9」→ 人間は「10」を言うしかないので、AIの勝ち。</p>
+
+<h2 id="setup">紙コップAIの作り方</h2>
+<ol class="steps">
+  <li>紙コップに1〜9の番号を書きます。番号は「いまの数」を表します。たとえば、いまの数が5のときは、5のコップからビーズを引きます。</li>
+  <li>どのコップにも、赤・青・白のビーズを3個ずつ入れます。最初はどの手も同じ確率(3分の1)で選ばれます。</li>
+  <li>10をこえてしまう手のビーズは、最初に取り除いておきます(例:8のコップの白は、11まで進んでしまうので入れない)。</li>
+</ol>
+
+<figure>
+  <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1から9の紙コップに、赤・青・白のビーズが3個ずつ入っている図">
+    <g font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222">
+      <!-- 9 cups -->
+      <g id="cups"></g>
+    </g>
+  </svg>
+  <figcaption>図1 初めの状態。赤・青・白を3個ずつ入れる。8は白なし、9は赤だけ(10をこえる手は入れない)。</figcaption>
+</figure>
+
+<h2 id="play">対戦と学習の手順</h2>
+<ol class="steps">
+  <li><strong>人間の番</strong>:1〜3つ数字を進めます。</li>
+  <li><strong>AIの番</strong>:いまの数のコップから、ビーズを<strong>見ないで1個</strong>引きます。色の数だけ進みます(<span class="bead r"></span>1つ、<span class="bead b"></span>2つ、<span class="bead w"></span>3つ)。引いたビーズは、コップの前に置いておきます。</li>
+  <li>1・2をくり返し、どちらかが「10」を言ったら対戦終了です。</li>
+  <li><strong>AIが勝ったとき(ごほうび)</strong>:引いたビーズを元のコップにもどし、さらに山場から<strong>同じ色を1個足します</strong>。勝ちにつながった手が、次から選ばれやすくなります。</li>
+  <li><strong>AIが負けたとき(ばつ)</strong>:引いたビーズはコップにもどさず、<strong>山場に没収</strong>します。負けにつながった手が、次から選ばれにくくなります。</li>
+  <li>これを何回もくり返し、ときどきコップの中のビーズを数えて記録します。</li>
+</ol>
+<p class="note">ポイント:AIは「考えて」いるのではなく、ビーズの割合が変わっているだけです。対戦のあとにコップの中を数えると、このことを子ども自身が確かめられます。</p>
+
+<h2 id="result">学習が進むと</h2>
+<p>このゲームでは、AIが「9」まで進めれば、人間は「10」を言うしかなくなります。対戦をくり返すと、9に届く手のビーズが増えていきます。</p>
+<table class="data">
+  <tr><th>いまの数</th><th>増えていく色</th><th>理由</th></tr>
+  <tr><td>6</td><td><span class="bead w"></span>白(3進む)</td><td class="l">6から3進むと9になる</td></tr>
+  <tr><td>7</td><td><span class="bead b"></span>青(2進む)</td><td class="l">7から2進むと9になる</td></tr>
+  <tr><td>8</td><td><span class="bead r"></span>赤(1進む)</td><td class="l">8から1進むと9になる</td></tr>
+</table>
+<p>市民向けワークショップ(小学5・6年生5名)では、実際にこの3つのコップで、該当する色がはっきり増えました。また、5のコップは、どの手を選んでも人間に9を取られてしまう「詰み」の場面なので、ビーズはあまり変わりませんでした。</p>
+
+<h2 id="lesson">授業の流れの例(50分)</h2>
+<table class="data">
+  <tr><th>段階</th><th>活動</th><th>時間</th></tr>
+  <tr><td>導入</td><td class="l">AIと強化学習の説明(動物のしつけなどのたとえ)</td><td>15分</td></tr>
+  <tr><td rowspan="4">展開</td><td class="l">ルールの説明</td><td>5分</td></tr>
+  <tr><td class="l">対戦(前半)</td><td>10分</td></tr>
+  <tr><td class="l">中間交流:「AIはどう変わった?」</td><td>5分</td></tr>
+  <tr><td class="l">対戦(後半)</td><td>10分</td></tr>
+  <tr><td>まとめ</td><td class="l">コップの中のビーズを数えて、ふり返る</td><td>5分</td></tr>
+</table>
+
+<h2 id="sim">デジタル版で試す</h2>
+<p>紙コップAIと同じルールで、画面の上で対戦できるシミュレータです。コップの中のビーズの変化を、表と棒グラフで見られます。たくさん対戦させて、ビーズがどう変わるかを確かめることもできます。</p>
+<p><a href="papercup-sim.html">紙コップAI シミュレータを開く →</a></p>
+<p class="note">同じ「ビーズで学ぶ」考え方の先行例:<a href="menace-sim.html">MENACE(○×ゲーム)</a>、<a href="hexapawn-sim.html">ヘキサポーン</a>のシミュレータ。</p>
+
+<h2 id="ref">関連発表</h2>
+<ul class="refs">
+  <li>中里彰吾, 安藤明伸.
+    <span class="title">数取りゲームを用いた強化学習のアンプラグド教材の開発と実践.</span>
+    <span class="venue">日本教育工学会論文誌, 50(Suppl.), ショートレター.</span>
+    <span class="tag">採録決定</span>
+  </li>
+</ul>
+<p class="note">この教材を研究や論文で紹介する場合は、上の論文を引用してください。<br>
+<!-- TODO: ワークシートPDFなどを置く場合 → [<a href="files/papercup-sheet.pdf">記録用紙 pdf</a>] -->
+</p>
+</main>
+
+<footer>
+  <p><a href="index.html">← 教材・実践の一覧へ</a><br>&copy; 中里彰吾 2026</p>
+</footer>
+
+</div>
+
+<script>
+// 図1:9個の紙コップとビーズを描く
+(function () {
+  var g = document.getElementById('cups');
+  var NS = 'http://www.w3.org/2000/svg';
+  var colors = { r: '#c0392b', b: '#2e5c8a', w: '#ffffff' };
+  function el(tag, attrs, parent) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    (parent || g).appendChild(e);
+    return e;
+  }
+  for (var i = 0; i < 9; i++) {
+    var cx = 44 + i * 79;
+    // コップ(台形)
+    el('path', { d: 'M' + (cx - 32) + ' 50 L' + (cx + 32) + ' 50 L' + (cx + 24) + ' 150 L' + (cx - 24) + ' 150 Z',
+                 fill: '#f3efe6', stroke: '#8a8070', 'stroke-width': 1.5 });
+    var t = el('text', { x: cx, y: 180 }); t.textContent = (i + 1);
+    // ビーズ(8は白なし、9は赤のみ)
+    var set = ['r', 'b', 'w'];
+    if (i + 1 === 8) set = ['r', 'b'];
+    if (i + 1 === 9) set = ['r'];
+    set.forEach(function (c, row) {
+      for (var j = 0; j < 3; j++) {
+        el('circle', { cx: cx - 14 + j * 14, cy: 134 - row * 16, r: 6,
+                       fill: colors[c], stroke: c === 'w' ? '#999' : 'none' });
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>

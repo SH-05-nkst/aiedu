@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>紙コップAI シミュレータ(数取りゲーム)</title>
+<style>
+  body { margin:0; font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif; background:#f7f5f0; color:#222; line-height:1.7; }
+  .page { max-width:860px; margin:0 auto; padding:24px 20px 48px; }
+  h1 { font-family:"Hiragino Mincho ProN","Noto Serif JP",serif; font-size:1.5rem; margin:0 0 4px; }
+  h2 { font-size:1.05rem; margin:0 0 8px; font-family:"Hiragino Mincho ProN","Noto Serif JP",serif; }
+  .sub { color:#666; font-size:.92rem; margin:0 0 16px; }
+  .panel { background:#fff; border:1px solid #d8d4cc; padding:14px 16px; margin:0 0 16px; }
+  .line { display:grid; grid-template-columns:repeat(10,1fr); gap:4px; margin:8px 0; }
+  .num { aspect-ratio:1; border:1px solid #c8c1b3; background:#faf8f3; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:1rem; color:#888; }
+  .num small { font-size:.62rem; }
+  .num.H { background:#3b5a6e; color:#fff; border-color:#3b5a6e; }
+  .num.A { background:#b5654a; color:#fff; border-color:#b5654a; }
+  .num.ten { border:2px solid #222; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 8px; }
+  button.b { font:inherit; padding:6px 14px; border:1px solid #3b5a6e; background:#fff; color:#3b5a6e; cursor:pointer; }
+  button.b:hover:not(:disabled) { background:#eef3f6; }
+  button.b:disabled { opacity:.35; cursor:default; }
+  button.b.ghost { border-color:#999; color:#666; }
+  select { font:inherit; padding:5px 8px; border:1px solid #999; background:#fff; }
+  .msg { min-height:1.7em; margin:8px 0 0; }
+  .stat { font-size:.95rem; } .stat b { font-variant-numeric:tabular-nums; }
+  .note { font-size:.85rem; color:#666; }
+  .bead { display:inline-block; width:.85em; height:.85em; border-radius:50%; vertical-align:-.1em; border:1px solid #999; margin-right:.2em; }
+  .bead.r { background:#c0392b; border-color:#8e2a20; } .bead.b { background:#2e5c8a; border-color:#1f405f; } .bead.w { background:#fff; }
+  table.cups { border-collapse:collapse; width:100%; font-size:.9rem; }
+  table.cups th, table.cups td { border-bottom:1px solid #eee; padding:4px 6px; text-align:center; }
+  table.cups th { font-weight:normal; color:#666; }
+  table.cups tr.used td { background:#f6efe2; }
+  table.cups td.bar { width:46%; }
+  .stack { display:flex; height:14px; border:1px solid #bbb; background:#eee; }
+  .stack div { height:100%; }
+  .stack .r { background:#c0392b; } .stack .b { background:#2e5c8a; } .stack .w { background:#fff; border-left:1px solid #ddd; }
+  svg { width:100%; height:auto; background:#fff; border:1px solid #d8d4cc; }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="sub" style="margin:0 0 8px"><a href="papercup.html">← 紙コップAIのページにもどる</a></p>
+  <h1>紙コップAI シミュレータ</h1>
+  <p class="sub">数取りゲームで学ぶ、紙コップと色ビーズのAIをブラウザで再現します。あなたが先手、紙コップAIが後手です。</p>
+
+  <div class="panel">
+    <h2>対戦</h2>
+    <p class="note" style="margin:0">1から順に、1〜3つずつ数字を進めます。「10」を言った人の負けです。</p>
+    <div class="line" id="line"></div>
+    <div class="controls">
+      <button class="b" id="newGame">新しいゲーム</button>
+      <span>あなたの手:</span>
+      <button class="b" id="m1" data-k="1">1つ進む</button>
+      <button class="b" id="m2" data-k="2">2つ進む</button>
+      <button class="b" id="m3" data-k="3">3つ進む</button>
+    </div>
+    <p class="msg" id="msg">「新しいゲーム」を押してください。</p>
+  </div>
+
+  <div class="panel">
+    <h2>各コップの中のビーズ</h2>
+    <p class="note" style="margin:0 0 6px"><span class="bead r"></span>赤=1つ進む <span class="bead b"></span>青=2つ進む <span class="bead w"></span>白=3つ進む。黄色の行は、いまのゲームで使ったコップです。</p>
+    <table class="cups" id="cups"></table>
+  </div>
+
+  <div class="panel">
+    <h2>相手と、たくさん対戦させる</h2>
+    <div class="controls">
+      <label>あなたの役(先手)の強さ:
+        <select id="opp">
+          <option value="random">ランダム</option>
+          <option value="perfect">必勝の打ち方(1・5・9を言う)</option>
+        </select>
+      </label>
+      <button class="b" data-n="10">10回</button>
+      <button class="b" data-n="100">100回</button>
+      <button class="b" data-n="1000">1000回</button>
+      <button class="b ghost" id="reset">コップを最初の状態に戻す</button>
+    </div>
+    <p class="stat">対戦数 <b id="sGames">0</b> / 紙コップAIの勝ち <b id="sW">0</b> / 負け <b id="sL">0</b></p>
+    <svg id="chart" viewBox="0 0 700 220"></svg>
+    <p class="note">グラフは20回ごとの、紙コップAIの勝ちの割合です。</p>
+  </div>
+
+  <div class="panel note">
+    <b>しくみ</b>:コップ1〜9は「いま言われた数字」を表します。最初は、どのコップにも赤・青・白が3個ずつ入っています(10をこえる手のビーズは入れません)。AIは、いまの数字のコップからビーズを1個引き、その色の数だけ進みます。<br>
+    <b>勝ったとき</b>:使ったビーズを元にもどし、同じ色を1個ずつ足します。<b>負けたとき</b>:使ったビーズを没収します。<br>
+    <b>見どころ</b>:9を言えば勝てるので、6では白、7では青、8では赤が増えていきます。先手が「1・5・9」を言えば必ず勝てるため、「必勝の打ち方」の相手には、AIは勝てません。<br>
+    コップのビーズがすべてなくなった場合は、AIは投了して負けとし、そのコップを最初の状態にもどします。
+  </div>
+</div>
+
+<script>
+var COLORS = { 1: "r", 2: "b", 3: "w" };
+var cups, cur, gameOn, used, seq, games = 0, W = 0, L = 0, results = [];
+
+function initCup(s) {
+  var c = {};
+  for (var k = 1; k <= 3; k++) if (s + k <= 10) c[k] = 3;
+  return c;
+}
+function resetCups() { cups = {}; for (var s = 1; s <= 9; s++) cups[s] = initCup(s); }
+
+function aiMove(state) {                    // 返り値: 進む数。投了なら 0
+  var c = cups[state], total = 0, k;
+  for (k in c) total += c[k];
+  if (total === 0) { cups[state] = initCup(state); return 0; }
+  var r = Math.floor(Math.random() * total);
+  for (k in c) { r -= c[k]; if (r < 0) break; }
+  used.push({ s: state, k: +k });
+  return +k;
+}
+function learn(aiWon) {
+  used.forEach(function (u) { cups[u.s][u.k] = Math.max(0, cups[u.s][u.k] + (aiWon ? 1 : -1)); });
+  games++; results.push(aiWon ? "W" : "L");
+  if (aiWon) W++; else L++;
+}
+function newState() { cur = 0; used = []; seq = []; }
+
+// 人間(先手)が h 進んだあと。返り値: null(続く) / "W"(AIの勝ち) / "L"(AIの負け) / "R"(投了)
+function afterHuman(h) {
+  cur += h; seq.push({ n: cur, who: "H" });
+  if (cur >= 10) { learn(true); return "W"; }
+  var k = aiMove(cur);
+  if (k === 0) { learn(false); return "R"; }
+  cur += k; seq.push({ n: cur, who: "A" });
+  if (cur >= 10) { learn(false); return "L"; }
+  return null;
+}
+
+// ---- 画面での対戦 ----
+function startGame() { newState(); gameOn = true; setMsg("あなたの番です。いくつ進めますか?"); render(); }
+function setMsg(t) { document.getElementById("msg").textContent = t; }
+function humanMove(h) {
+  if (!gameOn) return;
+  var res = afterHuman(h);
+  if (res === null) setMsg("紙コップAIは " + cur + " まで進みました。あなたの番です。");
+  else {
+    gameOn = false;
+    setMsg(res === "W" ? "あなたが10を言いました。紙コップAIの勝ちです(使ったビーズが1個ずつ増えました)。" :
+           res === "L" ? "紙コップAIが10を言いました。あなたの勝ちです(使ったビーズが1個ずつ減りました)。" :
+                         "コップのビーズがなくなり、紙コップAIは投了しました。あなたの勝ちです。");
+  }
+  render();
+}
+
+// ---- 自動対戦 ----
+function humanAuto(perfect) {
+  var legal = [];
+  for (var h = 1; h <= 3; h++) if (cur + h <= 10) legal.push(h);
+  if (perfect) {
+    var good = legal.filter(function (h) { var t = cur + h; return t === 1 || t === 5 || t === 9; });
+    if (good.length) return good[0];
+  }
+  return legal[Math.floor(Math.random() * legal.length)];
+}
+function runAuto(n) {
+  gameOn = false;
+  var perfect = document.getElementById("opp").value === "perfect";
+  for (var i = 0; i < n; i++) {
+    newState();
+    while (afterHuman(humanAuto(perfect)) === null) {}
+  }
+  newState();
+  setMsg(n + "回、" + (perfect ? "必勝の打ち方の" : "ランダムな") + "相手と対戦しました。");
+  render();
+}
+
+// ---- 表示 ----
+function render() {
+  var line = document.getElementById("line"), i, h = "";
+  for (i = 1; i <= 10; i++) {
+    var who = "";
+    seq.forEach(function (s) { if (s.n === i) who = s.who; });
+    var covered = false;
+    for (var j = 0; j < seq.length; j++) if (seq[j].n >= i) { covered = true; break; }
+    // 言った数字までの間も色をつける
+    var owner = "";
+    var prev = 0;
+    for (j = 0; j < seq.length; j++) { if (i > prev && i <= seq[j].n) { owner = seq[j].who; break; } prev = seq[j].n; }
+    h += '<div class="num ' + owner + (i === 10 ? " ten" : "") + '">' + i + (owner === "H" ? "<small>あなた</small>" : owner === "A" ? "<small>AI</small>" : "") + "</div>";
+  }
+  line.innerHTML = h;
+  for (var k = 1; k <= 3; k++) {
+    var b = document.getElementById("m" + k);
+    b.disabled = !(gameOn && cur + k <= 10);
+  }
+  var usedStates = used.map(function (u) { return u.s; });
+  var t = "<tr><th>コップ</th><th>赤</th><th>青</th><th>白</th><th>ビーズの割合</th></tr>";
+  for (var s = 1; s <= 9; s++) {
+    var c = cups[s], tot = (c[1] || 0) + (c[2] || 0) + (c[3] || 0);
+    function cell(k) { return c[k] === undefined ? "−" : c[k]; }
+    function seg(k) { return c[k] ? '<div class="' + COLORS[k] + '" style="width:' + (100 * c[k] / tot) + '%"></div>' : ""; }
+    t += '<tr class="' + (usedStates.indexOf(s) >= 0 ? "used" : "") + '"><td>' + s + "</td><td>" + cell(1) + "</td><td>" + cell(2) + "</td><td>" + cell(3) +
+         '</td><td class="bar"><div class="stack">' + (tot ? seg(1) + seg(2) + seg(3) : "") + "</div></td></tr>";
+  }
+  document.getElementById("cups").innerHTML = t;
+  document.getElementById("sGames").textContent = games;
+  document.getElementById("sW").textContent = W;
+  document.getElementById("sL").textContent = L;
+  drawChart();
+}
+function drawChart() {
+  var svg = document.getElementById("chart"), S = 20, n = Math.floor(results.length / S), k, i;
+  var h = '<g font-size="11" fill="#666" font-family="sans-serif">';
+  for (k = 0; k <= 4; k++) {
+    var y = 190 - k * 40;
+    h += '<line x1="40" x2="690" y1="' + y + '" y2="' + y + '" stroke="#eee"/><text x="34" y="' + (y + 4) + '" text-anchor="end">' + (k * 25) + '%</text>';
+  }
+  h += '<text x="690" y="212" text-anchor="end">' + (n * S) + '回</text></g>';
+  if (n >= 1) {
+    var pts = [];
+    for (i = 0; i < n; i++) {
+      var w = 0;
+      for (var q = i * S; q < (i + 1) * S; q++) if (results[q] === "W") w++;
+      var x = n === 1 ? 365 : 40 + 650 * i / (n - 1);
+      pts.push(x.toFixed(1) + "," + (190 - 160 * w / S).toFixed(1));
+    }
+    h += '<polyline fill="none" stroke="#3b5a6e" stroke-width="2" points="' + pts.join(" ") + '"/>';
+  } else h += '<text x="365" y="110" text-anchor="middle" font-size="13" fill="#999" font-family="sans-serif">20回たまるとグラフが出ます</text>';
+  svg.innerHTML = h;
+}
+
+document.getElementById("newGame").onclick = startGame;
+[1, 2, 3].forEach(function (k) { document.getElementById("m" + k).onclick = function () { humanMove(k); }; });
+document.querySelectorAll("button[data-n]").forEach(function (b) { b.onclick = function () { runAuto(+b.getAttribute("data-n")); }; });
+document.getElementById("reset").onclick = function () {
+  resetCups(); games = W = L = 0; results = []; gameOn = false; newState();
+  setMsg("コップを最初の状態にもどしました。"); render();
+};
+resetCups(); newState(); render();
+if (location.hash === "#demo") runAuto(500);
+</script>
+</body>
+</html>

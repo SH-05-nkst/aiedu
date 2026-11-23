@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アヤメ分類NN シミュレータ</title>
+<style>
+  body { margin:0; font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif; background:#f7f5f0; color:#222; line-height:1.7; }
+  .page { max-width:900px; margin:0 auto; padding:24px 20px 48px; }
+  h1 { font-family:"Hiragino Mincho ProN","Noto Serif JP",serif; font-size:1.5rem; margin:0 0 4px; }
+  h2 { font-size:1.05rem; margin:0 0 8px; font-family:"Hiragino Mincho ProN","Noto Serif JP",serif; }
+  .sub { color:#666; font-size:.92rem; margin:0 0 16px; }
+  .panel { background:#fff; border:1px solid #d8d4cc; padding:14px 16px; margin:0 0 16px; }
+  .note { font-size:.85rem; color:#666; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:8px 0; }
+  button.b { font:inherit; padding:6px 14px; border:1px solid #3b5a6e; background:#fff; color:#3b5a6e; cursor:pointer; }
+  button.b:hover:not(:disabled) { background:#eef3f6; }
+  button.b:disabled { opacity:.35; cursor:default; }
+  button.b.ghost { border-color:#999; color:#666; }
+  .flower { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+  .fv { border:1px solid #c8c1b3; background:#faf8f3; padding:6px 8px; text-align:center; }
+  .fv small { display:block; color:#666; font-size:.75rem; }
+  .fv b { font-size:1.3rem; font-variant-numeric:tabular-nums; }
+  .kids { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .kid { border:1px solid #c8c1b3; background:#faf8f3; padding:8px; }
+  .kid h3 { margin:0 0 4px; font-size:.9rem; }
+  .kid .val { font-size:.85rem; color:#666; margin-bottom:6px; }
+  .kid .val b { color:#222; }
+  .pt { display:grid; grid-template-columns:1fr auto auto auto; gap:4px; align-items:center; font-size:.85rem; margin:3px 0; }
+  .pt button { width:24px; height:24px; padding:0; border:1px solid #8a8070; background:#fff; cursor:pointer; }
+  .pt button:disabled { opacity:.3; cursor:default; }
+  .pt span.n { min-width:1.3em; text-align:center; font-weight:bold; font-variant-numeric:tabular-nums; }
+  .tot { font-size:.8rem; color:#666; margin-top:4px; }
+  .tot.ok { color:#3b5a6e; }
+  .hint { font-size:.8rem; color:#8a6a3d; margin-top:2px; min-height:1.2em; }
+  table.t { border-collapse:collapse; width:100%; font-size:.88rem; }
+  table.t th, table.t td { border:1px solid #e2ded5; padding:3px 6px; text-align:center; }
+  table.t th { background:#efece5; font-weight:normal; }
+  table.t td.win { background:#e3edf2; font-weight:bold; }
+  td.ok { color:#3b5a6e; } td.ng { color:#b5654a; }
+  .logwrap { max-height:260px; overflow:auto; }
+  .result { font-size:1.05rem; margin:8px 0 0; min-height:1.7em; }
+  svg { width:100%; height:auto; background:#fff; border:1px solid #d8d4cc; }
+  @media (max-width:720px){ .kids{grid-template-columns:repeat(2,1fr);} .flower{grid-template-columns:repeat(2,1fr);} }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="sub" style="margin:0 0 8px"><a href="iris.html">← アヤメ分類NNのページにもどる</a></p>
+  <h1>アヤメ分類NN シミュレータ</h1>
+  <p class="sub">中間層の4人(A〜D)が、それぞれ1つの数値を見て、3つの品種に合計10点をつけます。出力層が合計して、花の種類を判定します。</p>
+
+  <div class="panel">
+    <h2>1. 花のデータ</h2>
+    <div class="controls"><button class="b" id="next">新しいデータ</button><span class="note" id="roundNote"></span></div>
+    <div class="flower" id="flower"></div>
+  </div>
+
+  <div class="panel">
+    <h2>2. 中間層の点数づけ</h2>
+    <div class="kids" id="kids"></div>
+    <div class="controls">
+      <button class="b" id="judge">合計して判定する</button>
+      <label class="note"><input type="checkbox" id="hintOn"> お手本の点数を見る(統計から計算)</label>
+    </div>
+    <table class="t" id="sumTable" style="margin-top:6px"></table>
+    <p class="result" id="result">「新しいデータ」を押してください。</p>
+    <div class="controls">
+      <button class="b ghost" id="retry" disabled>点数を直して、同じデータでもう一度</button>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>3. 正解率の変化</h2>
+    <p class="note" style="margin:0">新しいデータの1回目の判定だけを数えます(直したあとの再判定は含めません)。直近5問の正解の割合です。</p>
+    <svg id="chart" viewBox="0 0 700 220"></svg>
+    <p class="note" id="chartNote"></p>
+  </div>
+
+  <div class="panel">
+    <h2>4. 記録</h2>
+    <div class="controls"><button class="b" id="csv" disabled>記録をCSVでダウンロード</button><button class="b ghost" id="reset">記録をすべて消す</button></div>
+    <div class="logwrap"><table class="t" id="log"></table></div>
+    <p class="note">CSVは、実践で使う記録票と同じ項目(データ・各児童の点数・合計・判定・正誤・再判定)で書き出します。</p>
+  </div>
+
+  <div class="panel note">
+    <b>データ</b>:Fisher (1936) のアヤメのデータ(3品種×50個、計150個)を使っています。<br>
+    <b>お手本の点数</b>:各数値について、品種ごとの平均とばらつきから「その品種らしさ」を計算し、合計10点に直したものです。花びらの数値は品種をよく分け、がくの数値は重なりが大きいので、点数のつき方に差が出ます。
+  </div>
+</div>
+
+<script>
+var IRIS=[[1.4,0.2,5.1,3.5,0],[1.4,0.2,4.9,3.0,0],[1.3,0.2,4.7,3.2,0],[1.5,0.2,4.6,3.1,0],[1.4,0.2,5.0,3.6,0],[1.7,0.4,5.4,3.9,0],[1.4,0.3,4.6,3.4,0],[1.5,0.2,5.0,3.4,0],[1.4,0.2,4.4,2.9,0],[1.5,0.1,4.9,3.1,0],[1.5,0.2,5.4,3.7,0],[1.6,0.2,4.8,3.4,0],[1.4,0.1,4.8,3.0,0],[1.1,0.1,4.3,3.0,0],[1.2,0.2,5.8,4.0,0],[1.5,0.4,5.7,4.4,0],[1.3,0.4,5.4,3.9,0],[1.4,0.3,5.1,3.5,0],[1.7,0.3,5.7,3.8,0],[1.5,0.3,5.1,3.8,0],[1.7,0.2,5.4,3.4,0],[1.5,0.4,5.1,3.7,0],[1.0,0.2,4.6,3.6,0],[1.7,0.5,5.1,3.3,0],[1.9,0.2,4.8,3.4,0],[1.6,0.2,5.0,3.0,0],[1.6,0.4,5.0,3.4,0],[1.5,0.2,5.2,3.5,0],[1.4,0.2,5.2,3.4,0],[1.6,0.2,4.7,3.2,0],[1.6,0.2,4.8,3.1,0],[1.5,0.4,5.4,3.4,0],[1.5,0.1,5.2,4.1,0],[1.4,0.2,5.5,4.2,0],[1.5,0.2,4.9,3.1,0],[1.2,0.2,5.0,3.2,0],[1.3,0.2,5.5,3.5,0],[1.4,0.1,4.9,3.6,0],[1.3,0.2,4.4,3.0,0],[1.5,0.2,5.1,3.4,0],[1.3,0.3,5.0,3.5,0],[1.3,0.3,4.5,2.3,0],[1.3,0.2,4.4,3.2,0],[1.6,0.6,5.0,3.5,0],[1.9,0.4,5.1,3.8,0],[1.4,0.3,4.8,3.0,0],[1.6,0.2,5.1,3.8,0],[1.4,0.2,4.6,3.2,0],[1.5,0.2,5.3,3.7,0],[1.4,0.2,5.0,3.3,0],[4.7,1.4,7.0,3.2,1],[4.5,1.5,6.4,3.2,1],[4.9,1.5,6.9,3.1,1],[4.0,1.3,5.5,2.3,1],[4.6,1.5,6.5,2.8,1],[4.5,1.3,5.7,2.8,1],[4.7,1.6,6.3,3.3,1],[3.3,1.0,4.9,2.4,1],[4.6,1.3,6.6,2.9,1],[3.9,1.4,5.2,2.7,1],[3.5,1.0,5.0,2.0,1],[4.2,1.5,5.9,3.0,1],[4.0,1.0,6.0,2.2,1],[4.7,1.4,6.1,2.9,1],[3.6,1.3,5.6,2.9,1],[4.4,1.4,6.7,3.1,1],[4.5,1.5,5.6,3.0,1],[4.1,1.0,5.8,2.7,1],[4.5,1.5,6.2,2.2,1],[3.9,1.1,5.6,2.5,1],[4.8,1.8,5.9,3.2,1],[4.0,1.3,6.1,2.8,1],[4.9,1.5,6.3,2.5,1],[4.7,1.2,6.1,2.8,1],[4.3,1.3,6.4,2.9,1],[4.4,1.4,6.6,3.0,1],[4.8,1.4,6.8,2.8,1],[5.0,1.7,6.7,3.0,1],[4.5,1.5,6.0,2.9,1],[3.5,1.0,5.7,2.6,1],[3.8,1.1,5.5,2.4,1],[3.7,1.0,5.5,2.4,1],[3.9,1.2,5.8,2.7,1],[5.1,1.6,6.0,2.7,1],[4.5,1.5,5.4,3.0,1],[4.5,1.6,6.0,3.4,1],[4.7,1.5,6.7,3.1,1],[4.4,1.3,6.3,2.3,1],[4.1,1.3,5.6,3.0,1],[4.0,1.3,5.5,2.5,1],[4.4,1.2,5.5,2.6,1],[4.6,1.4,6.1,3.0,1],[4.0,1.2,5.8,2.6,1],[3.3,1.0,5.0,2.3,1],[4.2,1.3,5.6,2.7,1],[4.2,1.2,5.7,3.0,1],[4.2,1.3,5.7,2.9,1],[4.3,1.3,6.2,2.9,1],[3.0,1.1,5.1,2.5,1],[4.1,1.3,5.7,2.8,1],[6.0,2.5,6.3,3.3,2],[5.1,1.9,5.8,2.7,2],[5.9,2.1,7.1,3.0,2],[5.6,1.8,6.3,2.9,2],[5.8,2.2,6.5,3.0,2],[6.6,2.1,7.6,3.0,2],[4.5,1.7,4.9,2.5,2],[6.3,1.8,7.3,2.9,2],[5.8,1.8,6.7,2.5,2],[6.1,2.5,7.2,3.6,2],[5.1,2.0,6.5,3.2,2],[5.3,1.9,6.4,2.7,2],[5.5,2.1,6.8,3.0,2],[5.0,2.0,5.7,2.5,2],[5.1,2.4,5.8,2.8,2],[5.3,2.3,6.4,3.2,2],[5.5,1.8,6.5,3.0,2],[6.7,2.2,7.7,3.8,2],[6.9,2.3,7.7,2.6,2],[5.0,1.5,6.0,2.2,2],[5.7,2.3,6.9,3.2,2],[4.9,2.0,5.6,2.8,2],[6.7,2.0,7.7,2.8,2],[4.9,1.8,6.3,2.7,2],[5.7,2.1,6.7,3.3,2],[6.0,1.8,7.2,3.2,2],[4.8,1.8,6.2,2.8,2],[4.9,1.8,6.1,3.0,2],[5.6,2.1,6.4,2.8,2],[5.8,1.6,7.2,3.0,2],[6.1,1.9,7.4,2.8,2],[6.4,2.0,7.9,3.8,2],[5.6,2.2,6.4,2.8,2],[5.1,1.5,6.3,2.8,2],[5.6,1.4,6.1,2.6,2],[6.1,2.3,7.7,3.0,2],[5.6,2.4,6.3,3.4,2],[5.5,1.8,6.4,3.1,2],[4.8,1.8,6.0,3.0,2],[5.4,2.1,6.9,3.1,2],[5.6,2.4,6.7,3.1,2],[5.1,2.3,6.9,3.1,2],[5.1,1.9,5.8,2.7,2],[5.9,2.3,6.8,3.2,2],[5.7,2.5,6.7,3.3,2],[5.2,2.3,6.7,3.0,2],[5.0,1.9,6.3,2.5,2],[5.2,2.0,6.5,3.0,2],[5.4,2.3,6.2,3.4,2],[5.1,1.8,5.9,3.0,2]];
+var FEATS = ["花びらの長さ", "花びらの幅", "がくの長さ", "がくの幅"];
+var KIDS = ["A", "B", "C", "D"];
+var SP = ["セトサ", "バージカラー", "バージニカ"];
+
+// 品種ごと・数値ごとの平均と標準偏差(お手本の点数用)
+var stat = [[], [], []];
+(function () {
+  for (var c = 0; c < 3; c++) for (var f = 0; f < 4; f++) {
+    var v = IRIS.filter(function (r) { return r[4] === c; }).map(function (r) { return r[f]; });
+    var m = v.reduce(function (a, b) { return a + b; }, 0) / v.length;
+    var sd = Math.sqrt(v.reduce(function (a, b) { return a + (b - m) * (b - m); }, 0) / v.length) || 0.1;
+    stat[c][f] = { m: m, sd: sd };
+  }
+})();
+// お手本: 数値 x に対する3品種の点数(合計10・最大剰余方式)
+function modelPoints(f, x) {
+  var ll = [0, 1, 2].map(function (c) { var s = stat[c][f]; var z = (x - s.m) / s.sd; return -0.5 * z * z - Math.log(s.sd); });
+  var mx = Math.max.apply(null, ll), e = ll.map(function (l) { return Math.exp(l - mx); });
+  var sum = e.reduce(function (a, b) { return a + b; }, 0), p = e.map(function (v) { return v / sum * 10; });
+  var pts = p.map(Math.floor), left = 10 - pts.reduce(function (a, b) { return a + b; }, 0);
+  var order = [0, 1, 2].sort(function (a, b) { return (p[b] - pts[b]) - (p[a] - pts[a]); });
+  for (var i = 0; i < left; i++) pts[order[i]]++;
+  return pts;
+}
+function judgeFrom(allPts) {                    // allPts[kid][species]
+  var sums = [0, 0, 0];
+  allPts.forEach(function (k) { for (var c = 0; c < 3; c++) sums[c] += k[c]; });
+  var mx = Math.max.apply(null, sums), win = [];
+  sums.forEach(function (s, c) { if (s === mx) win.push(c); });
+  return { sums: sums, win: win };
+}
+var modelAcc = (function () {
+  var ok = 0;
+  IRIS.forEach(function (r) {
+    var pts = [0, 1, 2, 3].map(function (f) { return modelPoints(f, r[f]); });
+    var j = judgeFrom(pts);
+    if (j.win.length === 1 && j.win[0] === r[4]) ok++;
+  });
+  return ok / IRIS.length;
+})();
+
+var pts, flower = null, flowerId = -1, round = 0, attempt = 0, judged = false, log = [], firsts = [];
+
+function resetPts() { pts = [0, 1, 2, 3].map(function () { return [3, 3, 4]; }); }
+
+function newFlower() {
+  flowerId = Math.floor(Math.random() * IRIS.length);
+  flower = IRIS[flowerId]; round++; attempt = 0; judged = false;
+  document.getElementById("result").textContent = "点数をつけて、「合計して判定する」を押してください。";
+  document.getElementById("sumTable").innerHTML = "";
+  render();
+}
+function setPt(k, c, d) {
+  if (judged && attempt === 0) return;
+  var a = pts[k], tot = a[0] + a[1] + a[2];
+  if (d > 0 && tot >= 10) return;
+  if (d < 0 && a[c] <= 0) return;
+  a[c] += d; render();
+}
+function judge() {
+  if (!flower) return;
+  for (var k = 0; k < 4; k++) if (pts[k][0] + pts[k][1] + pts[k][2] !== 10) {
+    document.getElementById("result").textContent = "中間層の" + KIDS[k] + "さんの点数が10点になっていません。";
+    return;
+  }
+  var j = judgeFrom(pts);
+  if (j.win.length > 1) {
+    document.getElementById("result").textContent = "同点で決まりません。点数を直してください。";
+    showSums(j); return;
+  }
+  var guess = j.win[0], right = guess === flower[4];
+  attempt++; judged = true;
+  log.push({ n: log.length + 1, round: round, id: flowerId + 1, vals: flower.slice(0, 4), ans: flower[4],
+             pts: pts.map(function (a) { return a.slice(); }), sums: j.sums, guess: guess, right: right, retry: attempt > 1 });
+  if (attempt === 1) firsts.push(right ? 1 : 0);
+  document.getElementById("result").innerHTML = "判定:<b>" + SP[guess] + "</b>。正解は<b>" + SP[flower[4]] + "</b>です。" +
+    (right ? "当たり!" : "はずれ。だれの点数が答えをずらしたか、見てみましょう。");
+  showSums(j); render();
+}
+function showSums(j) {
+  var h = "<tr><th></th>" + SP.map(function (s) { return "<th>" + s + "</th>"; }).join("") + "</tr>";
+  for (var k = 0; k < 4; k++) h += "<tr><th>" + KIDS[k] + "</th>" + pts[k].map(function (v) { return "<td>" + v + "</td>"; }).join("") + "</tr>";
+  h += "<tr><th>合計</th>" + j.sums.map(function (s, c) { return '<td class="' + (j.win.indexOf(c) >= 0 ? "win" : "") + '">' + s + "</td>"; }).join("") + "</tr>";
+  document.getElementById("sumTable").innerHTML = h;
+}
+function retry() {                              // 同じデータで再判定
+  if (!judged) return;
+  judged = false;
+  document.getElementById("result").textContent = "点数を直して、もう一度判定してください。";
+  document.getElementById("sumTable").innerHTML = "";
+  render();
+}
+
+function render() {
+  document.getElementById("roundNote").textContent = flower ? "第" + round + "問(データ番号 " + (flowerId + 1) + ")" : "";
+  document.getElementById("flower").innerHTML = FEATS.map(function (f, i) {
+    return '<div class="fv"><small>' + f + '</small><b>' + (flower ? flower[i].toFixed(1) : "−") + "</b> cm</div>";
+  }).join("");
+  var hint = document.getElementById("hintOn").checked;
+  var locked = !flower || (judged);
+  var kh = "";
+  for (var k = 0; k < 4; k++) {
+    var a = pts[k], tot = a[0] + a[1] + a[2];
+    kh += '<div class="kid"><h3>中間層 ' + KIDS[k] + '</h3><div class="val">' + FEATS[k] + ":<b> " + (flower ? flower[k].toFixed(1) : "−") + "</b></div>";
+    for (var c = 0; c < 3; c++)
+      kh += '<div class="pt"><span>' + SP[c] + '</span><button data-k="' + k + '" data-c="' + c + '" data-d="-1"' + (locked || a[c] <= 0 ? " disabled" : "") + '>−</button><span class="n">' + a[c] +
+            '</span><button data-k="' + k + '" data-c="' + c + '" data-d="1"' + (locked || tot >= 10 ? " disabled" : "") + ">+</button></div>";
+    kh += '<div class="tot' + (tot === 10 ? " ok" : "") + '">合計 ' + tot + " / 10</div>";
+    kh += '<div class="hint">' + (hint && flower ? "お手本: " + modelPoints(k, flower[k]).join(" / ") : "") + "</div></div>";
+  }
+  var kidsEl = document.getElementById("kids"); kidsEl.innerHTML = kh;
+  kidsEl.querySelectorAll("button").forEach(function (b) {
+    b.onclick = function () { setPt(+b.getAttribute("data-k"), +b.getAttribute("data-c"), +b.getAttribute("data-d")); };
+  });
+  document.getElementById("judge").disabled = !flower || judged;
+  document.getElementById("retry").disabled = !(judged && flower);
+  document.getElementById("csv").disabled = log.length === 0;
+  drawLog(); drawChart();
+}
+function drawLog() {
+  var h = "<tr><th>回</th><th>問</th><th>花びら長</th><th>花びら幅</th><th>がく長</th><th>がく幅</th><th>正解</th><th>A</th><th>B</th><th>C</th><th>D</th><th>合計</th><th>判定</th><th>正誤</th><th>再</th></tr>";
+  log.slice().reverse().forEach(function (r) {
+    h += "<tr><td>" + r.n + "</td><td>" + r.round + "</td>" + r.vals.map(function (v) { return "<td>" + v.toFixed(1) + "</td>"; }).join("") +
+         "<td>" + SP[r.ans] + "</td>" + r.pts.map(function (a) { return "<td>" + a.join("/") + "</td>"; }).join("") +
+         "<td>" + r.sums.join("/") + "</td><td>" + SP[r.guess] + '</td><td class="' + (r.right ? "ok" : "ng") + '">' + (r.right ? "○" : "×") + "</td><td>" + (r.retry ? "再" : "") + "</td></tr>";
+  });
+  document.getElementById("log").innerHTML = log.length ? h : "";
+}
+function drawChart() {
+  var svg = document.getElementById("chart"), n = firsts.length, W = 5, k, i;
+  var h = '<g font-size="11" fill="#666" font-family="sans-serif">';
+  for (k = 0; k <= 4; k++) {
+    var y = 190 - k * 40;
+    h += '<line x1="40" x2="690" y1="' + y + '" y2="' + y + '" stroke="#eee"/><text x="34" y="' + (y + 4) + '" text-anchor="end">' + (k * 25) + '%</text>';
+  }
+  var yb = 190 - 160 * modelAcc, yr = 190 - 160 / 3;
+  h += '<line x1="40" x2="690" y1="' + yb + '" y2="' + yb + '" stroke="#8a6a3d" stroke-dasharray="5 4"/><text x="688" y="' + (yb - 4) + '" text-anchor="end" fill="#8a6a3d">お手本の点数 ' + Math.round(modelAcc * 100) + '%</text>';
+  h += '<line x1="40" x2="690" y1="' + yr + '" y2="' + yr + '" stroke="#999" stroke-dasharray="5 4"/><text x="688" y="' + (yr - 4) + '" text-anchor="end" fill="#999">あてずっぽう 33%</text>';
+  h += '<text x="690" y="212" text-anchor="end">' + n + '問</text></g>';
+  if (n >= W) {
+    var pt = [];
+    for (i = W - 1; i < n; i++) {
+      var s = 0; for (var q = i - W + 1; q <= i; q++) s += firsts[q];
+      var x = (n - W === 0) ? 365 : 40 + 650 * (i - W + 1) / (n - W);
+      pt.push(x.toFixed(1) + "," + (190 - 160 * s / W).toFixed(1));
+    }
+    h += '<polyline fill="none" stroke="#3b5a6e" stroke-width="2" points="' + pt.join(" ") + '"/>';
+  } else h += '<text x="365" y="110" text-anchor="middle" font-size="13" fill="#999" font-family="sans-serif">5問たまるとグラフが出ます</text>';
+  svg.innerHTML = h;
+  var ok = firsts.reduce(function (a, b) { return a + b; }, 0);
+  document.getElementById("chartNote").textContent = n ? "1回目の正解:" + ok + " / " + n + "問(" + Math.round(100 * ok / n) + "%)" : "";
+}
+function csv() {
+  var head = ["回", "問", "再判定", "データ番号", "花びらの長さ", "花びらの幅", "がくの長さ", "がくの幅", "正解の品種"];
+  KIDS.forEach(function (k) { SP.forEach(function (s) { head.push("中間層" + k + ":" + s); }); });
+  SP.forEach(function (s) { head.push("合計:" + s); });
+  head.push("出力層の判定", "正誤");
+  var rows = [head.join(",")];
+  log.forEach(function (r) {
+    var row = [r.n, r.round, r.retry ? 1 : 0, r.id].concat(r.vals, [SP[r.ans]]);
+    r.pts.forEach(function (a) { row = row.concat(a); });
+    row = row.concat(r.sums, [SP[r.guess], r.right ? "○" : "×"]);
+    rows.push(row.join(","));
+  });
+  var blob = new Blob(["﻿" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" });
+  var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "iris-nn-record.csv";
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+}
+
+document.getElementById("next").onclick = newFlower;
+document.getElementById("judge").onclick = judge;
+document.getElementById("retry").onclick = retry;
+document.getElementById("csv").onclick = csv;
+document.getElementById("hintOn").onchange = render;
+document.getElementById("reset").onclick = function () { log = []; firsts = []; round = 0; flower = null; judged = false; resetPts();
+  document.getElementById("result").textContent = "「新しいデータ」を押してください。"; document.getElementById("sumTable").innerHTML = ""; render(); };
+resetPts(); render();
+if (location.hash === "#demo") {                 // 動作確認用:お手本の点数で10問
+  document.getElementById("hintOn").checked = true;
+  for (var t = 0; t < 12; t++) {
+    newFlower();
+    pts = [0, 1, 2, 3].map(function (f) { return modelPoints(f, flower[f]); });
+    if (t % 4 === 3) pts[0] = [0, 0, 10];        // わざとまちがえる例
+    judge();
+  }
+}
+</script>
+</body>
+</html>
