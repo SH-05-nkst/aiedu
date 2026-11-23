@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ヘキサポーン シミュレータ</title>
+<style>
+  body { margin:0; font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif; background:#f7f5f0; color:#222; line-height:1.7; }
+  .page { max-width:860px; margin:0 auto; padding:24px 20px 48px; }
+  h1 { font-family:"Hiragino Mincho ProN","Noto Serif JP",serif; font-size:1.5rem; margin:0 0 4px; }
+  h2 { font-size:1.05rem; margin:0 0 8px; font-family:"Hiragino Mincho ProN","Noto Serif JP",serif; }
+  .sub { color:#666; font-size:.92rem; margin:0 0 16px; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .panel { background:#fff; border:1px solid #d8d4cc; padding:14px 16px; margin:0 0 16px; }
+  .board { display:grid; grid-template-columns:repeat(3,1fr); gap:4px; width:210px; }
+  .cell { aspect-ratio:1; border:1px solid #8a8070; background:#faf8f3; padding:0; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+  .cell:disabled { cursor:default; }
+  .cell.sel { background:#eef3f6; border:2px solid #3b5a6e; }
+  .cell.tgt { background:#f6efe2; border:2px solid #8a6a3d; }
+  .disc { width:60%; height:60%; border-radius:50%; border:2px solid #333; }
+  .disc.W { background:#fff; } .disc.B { background:#333; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 0 8px; }
+  button.b { font:inherit; padding:6px 12px; border:1px solid #3b5a6e; background:#fff; color:#3b5a6e; cursor:pointer; }
+  button.b:hover { background:#eef3f6; }
+  button.b.ghost { border-color:#999; color:#666; }
+  select { font:inherit; padding:5px 8px; border:1px solid #999; background:#fff; }
+  .stat { font-size:.95rem; } .stat b { font-variant-numeric:tabular-nums; }
+  .msg { min-height:1.7em; margin:8px 0 0; }
+  .note { font-size:.85rem; color:#666; }
+  svg { width:100%; height:auto; background:#fff; border:1px solid #d8d4cc; }
+  svg.boxsvg { width:210px; }
+  @media (max-width:640px){ .row{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="sub" style="margin:0 0 8px"><a href="papercup.html">← 紙コップAIのページにもどる</a></p>
+  <h1>ヘキサポーン シミュレータ</h1>
+  <p class="sub">3×3マスで、ポーンを3つずつ動かすゲームです。Gardner(1962)のマッチ箱の機械を再現します。あなたが白(先手)、機械が黒(後手)です。</p>
+
+  <div class="row">
+    <div class="panel">
+      <h2>対戦</h2>
+      <div class="controls"><button class="b" id="newGame">新しいゲーム</button></div>
+      <div class="board" id="board"></div>
+      <p class="msg" id="msg">「新しいゲーム」を押してください。</p>
+    </div>
+    <div class="panel">
+      <h2>最後に使った箱</h2>
+      <p class="note" style="margin:0 0 8px">矢印が箱の中のビーズ(手)、数字がビーズの数です。</p>
+      <svg class="boxsvg" id="boxsvg" viewBox="0 0 210 210"></svg>
+      <p class="note" id="boxNote" style="margin:8px 0 0"></p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>相手と、たくさん対戦させる</h2>
+    <div class="controls">
+      <label>白(相手)の強さ:
+        <select id="opp">
+          <option value="random">ランダム</option>
+          <option value="smart">少し賢い(すぐ勝てる手を打ち、すぐ負ける手を避ける)</option>
+        </select>
+      </label>
+      <button class="b" data-n="10">10回</button>
+      <button class="b" data-n="100">100回</button>
+      <button class="b" data-n="1000">1000回</button>
+      <button class="b ghost" id="reset">機械を最初の状態に戻す</button>
+    </div>
+    <p class="stat">対戦数 <b id="sGames">0</b> / 機械の勝ち <b id="sW">0</b> / 機械の負け <b id="sL">0</b> / 使われた箱 <b id="sBoxes">0</b> / ビーズがなくなった箱 <b id="sEmpty">0</b></p>
+    <svg id="chart" viewBox="0 0 700 220"></svg>
+    <p class="note">グラフは20回ごとの割合です(青:機械の勝ち、赤:機械の負け)。</p>
+  </div>
+
+  <div class="panel note">
+    <b>ゲームのルール</b>:ポーンは前に1マス進めます(前のマスが空のときだけ)。ななめ前に相手のポーンがいるときは、取ることができます。次のどれかで勝ちです。①相手側の端の列まで進む ②相手のポーンをすべて取る ③相手が動かせなくなる。<br>
+    <b>機械のしくみ</b>:盤面ごとに箱があり、動かせる手の数だけビーズが1個ずつ入っています。機械は箱からビーズを1個引き、その手を打ちます。<b>負けたときは、最後に打った手のビーズを1個取り除きます</b>(勝ったときは何もしません)。箱のビーズがすべてなくなったら「投了」して負けとし、その1つ前の手のビーズを取り除きます。左右を裏返すと同じ形になる盤面は、1つの箱にまとめています。<br>
+    <b>見どころ</b>:このゲームは、後手(黒)が正しく打てば必ず勝てます。対戦をくり返すと、負けにつながる手のビーズがなくなり、機械はだんだん負けなくなります。「ビーズがなくなった箱」は、どの手を打っても負ける局面を、機械が見つけた印です。
+  </div>
+</div>
+
+<script>
+// 盤面: 長さ9の配列。'W' 白(下から上へ)、'B' 黒(上から下へ)、'.' 空き
+var boxes = {};           // key -> [{m:[from,to], n:beads}]
+var board, turn, hist, gameOn, lastKey = null, selected = null;
+var games = 0, W = 0, L = 0, results = [];
+
+function opp(s) { return s === "W" ? "B" : "W"; }
+function genMoves(b, side) {
+  var dir = side === "W" ? -3 : 3, mv = [], o = opp(side);
+  for (var i = 0; i < 9; i++) {
+    if (b[i] !== side) continue;
+    var t = i + dir;
+    if (t < 0 || t > 8) continue;
+    if (b[t] === ".") mv.push([i, t]);
+    [-1, 1].forEach(function (dc) {
+      var c = (i % 3) + dc;
+      if (c >= 0 && c <= 2 && b[t + dc] === o) mv.push([i, t + dc]);
+    });
+  }
+  return mv;
+}
+function apply(b, m) { var nb = b.slice(); nb[m[1]] = nb[m[0]]; nb[m[0]] = "."; return nb; }
+function isWin(b, side) {             // side が動いた直後に勝っているか
+  var o = opp(side), goal = side === "W" ? 0 : 2, i, hasOpp = false;
+  for (i = 0; i < 9; i++) {
+    if (b[i] === side && Math.floor(i / 3) === goal) return true;
+    if (b[i] === o) hasOpp = true;
+  }
+  if (!hasOpp) return true;
+  return genMoves(b, o).length === 0;
+}
+function whiteAuto(smart) {
+  var mv = genMoves(board, "W");
+  if (smart) {
+    var win = mv.filter(function (m) { return isWin(apply(board, m), "W"); });
+    if (win.length) return win[Math.floor(Math.random() * win.length)];
+    var safe = mv.filter(function (m) {              // 黒にすぐ勝たれない手
+      var nb = apply(board, m);
+      return !genMoves(nb, "B").some(function (bm) { return isWin(apply(nb, bm), "B"); });
+    });
+    if (safe.length) mv = safe;
+  }
+  return mv[Math.floor(Math.random() * mv.length)];
+}
+
+// ---- 箱(左右反転で1つにまとめる) ----
+function mirrorIdx(i) { return Math.floor(i / 3) * 3 + (2 - (i % 3)); }
+function canon(b) {
+  var mir = []; for (var i = 0; i < 9; i++) mir[i] = b[mirrorIdx(i)];
+  var s = b.join(""), m = mir.join("");
+  return m < s ? { key: m, mirrored: true } : { key: s, mirrored: false };
+}
+function getBox(key) {
+  if (!boxes[key]) boxes[key] = genMoves(key.split(""), "B").map(function (m) { return { m: m, n: 1 }; });
+  return boxes[key];
+}
+function punishLast() {
+  if (!hist.length) return;
+  var h = hist[hist.length - 1], e = boxes[h.key][h.idx];
+  e.n = Math.max(0, e.n - 1);
+}
+// 機械(黒)の手。投了なら false
+function machineTurn() {
+  var c = canon(board), box = getBox(c.key), total = 0, i;
+  lastKey = c.key;
+  for (i = 0; i < box.length; i++) total += box[i].n;
+  if (total === 0) return false;
+  var r = Math.floor(Math.random() * total);
+  for (i = 0; i < box.length; i++) { r -= box[i].n; if (r < 0) break; }
+  hist.push({ key: c.key, idx: i });
+  var m = box[i].m;
+  if (c.mirrored) m = [mirrorIdx(m[0]), mirrorIdx(m[1])];
+  board = apply(board, m);
+  return true;
+}
+function record(machineWon) {
+  games++; results.push(machineWon ? "W" : "L");
+  if (machineWon) W++; else L++;
+}
+// 白が動いたあとの流れ。返り値: null(続く) / "W"(機械の勝ち) / "L"(機械の負け)
+function afterWhite(m) {
+  board = apply(board, m);
+  if (isWin(board, "W")) { punishLast(); record(false); return "L"; }
+  if (!machineTurn()) { punishLast(); record(false); return "R"; }   // 投了
+  if (isWin(board, "B")) { record(true); return "W"; }
+  return null;
+}
+
+// ---- 画面での対戦 ----
+function newBoard() { board = ["B","B","B",".",".",".","W","W","W"]; hist = []; turn = "W"; selected = null; }
+function startGame() { newBoard(); gameOn = true; setMsg("あなたの番です(白)。動かすポーンを選んでください。"); render(); }
+function setMsg(t) { document.getElementById("msg").textContent = t; }
+function clickCell(i) {
+  if (!gameOn) return;
+  var mv = genMoves(board, "W");
+  if (selected !== null) {
+    var m = mv.filter(function (x) { return x[0] === selected && x[1] === i; })[0];
+    if (m) { selected = null; return finishHuman(afterWhite(m)); }
+  }
+  selected = mv.some(function (x) { return x[0] === i; }) ? i : null;
+  render();
+}
+function finishHuman(res) {
+  if (res === null) { setMsg("あなたの番です(白)。"); }
+  else {
+    gameOn = false;
+    setMsg(res === "W" ? "機械の勝ちです。ビーズは変わりません。" :
+           res === "L" ? "あなたの勝ちです。機械は、最後に打った手のビーズを1個失いました。" :
+                         "機械は投了しました。あなたの勝ちです。1つ前の手のビーズを1個失いました。");
+  }
+  render();
+}
+
+// ---- 自動対戦 ----
+function autoGame(strong) {
+  newBoard();
+  for (;;) {
+    var m = whiteAuto(strong);
+    var res = afterWhite(m);
+    if (res !== null) return;
+  }
+}
+function runAuto(n) {
+  gameOn = false; selected = null;
+  var strong = document.getElementById("opp").value === "smart";
+  for (var i = 0; i < n; i++) autoGame(strong);
+  newBoard();
+  setMsg(n + "回、" + (strong ? "少し賢い" : "ランダムな") + "相手と対戦しました。");
+  render();
+}
+
+// ---- 表示 ----
+function render() {
+  var bd = document.getElementById("board"); bd.innerHTML = "";
+  var targets = [];
+  if (gameOn && selected !== null)
+    genMoves(board, "W").forEach(function (m) { if (m[0] === selected) targets.push(m[1]); });
+  for (var i = 0; i < 9; i++) {
+    var b = document.createElement("button");
+    b.className = "cell" + (i === selected ? " sel" : "") + (targets.indexOf(i) >= 0 ? " tgt" : "");
+    b.disabled = !gameOn;
+    if (board[i] !== ".") { var d = document.createElement("span"); d.className = "disc " + board[i]; b.appendChild(d); }
+    (function (k) { b.onclick = function () { clickCell(k); }; })(i);
+    bd.appendChild(b);
+  }
+  drawBox();
+  var empty = 0, k;
+  for (k in boxes) if (boxes[k].every(function (e) { return e.n === 0; })) empty++;
+  document.getElementById("sGames").textContent = games;
+  document.getElementById("sW").textContent = W;
+  document.getElementById("sL").textContent = L;
+  document.getElementById("sBoxes").textContent = Object.keys(boxes).length;
+  document.getElementById("sEmpty").textContent = empty;
+  drawChart();
+}
+function drawBox() {
+  var svg = document.getElementById("boxsvg"), h = "", i, S = 70;
+  var cols = ["#3b5a6e", "#b5654a", "#6b7f5a", "#8a6a3d", "#7d6a9a", "#2a8a8a"];
+  function cx(i) { return (i % 3) * S + S / 2; }
+  function cy(i) { return Math.floor(i / 3) * S + S / 2; }
+  if (!lastKey) { svg.innerHTML = ""; document.getElementById("boxNote").textContent = "まだ使われていません。"; return; }
+  for (i = 0; i < 9; i++)
+    h += '<rect x="' + (i % 3) * S + '" y="' + Math.floor(i / 3) * S + '" width="' + S + '" height="' + S + '" fill="#faf8f3" stroke="#c8c1b3"/>';
+  h += '<defs>' + cols.map(function (c, j) { return '<marker id="m' + j + '" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="' + c + '"/></marker>'; }).join("") + '</defs>';
+  for (i = 0; i < 9; i++) {
+    var c = lastKey[i];
+    if (c !== ".") h += '<circle cx="' + cx(i) + '" cy="' + cy(i) + '" r="15" fill="' + (c === "W" ? "#fff" : "#333") + '" stroke="#333" stroke-width="2"/>';
+  }
+  boxes[lastKey].forEach(function (e, j) {
+    var col = e.n === 0 ? "#bbb" : cols[j % cols.length], f = e.m[0], t = e.m[1];
+    var x1 = cx(f), y1 = cy(f), x2 = cx(t), y2 = cy(t);
+    var dx = x2 - x1, dy = y2 - y1, len = Math.sqrt(dx * dx + dy * dy);
+    var sx = x1 + dx / len * 16, sy = y1 + dy / len * 16, ex = x2 - dx / len * 18, ey = y2 - dy / len * 18;
+    h += '<line x1="' + sx + '" y1="' + sy + '" x2="' + ex + '" y2="' + ey + '" stroke="' + col + '" stroke-width="3"' +
+         (e.n === 0 ? ' stroke-dasharray="3 3"' : ' marker-end="url(#m' + (j % cols.length) + ')"') + '/>';
+    var lx = sx + (ex - sx) * 0.5 + (dy !== 0 && dx === 0 ? 9 : 0), ly = sy + (ey - sy) * 0.5 - 4;
+    h += '<text x="' + lx + '" y="' + ly + '" font-size="13" font-weight="bold" fill="' + col + '" text-anchor="middle" font-family="sans-serif" stroke="#fff" stroke-width="3" paint-order="stroke">' + e.n + '</text>';
+  });
+  svg.innerHTML = h;
+  document.getElementById("boxNote").textContent = "(左右の裏返しをそろえた向きで表示しています。灰色の点線は、ビーズがなくなった手です)";
+}
+function drawChart() {
+  var svg = document.getElementById("chart"), S = 20, n = Math.floor(results.length / S), k, i;
+  var h = '<g font-size="11" fill="#666" font-family="sans-serif">';
+  for (k = 0; k <= 4; k++) {
+    var y = 190 - k * 40;
+    h += '<line x1="40" x2="690" y1="' + y + '" y2="' + y + '" stroke="#eee"/><text x="34" y="' + (y + 4) + '" text-anchor="end">' + (k * 25) + '%</text>';
+  }
+  h += '<text x="690" y="212" text-anchor="end">' + (n * S) + '回</text></g>';
+  if (n >= 1) {
+    var pw = [], pl = [];
+    for (i = 0; i < n; i++) {
+      var w = 0;
+      for (var q = i * S; q < (i + 1) * S; q++) if (results[q] === "W") w++;
+      var x = n === 1 ? 365 : 40 + 650 * i / (n - 1);
+      pw.push(x.toFixed(1) + "," + (190 - 160 * w / S).toFixed(1));
+      pl.push(x.toFixed(1) + "," + (190 - 160 * (S - w) / S).toFixed(1));
+    }
+    h += '<polyline fill="none" stroke="#3b5a6e" stroke-width="2" points="' + pw.join(" ") + '"/>';
+    h += '<polyline fill="none" stroke="#b5654a" stroke-width="2" points="' + pl.join(" ") + '"/>';
+  } else h += '<text x="365" y="110" text-anchor="middle" font-size="13" fill="#999" font-family="sans-serif">20回たまるとグラフが出ます</text>';
+  svg.innerHTML = h;
+}
+
+document.getElementById("newGame").onclick = startGame;
+document.querySelectorAll("button[data-n]").forEach(function (b) { b.onclick = function () { runAuto(+b.getAttribute("data-n")); }; });
+document.getElementById("reset").onclick = function () {
+  boxes = {}; lastKey = null; games = W = L = 0; results = []; gameOn = false; newBoard();
+  setMsg("機械を最初の状態に戻しました。"); render();
+};
+newBoard(); render();
+if (location.hash === "#demo") runAuto(1000);
+if (location.hash === "#demo2") { document.getElementById("opp").value = "smart"; runAuto(300); }
+</script>
+</body>
+</html>
