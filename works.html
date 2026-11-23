@@ -18,7 +18,7 @@
 <div class="page">
 
 <header class="site-header">
-  <p class="site-name"><a href="index.html">中里 彰吾</a><small>Shogo NakaSato</small></p>
+  <p class="site-name"><a href="index.html">中里 彰吾</a><small>Shogo Nakazato</small></p>
 </header>
 <nav class="site-nav">
   <a href="index.html">教材・実践</a>
@@ -28,8 +28,8 @@
 
 <main>
 <h1>研究業績</h1>
-<p>小学校教諭。修士(理学)専門は教育工学。小学生のAIリテラシー教育、とくに強化学習や生成AIの考え方をアンプラグドで学ぶ教材と授業を研究しています。北海道大学大学院理学院修了。日本教育工学会、日本STEM教育学会 会員。</p>
-<p class="src">業績の一覧は、<a href="https://researchmap.jp/naka_sato">researchmap</a> の公開データを読み込んで表示しています。<span id="status">読み込み中…</span></p>
+<p>小学校教諭。専門は教育工学。小学生のAIリテラシー教育、とくに強化学習や生成AIの考え方をアンプラグドで学ぶ教材と授業を研究しています。北海道大学大学院理学院 修士課程修了。日本教育工学会、日本STEM教育学会 会員。</p>
+<p class="src">業績の一覧は、<a href="https://researchmap.jp/naka_sato">researchmap</a> の公開データを、週に1回自動で取り込んで表示しています。<span id="status">読み込み中…</span></p>
 
 <ul class="jump" id="jump"></ul>
 
@@ -37,14 +37,14 @@
 
 <!-- researchmapを読み込めなかったときに表示する、手書きの一覧 -->
 <div id="fallback">
-  <p class="note">researchmapから読み込めなかったため、このページに書いてある一覧を表示しています。最新の一覧は <a href="https://researchmap.jp/naka_sato">researchmap</a> をご覧ください。</p>
+  <p class="note">データを読み込めなかったため、このページに書いてある一覧を表示しています。最新の一覧は <a href="https://researchmap.jp/naka_sato">researchmap</a> をご覧ください。</p>
   <h2>論文</h2>
   <ul class="refs">
     <li>中里彰吾, 安藤明伸. <span class="title">数取りゲームを用いた強化学習のアンプラグド教材の開発と実践.</span> <span class="venue">日本教育工学会論文誌, 50(Suppl.), ショートレター.</span> <span class="tag">採録決定</span></li>
   </ul>
   <h2>国際会議</h2>
   <ul class="refs">
-    <li>S. NakaSato. <span class="title-en">Elementary School Students' Initial Mental Models of Generative AI.</span> <span class="venue">WAIE 2026, Sapporo, Japan, September 2026.</span> <span class="tag">口頭発表</span></li>
+    <li>S. Nakazato. <span class="title-en">Elementary School Students' Initial Mental Models of Generative AI.</span> <span class="venue">WAIE 2026, Sapporo, Japan, September 2026.</span> <span class="tag">口頭発表</span></li>
   </ul>
   <h2>講演・登壇</h2>
   <ul class="refs">
@@ -61,7 +61,6 @@
 
 <script>
 (function () {
-  var BASE = "https://api.researchmap.jp/naka_sato/";
   var PTYPE = { oral_presentation: "口頭発表", poster_presentation: "ポスター", invited_oral_presentation: "招待講演",
                 public_symposium: "シンポジウム", keynote_oral_presentation: "基調講演" };
 
@@ -125,22 +124,11 @@
     return h + (open ? "</ul>" : "");
   }
 
-  // researchmapのAPIを直接読む。ブラウザに止められたとき(CORS)は、同じ場所に置いた data/○○.json を読む。
+  // data/○○.json を読む。このファイルは、GitHub Actions が週に1回 researchmap から取ってきて更新する。
   function getAll(type) {
-    var all = [];
-    function next(url) {
-      return fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
-        all = all.concat(d.items || []);
-        var n = d._links && d._links.next && d._links.next.href;
-        return n ? next(n) : all;
-      });
-    }
-    return next(BASE + type + "?limit=100").then(function (a) { return { items: a, ok: true, from: "api" }; }).catch(function () {
-      all = [];
-      return fetch("data/" + type + ".json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(function (d) { return { items: d.items || [], ok: true, from: "file" }; })
-        .catch(function () { return { items: [], ok: false }; });
-    });
+    return fetch("data/" + type + ".json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (d) { return { items: d.items || [], ok: true, from: "file" }; })
+      .catch(function () { return { items: [], ok: false }; });
   }
 
   Promise.all(["published_papers", "presentations", "books_etc", "misc"].map(getAll)).then(function (res) {
@@ -159,7 +147,7 @@
     secs.forEach(function (s) { var h = section(s[0], s[1], s[2].slice(), s[3]); if (h) { html += h; jump += '<li><a href="#' + s[0] + '">' + s[1] + "(" + s[2].length + ")</a></li>"; } });
     document.getElementById("live").innerHTML = html;
     document.getElementById("jump").innerHTML = jump;
-    document.getElementById("status").textContent = res.every(function (x) { return x.from === "file"; }) ? "(保存したデータを表示しています)" : "";
+    document.getElementById("status").textContent = "";
   }).catch(function () {
     document.getElementById("status").textContent = "(読み込めませんでした)";
     document.getElementById("fallback").style.display = "block";
