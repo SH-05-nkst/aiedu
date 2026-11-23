@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>中里彰吾:研究業績</title>
-<meta name="description" content="中里彰吾の研究業績(論文、国際会議、学会・研究会発表、講演)。researchmapの公開データを表示しています。">
+<title>NakaSato:研究業績</title>
+<meta name="description" content="NakaSatoの研究業績(論文、国際会議、学会・研究会発表、講演)。researchmapの公開データを表示しています。">
 <meta name="theme-color" content="#3b5a6e">
 <link rel="stylesheet" href="style.css">
 <style>
@@ -18,7 +18,7 @@
 <div class="page">
 
 <header class="site-header">
-  <p class="site-name"><a href="index.html">中里 彰吾</a><small>Shogo NakaSato</small></p>
+  <p class="site-name"><a href="index.html">NakaSato</a></p>
 </header>
 <nav class="site-nav">
   <a href="index.html">教材・実践</a>
@@ -28,7 +28,7 @@
 
 <main>
 <h1>研究業績</h1>
-<p>小学校教諭。修士(理学)専門は教育工学。小学生のAIリテラシー教育、とくに強化学習や生成AIの考え方をアンプラグドで学ぶ教材と授業を研究しています。北海道大学大学院理学院修了。日本教育工学会、日本STEM教育学会 会員。</p>
+<p>小学校教諭。修士（理学）北海道大学大学院理学院修了。専門は教育工学。小学生のAIリテラシー教育、とくに強化学習や生成AIの考え方をアンプラグドで学ぶ教材と授業を研究しています。日本教育工学会、日本STEM教育学会 会員。</p>
 <p class="src">業績の一覧は、<a href="https://researchmap.jp/naka_sato">researchmap</a> の公開データを、週に1回自動で取り込んで表示しています。<span id="status">読み込み中…</span></p>
 
 <ul class="jump" id="jump"></ul>
@@ -44,7 +44,7 @@
   </ul>
   <h2>国際会議</h2>
   <ul class="refs">
-    <li>S. NakaSato. <span class="title-en">Elementary School Students' Initial Mental Models of Generative AI.</span> <span class="venue">WAIE 2026, Sapporo, Japan, September 2026.</span> <span class="tag">口頭発表</span></li>
+    <li>S. Nakazato. <span class="title-en">Elementary School Students' Initial Mental Models of Generative AI.</span> <span class="venue">WAIE 2026, Sapporo, Japan, September 2026.</span> <span class="tag">口頭発表</span></li>
   </ul>
   <h2>講演・登壇</h2>
   <ul class="refs">
@@ -54,7 +54,7 @@
 </main>
 
 <footer>
-  <p>&copy; 中里彰吾 2026</p>
+  <p>&copy; NakaSato 2026</p>
 </footer>
 
 </div>
@@ -112,6 +112,14 @@
            '<span class="venue">' + esc(pub) + (dateOf(it) ? " (" + esc(ym(dateOf(it))) + ")" : "") + ".</span>" + links(it);
   }
 
+  function fmtMedia(it) {
+    var t = pick(it.media_coverage_title || it.title || it.paper_title || it.presentation_title);
+    var who = pick(it.publisher || it.media || it.publication_name), ev = pick(it.event || it.program || it.media_program);
+    var v = [who, ev].filter(function (x) { return x; }).join(" ");
+    var d = it.publication_date || it.from_event_date || "";
+    return '<span class="title">' + esc(t) + ".</span> " + '<span class="venue">' + esc(v) + (d ? (v ? ", " : "") + esc(ym(String(d))) : "") + ".</span>" + links(it);
+  }
+
   function section(id, title, items, fmt) {
     if (!items.length) return "";
     items.sort(function (a, b) { return dateOf(b).localeCompare(dateOf(a)); });
@@ -131,17 +139,17 @@
       .catch(function () { return { items: [], ok: false }; });
   }
 
-  Promise.all(["published_papers", "presentations", "books_etc", "misc"].map(getAll)).then(function (res) {
+  Promise.all(["published_papers", "presentations", "books_etc", "misc", "media_coverage"].map(getAll)).then(function (res) {
     if (!res.some(function (x) { return x.ok; })) throw new Error("none");
     var r = res.map(function (x) { return x.items; });
-    var papers = r[0], pres = r[1], books = r[2], misc = r[3];
+    var papers = r[0], pres = r[1], books = r[2], misc = r[3], media = r[4] || [];
     var talks = pres.filter(function (p) { return p.presentation_type === "invited_oral_presentation" || p.presentation_type === "keynote_oral_presentation"; });
     var rest = pres.filter(function (p) { return talks.indexOf(p) < 0; });
     var intl = rest.filter(function (p) { return p.is_international_presentation === true; });
     var dom = rest.filter(function (p) { return p.is_international_presentation !== true; });
     var secs = [
       ["papers", "論文", papers, fmtPaper], ["intl", "国際会議", intl, fmtPres], ["domestic", "国内学会・研究会", dom, fmtPres],
-      ["talks", "講演・招待発表", talks, fmtPres], ["books", "書籍等", books, fmtBook], ["misc", "その他(MISC)", misc, fmtMisc]
+      ["talks", "講演・招待発表", talks, fmtPres], ["books", "書籍等", books, fmtBook], ["media", "メディア", media, fmtMedia], ["misc", "その他(MISC)", misc, fmtMisc]
     ];
     var html = "", jump = "";
     secs.forEach(function (s) { var h = section(s[0], s[1], s[2].slice(), s[3]); if (h) { html += h; jump += '<li><a href="#' + s[0] + '">' + s[1] + "(" + s[2].length + ")</a></li>"; } });
