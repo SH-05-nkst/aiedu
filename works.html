@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NakaSato:研究業績</title>
-<meta name="description" content="中里　彰吾　Shogo　NakaSatoの研究業績(論文、国際会議、学会・研究会発表、講演)。researchmapの公開データを表示しています。">
+<meta name="description" content="NakaSatoの研究業績(論文、国際会議、学会・研究会発表、講演)。researchmapの公開データを表示しています。">
 <meta name="theme-color" content="#3b5a6e">
 <link rel="stylesheet" href="style.css">
 <style>
@@ -80,7 +80,7 @@
     var out = [], seen = {};
     function add(label, url) { url = safeUrl(url); if (url && !seen[url]) { seen[url] = 1; out.push('<a href="' + esc(url) + '">' + esc(label) + "</a>"); } }
     if (it.identifiers && it.identifiers.doi && it.identifiers.doi[0]) add("doi", "https://doi.org/" + it.identifiers.doi[0]);
-    (it.see_also || []).forEach(function (s) { add(s.label === "doi" ? "doi" : s.label === "url" ? "link" : (s.label || "link"), s["@id"]); });
+    (it.see_also || []).forEach(function (s) { if (/^rm:/.test(s.label || "") || /api\.researchmap\.jp/.test(s["@id"] || "")) return; add(s.label === "doi" ? "doi" : s.label === "url" ? "link" : (s.label || "link"), s["@id"]); });
     return out.length ? ' <span class="links">[' + out.join("] [") + "]</span>" : "";
   }
   function year(it) { return String(it.publication_date || it.from_event_date || "").slice(0, 4) || "年不明"; }
