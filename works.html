@@ -4,15 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>中里彰吾:研究業績</title>
-<meta name="description" content="中里彰吾の研究業績(論文、国際会議、学会・研究会発表、講演)。">
+<meta name="description" content="中里彰吾の研究業績(論文、国際会議、学会・研究会発表、講演)。researchmapの公開データを表示しています。">
 <meta name="theme-color" content="#3b5a6e">
 <link rel="stylesheet" href="style.css">
+<style>
+  #status { color: var(--sub); font-size: .9rem; }
+  .src { font-size: .88rem; color: var(--sub); }
+  #fallback { display: none; }
+  ul.refs li .tag { white-space: nowrap; }
+</style>
 </head>
 <body>
 <div class="page">
 
 <header class="site-header">
-  <p class="site-name"><a href="index.html">中里 彰吾</a><small>Shogo NakaSato</small></p>
+  <p class="site-name"><a href="index.html">中里 彰吾</a><small>Shogo Nakazato</small></p>
 </header>
 <nav class="site-nav">
   <a href="index.html">教材・実践</a>
@@ -22,70 +28,29 @@
 
 <main>
 <h1>研究業績</h1>
-<p>小学校教諭。修士(理学)専門は教育工学。小学生のAIリテラシー教育、とくに強化学習や生成AIの考え方をアンプラグドで学ぶ教材と授業を研究しています。北海道大学大学院理学院修了。日本教育工学会、日本STEM教育学会 会員。</p>
-<ul class="jump">
-  <li><a href="#interests">研究の関心</a></li>
-  <li><a href="#papers">論文</a></li>
-  <li><a href="#intl">国際会議</a></li>
-  <li><a href="#domestic">国内学会・研究会</a></li>
-  <li><a href="#talks">講演・登壇</a></li>
-</ul>
+<p>小学校教諭。専門は教育工学。小学生のAIリテラシー教育、とくに強化学習や生成AIの考え方をアンプラグドで学ぶ教材と授業を研究しています。北海道大学大学院理学院 修士課程修了。日本教育工学会、日本STEM教育学会 会員。</p>
+<p class="src">業績の一覧は、<a href="https://researchmap.jp/naka_sato">researchmap</a> の公開データを読み込んで表示しています。<span id="status">読み込み中…</span></p>
 
-<h2 id="interests">研究の関心</h2>
-<ul>
-  <li>小学生へのAIリテラシー教育</li>
-  <li>強化学習・ニューラルネットワーク・生成AIのアンプラグド教材</li>
-  <li>生成AIに対する児童のメンタルモデル</li>
-</ul>
+<ul class="jump" id="jump"></ul>
 
-<h2 id="papers">論文</h2>
-<p class="year">2026</p>
-<ul class="refs">
-  <li>中里彰吾, 安藤明伸.
-    <span class="title">数取りゲームを用いた強化学習のアンプラグド教材の開発と実践.</span>
-    <span class="venue">日本教育工学会論文誌, 50(Suppl.), ショートレター.</span>
-    <span class="tag">採録決定</span>
-    <span class="links"><!-- 掲載後に追加: [<a href="#">doi</a>] [<a href="#">pdf</a>] --></span>
-    <br>→ 教材:<a href="index.html#papercup">紙コップAI</a>
-  </li>
-</ul>
+<div id="live"></div>
 
-<h2 id="intl">国際会議</h2>
-<p class="year">2026</p>
-<ul class="refs">
-  <li>S. Nakazato.
-    <span class="title-en">Elementary School Students' Initial Mental Models of Generative AI.</span>
-    <span class="venue">WAIE 2026, Sapporo, Japan, September 2026.</span>
-    <span class="tag">口頭発表</span>
-    <span class="links"><!-- [<a href="#">doi</a>] [<a href="#">slides</a>] --></span>
-  </li>
-</ul>
-
-<h2 id="domestic">国内学会・研究会</h2>
-<!-- TODO: JSET研究会などの発表を年ごとに追加
-<p class="year">2026</p>
-<ul class="refs">
-  <li>中里彰吾. <span class="title">タイトル.</span> <span class="venue">日本教育工学会研究会(会場), 2026年○月.</span></li>
-</ul>
--->
-<ul class="refs">
-  <li>中里彰吾 ほか.
-    <span class="title">紙コップAIのポスター発表(タイトルを記入).</span>
-    <span class="venue">(学会名・年月を記入)</span>
-    <span class="tag">ポスター</span>
-  </li>
-</ul>
-
-<h2 id="talks">講演・登壇</h2>
-<p class="year">2026</p>
-<ul class="refs">
-  <li><span class="title">普段遣いの生成AI〜いつ使うのか。その基準は、誰がもつのか。〜</span>
-    <span class="venue">(ベネッセ 2026年度第2回北陸エリアコミュニティ「評価について考える 学びへの生成AIの取り入れ方」, 2026年8月21日)</span>
-  </li>
-  <li><span class="title">生成AIと学び(タイトルを記入)</span>
-    <span class="venue">(金沢しゃべり場, 年月を記入)</span>
-  </li>
-</ul>
+<!-- researchmapを読み込めなかったときに表示する、手書きの一覧 -->
+<div id="fallback">
+  <p class="note">researchmapから読み込めなかったため、このページに書いてある一覧を表示しています。最新の一覧は <a href="https://researchmap.jp/naka_sato">researchmap</a> をご覧ください。</p>
+  <h2>論文</h2>
+  <ul class="refs">
+    <li>中里彰吾, 安藤明伸. <span class="title">数取りゲームを用いた強化学習のアンプラグド教材の開発と実践.</span> <span class="venue">日本教育工学会論文誌, 50(Suppl.), ショートレター.</span> <span class="tag">採録決定</span></li>
+  </ul>
+  <h2>国際会議</h2>
+  <ul class="refs">
+    <li>S. Nakazato. <span class="title-en">Elementary School Students' Initial Mental Models of Generative AI.</span> <span class="venue">WAIE 2026, Sapporo, Japan, September 2026.</span> <span class="tag">口頭発表</span></li>
+  </ul>
+  <h2>講演・登壇</h2>
+  <ul class="refs">
+    <li><span class="title">普段遣いの生成AI〜いつ使うのか。その基準は、誰がもつのか。〜</span> <span class="venue">ベネッセ 2026年度第2回北陸エリアコミュニティ, 2026年8月21日.</span></li>
+  </ul>
+</div>
 </main>
 
 <footer>
@@ -93,5 +58,113 @@
 </footer>
 
 </div>
+
+<script>
+(function () {
+  var BASE = "https://api.researchmap.jp/naka_sato/";
+  var PTYPE = { oral_presentation: "口頭発表", poster_presentation: "ポスター", invited_oral_presentation: "招待講演",
+                public_symposium: "シンポジウム", keynote_oral_presentation: "基調講演" };
+
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function pick(o) {                       // {ja:..., en:...} から日本語を優先して取り出す
+    if (!o) return ""; if (typeof o === "string") return o;
+    return o.ja || o.en || o[Object.keys(o)[0]] || "";
+  }
+  function pickLang(o) { if (!o) return ""; return o.ja ? "ja" : o.en ? "en" : Object.keys(o)[0]; }
+  function names(o) {
+    if (!o) return "";
+    var l = pickLang(o), a = o[l] || [];
+    return a.map(function (x) { return x.name; }).join(l === "ja" ? ", " : ", ");
+  }
+  function safeUrl(u) { return /^https?:\/\//.test(u || "") ? u : ""; }
+  function links(it) {
+    var out = [], seen = {};
+    function add(label, url) { url = safeUrl(url); if (url && !seen[url]) { seen[url] = 1; out.push('<a href="' + esc(url) + '">' + esc(label) + "</a>"); } }
+    if (it.identifiers && it.identifiers.doi && it.identifiers.doi[0]) add("doi", "https://doi.org/" + it.identifiers.doi[0]);
+    (it.see_also || []).forEach(function (s) { add(s.label === "doi" ? "doi" : s.label === "url" ? "link" : (s.label || "link"), s["@id"]); });
+    return out.length ? ' <span class="links">[' + out.join("] [") + "]</span>" : "";
+  }
+  function year(it) { return String(it.publication_date || it.from_event_date || "").slice(0, 4) || "年不明"; }
+  function dateOf(it) { return String(it.publication_date || it.from_event_date || ""); }
+  function ym(d) { var m = /^(\d{4})-(\d{2})/.exec(d); return m ? m[1] + "年" + parseInt(m[2], 10) + "月" : (d ? d.slice(0, 4) + "年" : ""); }
+
+  function fmtPaper(it) {
+    var l = pickLang(it.paper_title), t = pick(it.paper_title), pub = pick(it.publication_name), vol = it.volume || "", no = it.number || "";
+    var pages = it.starting_page ? it.starting_page + (it.ending_page ? "–" + it.ending_page : "") : "";
+    var v = pub + (vol ? ", " + vol : "") + (no ? "(" + no + ")" : "") + (pages ? ", " + pages : "");
+    return esc(names(it.authors)) + ". " + '<span class="' + (l === "en" ? "title-en" : "title") + '">' + esc(t) + ".</span> " +
+           '<span class="venue">' + esc(v) + (dateOf(it) ? " (" + esc(ym(dateOf(it))) + ")" : "") + ".</span>" +
+           (it.referee === true ? ' <span class="tag">査読あり</span>' : "") + links(it);
+  }
+  function fmtPres(it) {
+    var l = pickLang(it.presentation_title), t = pick(it.presentation_title), ev = pick(it.event);
+    var tag = PTYPE[it.presentation_type] ? ' <span class="tag">' + PTYPE[it.presentation_type] + "</span>" : "";
+    return esc(names(it.presenters)) + ". " + '<span class="' + (l === "en" ? "title-en" : "title") + '">' + esc(t) + ".</span> " +
+           '<span class="venue">' + esc(ev) + (it.from_event_date ? ", " + esc(ym(it.from_event_date)) : "") + ".</span>" + tag + links(it);
+  }
+  function fmtBook(it) {
+    var t = pick(it.book_title), pub = pick(it.publisher);
+    return esc(names(it.authors)) + (it.authors ? ". " : "") + '<span class="title">' + esc(t) + ".</span> " +
+           '<span class="venue">' + esc(pub) + (it.publication_date ? ", " + esc(ym(it.publication_date)) : "") + ".</span>" + links(it);
+  }
+  function fmtMisc(it) {
+    var pub = pick(it.publication_name);
+    return esc(names(it.authors)) + ". " + '<span class="title">' + esc(pick(it.paper_title)) + ".</span> " +
+           '<span class="venue">' + esc(pub) + (dateOf(it) ? " (" + esc(ym(dateOf(it))) + ")" : "") + ".</span>" + links(it);
+  }
+
+  function section(id, title, items, fmt) {
+    if (!items.length) return "";
+    items.sort(function (a, b) { return dateOf(b).localeCompare(dateOf(a)); });
+    var h = '<h2 id="' + id + '">' + title + "</h2>", cur = null, open = false;
+    items.forEach(function (it) {
+      var y = year(it);
+      if (y !== cur) { if (open) h += "</ul>"; h += '<p class="year">' + esc(y) + '</p><ul class="refs">'; cur = y; open = true; }
+      h += "<li>" + fmt(it) + "</li>";
+    });
+    return h + (open ? "</ul>" : "");
+  }
+
+  // researchmapのAPIを直接読む。ブラウザに止められたとき(CORS)は、同じ場所に置いた data/○○.json を読む。
+  function getAll(type) {
+    var all = [];
+    function next(url) {
+      return fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+        all = all.concat(d.items || []);
+        var n = d._links && d._links.next && d._links.next.href;
+        return n ? next(n) : all;
+      });
+    }
+    return next(BASE + type + "?limit=100").then(function (a) { return { items: a, ok: true, from: "api" }; }).catch(function () {
+      all = [];
+      return fetch("data/" + type + ".json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (d) { return { items: d.items || [], ok: true, from: "file" }; })
+        .catch(function () { return { items: [], ok: false }; });
+    });
+  }
+
+  Promise.all(["published_papers", "presentations", "books_etc", "misc"].map(getAll)).then(function (res) {
+    if (!res.some(function (x) { return x.ok; })) throw new Error("none");
+    var r = res.map(function (x) { return x.items; });
+    var papers = r[0], pres = r[1], books = r[2], misc = r[3];
+    var talks = pres.filter(function (p) { return p.presentation_type === "invited_oral_presentation" || p.presentation_type === "keynote_oral_presentation"; });
+    var rest = pres.filter(function (p) { return talks.indexOf(p) < 0; });
+    var intl = rest.filter(function (p) { return p.is_international_presentation === true; });
+    var dom = rest.filter(function (p) { return p.is_international_presentation !== true; });
+    var secs = [
+      ["papers", "論文", papers, fmtPaper], ["intl", "国際会議", intl, fmtPres], ["domestic", "国内学会・研究会", dom, fmtPres],
+      ["talks", "講演・招待発表", talks, fmtPres], ["books", "書籍等", books, fmtBook], ["misc", "その他(MISC)", misc, fmtMisc]
+    ];
+    var html = "", jump = "";
+    secs.forEach(function (s) { var h = section(s[0], s[1], s[2].slice(), s[3]); if (h) { html += h; jump += '<li><a href="#' + s[0] + '">' + s[1] + "(" + s[2].length + ")</a></li>"; } });
+    document.getElementById("live").innerHTML = html;
+    document.getElementById("jump").innerHTML = jump;
+    document.getElementById("status").textContent = res.every(function (x) { return x.from === "file"; }) ? "(保存したデータを表示しています)" : "";
+  }).catch(function () {
+    document.getElementById("status").textContent = "(読み込めませんでした)";
+    document.getElementById("fallback").style.display = "block";
+  });
+})();
+</script>
 </body>
 </html>
