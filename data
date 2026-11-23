@@ -1,0 +1,3313 @@
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/naka_sato/books_etc?limit=100&format=json&start=1",
+    "@type": "books_etc",
+    "@reverse": "https://api.researchmap.jp/naka_sato",
+    "total_items": 8,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/books_etc/54912584",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+            "rm:id": "54912584",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-09-11T08:29:16Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-09-11T08:29:16Z",
+            "book_title": {
+                "ja": "実践国語研究 国語授業AIでできること✖️できないこと"
+            },
+            "book_owner_role": "joint_work",
+            "book_owner_range": {
+                "ja": "読むこと 古典"
+            },
+            "publisher": {
+                "ja": "明治図書出版"
+            },
+            "publication_date": "2026-09-11",
+            "rep_page": "40-43",
+            "referee": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/books_etc/50971889",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+            "rm:id": "50971889",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-08-27T12:23:26Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-08-27T12:23:26Z",
+            "book_title": {
+                "ja": "教室ツーウェイNEXT vol.25"
+            },
+            "book_owner_role": "contributor",
+            "book_owner_range": {
+                "ja": "92-95 マルチモーダル時代の「読む力」AI・SNS・フェイクニュースへの対応力を育む"
+            },
+            "publisher": {
+                "ja": "学芸みらい社"
+            },
+            "publication_date": "2025-08",
+            "identifiers": {
+                "isbn": [
+                    "9784867570890"
+                ]
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783374",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+            "rm:id": "48783374",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T04:36:39Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T04:36:39Z",
+            "book_title": {
+                "ja": "明日から使えるミライシード : 35の実践事例 : 子ども主体の学びを実現!"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "青木, 秀夫"
+                    },
+                    {
+                        "name": "浅見, 拓真"
+                    },
+                    {
+                        "name": "岩本, 紅葉"
+                    },
+                    {
+                        "name": "金原, 洋輔"
+                    },
+                    {
+                        "name": "佐納, 達平"
+                    },
+                    {
+                        "name": "高橋, 蔵匡"
+                    },
+                    {
+                        "name": "たのけん"
+                    },
+                    {
+                        "name": "津田, 信"
+                    },
+                    {
+                        "name": "中里, 彰吾"
+                    },
+                    {
+                        "name": "西村, 知夏"
+                    },
+                    {
+                        "name": "二川, 佳祐"
+                    },
+                    {
+                        "name": "福住, 里絵"
+                    },
+                    {
+                        "name": "水谷, 智明"
+                    },
+                    {
+                        "name": "吉田, 沙也加"
+                    },
+                    {
+                        "name": "ベネッセコーポレーション"
+                    }
+                ]
+            },
+            "publisher": {
+                "ja": "時事通信出版局,時事通信社(発売)"
+            },
+            "publication_date": "2024-07",
+            "total_page": "142p",
+            "languages": [
+                "jpn"
+            ],
+            "identifiers": {
+                "cinii_nc_id": [
+                    "BD0780581X"
+                ],
+                "isbn": [
+                    "9784788719149"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "cinii_books",
+                    "@id": "http://ci.nii.ac.jp/ncid/BD0780581X",
+                    "is_downloadable": false
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783485",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+            "rm:id": "48783485",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T04:50:11Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T04:50:11Z",
+            "book_title": {
+                "ja": "教室ツーウェイNEXT vol.21"
+            },
+            "book_owner_role": "contributor",
+            "book_owner_range": {
+                "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ"
+            },
+            "publisher": {
+                "ja": "学芸みらい社"
+            },
+            "description": {
+                "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ\n「三学期は学びの集大成！教科横断的な活動へ」"
+            },
+            "publication_date": "2024-01",
+            "rep_page": "106-109頁",
+            "identifiers": {
+                "isbn": [
+                    "9784867570432"
+                ]
+            },
+            "see_also": [
+                {
+                    "is_downloadable": false,
+                    "@id": "https://www.gakugeimirai.jp/archives/54172",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783463",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+            "rm:id": "48783463",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T04:48:13Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T04:48:13Z",
+            "book_title": {
+                "ja": "教室ツーウェイNEXT vol.20"
+            },
+            "book_owner_role": "contributor",
+            "book_owner_range": {
+                "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ"
+            },
+            "publisher": {
+                "ja": "学芸みらい社"
+            },
+            "description": {
+                "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ\n「活用はシンプルに 学習展開をルーチン化」"
+            },
+            "publication_date": "2023-09",
+            "rep_page": "118-121頁",
+            "identifiers": {
+                "isbn": [
+                    "9784867570326"
+                ]
+            },
+            "see_also": [
+                {
+                    "is_downloadable": false,
+                    "@id": "https://www.gakugeimirai.jp/archives/53685",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783397",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+            "rm:id": "48783397",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T04:41:41Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T04:41:41Z",
+            "book_title": {
+                "ja": "社会科プロ発!“ICT活用\"ヒント事典 : 授業アップデートのアイデア50"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "佐々木, 英明"
+                    },
+                    {
+                        "name": "山方, 貴順"
+                    }
+                ]
+            },
+            "publisher": {
+                "ja": "学芸みらい社"
+            },
+            "publication_date": "2023-07",
+            "total_page": "135p",
+            "rep_page": "42-45,86-87,94-95100-101,114-117,122,124-127,130,132 頁",
+            "languages": [
+                "jpn"
+            ],
+            "identifiers": {
+                "cinii_nc_id": [
+                    "BD0256327X"
+                ],
+                "isbn": [
+                    "9784867570296"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "cinii_books",
+                    "@id": "http://ci.nii.ac.jp/ncid/BD0256327X",
+                    "is_downloadable": false
+                },
+                {
+                    "is_downloadable": false,
+                    "@id": "https://www.gakugeimirai.jp/archives/53659",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783429",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+            "rm:id": "48783429",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T04:46:07Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T04:46:07Z",
+            "book_title": {
+                "ja": "教室ツーウェイNEXT vol.19"
+            },
+            "book_owner_role": "contributor",
+            "book_owner_range": {
+                "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ"
+            },
+            "description": {
+                "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ\n「世界に一つだけの地図づくり」"
+            },
+            "publication_date": "2023-05",
+            "rep_page": "126-129頁",
+            "identifiers": {
+                "isbn": [
+                    "9784867570258"
+                ]
+            },
+            "see_also": [
+                {
+                    "is_downloadable": false,
+                    "@id": "https://www.gakugeimirai.jp/archives/53223",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783379",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+            "rm:id": "48783379",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T04:37:50Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T04:51:30Z",
+            "book_title": {
+                "ja": "社会科教科書のわかる教え方 : 学習者端末活用事例付"
+            },
+            "book_owner_role": "contributor",
+            "authors": {
+                "ja": [
+                    {
+                        "name": "峯, 明秀"
+                    },
+                    {
+                        "name": "佐々木, 英明"
+                    }
+                ]
+            },
+            "book_owner_range": {
+                "ja": "34-45頁"
+            },
+            "publisher": {
+                "ja": "学芸みらい社"
+            },
+            "publication_date": "2022-11",
+            "total_page": "158p",
+            "rep_page": "34-45頁",
+            "languages": [
+                "jpn"
+            ],
+            "identifiers": {
+                "cinii_nc_id": [
+                    "BC17393278"
+                ],
+                "isbn": [
+                    "9784867570128"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "cinii_books",
+                    "@id": "http://ci.nii.ac.jp/ncid/BC17393278",
+                    "is_downloadable": false
+                },
+                {
+                    "is_downloadable": false,
+                    "@id": "https://www.gakugeimirai.jp/archives/52166",
+                    "label": "url"
+                }
+            ]
+        }
+    ]
+}
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/naka_sato/misc?limit=100&format=json&start=1",
+    "@type": "misc",
+    "@reverse": "https://api.researchmap.jp/naka_sato",
+    "total_items": 9,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/misc/55063854",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+            "rm:id": "55063854",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-09-28T10:29:06Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-09-28T10:29:06Z",
+            "paper_title": {
+                "ja": "強化学習アンプラグド教材「紙コップAI」の開発とデータ収束の検証"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "publication_date": "2026-09",
+            "publication_name": {
+                "ja": "日本教育工学会 全国大会（第49回大会）講演論文集"
+            },
+            "starting_page": "977",
+            "ending_page": "978",
+            "languages": [
+                "jpn"
+            ],
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/misc/51674327",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+            "rm:id": "51674327",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-11-17T09:04:58Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-11-19T11:57:40Z",
+            "paper_title": {
+                "ja": "学校現場における生成AI利用の利用状況、潜在ニーズ、協働形態の事例と傾向"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "佐藤悠"
+                    },
+                    {
+                        "name": "横嶋幸成"
+                    },
+                    {
+                        "name": "岡本美佳"
+                    },
+                    {
+                        "name": "住川泰希"
+                    },
+                    {
+                        "name": "田中啓介"
+                    },
+                    {
+                        "name": "中里彰吾"
+                    },
+                    {
+                        "name": "半澤亮"
+                    },
+                    {
+                        "name": "渡邉優太"
+                    },
+                    {
+                        "name": "板垣翔大"
+                    },
+                    {
+                        "name": "岡本恭介"
+                    },
+                    {
+                        "name": "安藤明伸"
+                    }
+                ]
+            },
+            "publication_date": "2025-11-15",
+            "publication_name": {
+                "ja": "全日本教育工学研究協議会全国大会論文集"
+            },
+            "starting_page": "233",
+            "ending_page": "236",
+            "languages": [
+                "jpn"
+            ],
+            "referee": false,
+            "invited": false,
+            "misc_type": "summary_national_conference",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/misc/50181035",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+            "rm:id": "50181035",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-05-17T04:44:49Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-08-27T14:09:54Z",
+            "paper_title": {
+                "ja": "機械学習を題材にした学びが促す学習者の変容"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "publisher": {
+                "ja": "日本教育工学協会"
+            },
+            "publication_date": "2025-05",
+            "publication_name": {
+                "ja": "日本教育工学協会"
+            },
+            "languages": [
+                "jpn"
+            ],
+            "misc_type": "summary_national_conference",
+            "rm:is_open_access": true,
+            "see_also": [
+                {
+                    "@id": "https://jaet.jp/wp-jaet/wp-content/uploads/2025/05/db117e0cba3f293ea7b79d31c1fe8f4f.pdf",
+                    "label": "url",
+                    "is_downloadable": true
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/misc/49900955",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+            "rm:id": "49900955",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-04-18T15:21:02Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-04-18T15:24:01Z",
+            "paper_title": {
+                "ja": "生成AI の「よりよき使い手」となる子の育成 ～「学び」の再構築と可能性の拡大のための授業改善～"
+            },
+            "published_paper_owner_roles": [
+                "corresponding"
+            ],
+            "publisher": {
+                "ja": "公益財団法人パナソニック教育財団"
+            },
+            "publication_date": "2025-04",
+            "publication_name": {
+                "ja": "パナソニック教育財団 実践研究助成 研究成果報告書(2024 第50回)"
+            },
+            "starting_page": "1",
+            "ending_page": "7",
+            "languages": [
+                "jpn"
+            ],
+            "referee": true,
+            "rm:is_open_access": true,
+            "see_also": [
+                {
+                    "@id": "https://www.pef.or.jp/db/pdf/2024/2024_04.pdf",
+                    "label": "url",
+                    "is_downloadable": true
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/misc/48783675",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+            "rm:id": "48783675",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:11:45Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:11:45Z",
+            "paper_title": {
+                "ja": "「ICTの『よりよき使い手』の育成を目指したモデルカリキュラムの作成」"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "published_paper_owner_roles": [
+                "lead"
+            ],
+            "publication_date": "2023-06",
+            "publication_name": {
+                "ja": "日本LD学会会報125号 連載講座2"
+            },
+            "languages": [
+                "jpn"
+            ],
+            "invited": true,
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/misc/50259937",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+            "rm:id": "50259937",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-05-27T15:14:22Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-05-27T15:15:28Z",
+            "paper_title": {
+                "ja": "小学校中・高学年向け観光副教材「みんなでSAPPORO観光大志！」教師向け資料"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "札幌市経済観光局 観光・MICE推進部"
+                    },
+                    {
+                        "name": "観光・MICE推進課"
+                    }
+                ]
+            },
+            "publisher": {
+                "ja": "札幌市経済観光局観光・MICE推進部 観光・MICE推進課"
+            },
+            "publication_date": "2023-04",
+            "languages": [
+                "jpn"
+            ],
+            "rm:is_open_access": true,
+            "see_also": [
+                {
+                    "@id": "https://www.city.sapporo.jp/keizai/kanko/tourist/documents/fukukyozai_kyosi.pdf",
+                    "label": "url",
+                    "is_downloadable": true
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/misc/49207691",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+            "rm:id": "49207691",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-02-20T14:38:51Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-02-20T14:38:51Z",
+            "paper_title": {
+                "ja": "ICT の「よりよき使い手」となる子の育成に向けたモデルカリキュラムの開発"
+            },
+            "published_paper_owner_roles": [
+                "corresponding"
+            ],
+            "publication_date": "2023-03",
+            "publication_name": {
+                "ja": "パナソニック教育財団 実践研究助成 研究成果報告書(2022 第48回)"
+            },
+            "starting_page": "1",
+            "ending_page": "6",
+            "languages": [
+                "jpn"
+            ],
+            "misc_type": "introduction_other",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/misc/50015362",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+            "rm:id": "50015362",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-04-29T11:57:08Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-04-29T11:57:08Z",
+            "paper_title": {
+                "ja": "社会科「武士の世の中へ」"
+            },
+            "publication_date": "2021-08-16",
+            "publication_name": {
+                "ja": "NIE全国大会2021札幌大会資料集 新しい学びを創るNIE"
+            },
+            "starting_page": "10",
+            "ending_page": "13",
+            "languages": [
+                "jpn"
+            ],
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/misc/48783662",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+            "rm:id": "48783662",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:10:31Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:10:31Z",
+            "paper_title": {
+                "ja": "普段使いのChromebook活用事例~今すぐやりたい8つのこと~"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "published_paper_owner_roles": [
+                "lead"
+            ],
+            "publication_date": "2021-07",
+            "publication_name": {
+                "ja": "「教室の窓 北海道版~これからのICT活用~」東京書籍"
+            },
+            "starting_page": "10",
+            "ending_page": "13",
+            "languages": [
+                "jpn"
+            ],
+            "invited": true,
+            "rm:is_open_access": false
+        }
+    ]
+}
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/naka_sato/presentations?limit=100&format=json&start=1",
+    "@type": "presentations",
+    "@reverse": "https://api.researchmap.jp/naka_sato",
+    "total_items": 59,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/55063653",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "55063653",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-09-28T10:09:26Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-09-28T10:09:26Z",
+            "presentation_title": {
+                "ja": "Elementary School Students' Initial Mental Models of Generative AI",
+                "en": "Elementary School Students' Initial Mental Models of Generative AI"
+            },
+            "presenters": {
+                "en": [
+                    {
+                        "name": "Shogo NakaSato"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "2026 8th International Workshop on Artificial Intelligence and Education",
+                "en": "2026 8th International Workshop on Artificial Intelligence and Education"
+            },
+            "publication_date": "2026-09",
+            "from_event_date": "2026-09",
+            "languages": [
+                "eng"
+            ],
+            "presentation_type": "oral_presentation",
+            "is_international_presentation": true,
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/55063602",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "55063602",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-09-28T10:02:33Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-09-28T10:02:33Z",
+            "presentation_title": {
+                "ja": "強化学習アンプラグド教材「紙コップAI」の開発とデータ収束の検証"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "日本教育工学会2026年秋季全国大会"
+            },
+            "publication_date": "2026-09",
+            "from_event_date": "2026-09",
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "poster_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/53623762",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "53623762",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-05-11T09:06:54Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-05-11T09:07:28Z",
+            "presentation_title": {
+                "ja": "SIAF2027 オープントーク プラネット・スノーの学校、全容公開！"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "秋元さなえ"
+                    },
+                    {
+                        "name": "佐竹真紀"
+                    },
+                    {
+                        "name": "淺田一"
+                    },
+                    {
+                        "name": "草野竹史"
+                    },
+                    {
+                        "name": "ゴッドスコーピオン"
+                    },
+                    {
+                        "name": "佐藤祈"
+                    },
+                    {
+                        "name": "中里彰吾"
+                    },
+                    {
+                        "name": "フジ森"
+                    },
+                    {
+                        "name": "漆崇博"
+                    }
+                ]
+            },
+            "publication_date": "2026-05-09",
+            "invited": true,
+            "promoter": {
+                "ja": "札幌国際芸術祭実行委員会・札幌市"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/52894289",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "52894289",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-03-10T09:02:08Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-03-10T09:02:08Z",
+            "presentation_title": {
+                "ja": "生成 AI の「普段使い」で実現するこれからの教育現場"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "安藤明伸"
+                    },
+                    {
+                        "name": "板垣翔大"
+                    },
+                    {
+                        "name": "岡本恭介"
+                    },
+                    {
+                        "name": "住川泰希"
+                    },
+                    {
+                        "name": "田中啓介"
+                    },
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "有識者と考える GIGA スクール構想第 2 期セミナー"
+            },
+            "publication_date": "2026-02-28",
+            "invited": true,
+            "presentation_type": "nominated_symposium",
+            "promoter": {
+                "ja": "Google for Education"
+            },
+            "rm:is_open_access": false,
+            "see_also": [
+                {
+                    "@id": "https://rsvp.withgoogle.com/events/gfe-20260228",
+                    "label": "url",
+                    "is_downloadable": false
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/52568934",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "52568934",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-03-06T15:33:25Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-03-06T15:33:25Z",
+            "presentation_title": {
+                "ja": "「紙コップAI」で学ぶアルゴリズム〜AIを賢く育てよう〜"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "STEAM STUDY DAY 未来の学校を体験！ワークショップ＆トーク"
+            },
+            "publication_date": "2026-02-28",
+            "invited": true,
+            "presentation_type": "public_discourse",
+            "promoter": {
+                "ja": "札幌国際芸術祭"
+            },
+            "rm:is_open_access": false,
+            "see_also": [
+                {
+                    "@id": "https://siaf.jp/event/25097/",
+                    "label": "url",
+                    "is_downloadable": false
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/52568931",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "52568931",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-03-06T15:30:46Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-03-06T15:31:11Z",
+            "presentation_title": {
+                "ja": "創造性を育む未来の教育とは？"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "STEAM STUDY DAY 未来の学校を体験！ワークショップ＆トーク"
+            },
+            "publication_date": "2026-02-28",
+            "invited": true,
+            "presentation_type": "public_discourse",
+            "promoter": {
+                "ja": "札幌国際芸術祭"
+            },
+            "location": {
+                "ja": "札幌市"
+            },
+            "rm:is_open_access": false,
+            "see_also": [
+                {
+                    "@id": "https://siaf.jp/event/25097/",
+                    "label": "url",
+                    "is_downloadable": false
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/52091549",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "52091549",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-01-23T14:17:11Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-01-23T14:17:11Z",
+            "presentation_title": {
+                "ja": "校務DXで業務カイゼン"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "ニセコスタイルの教育研究会 研修会"
+            },
+            "publication_date": "2026-01-22",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "promoter": {
+                "ja": "ニセコ町教育委員会"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/52041904",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "52041904",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-01-14T13:34:10Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-01-14T13:34:10Z",
+            "presentation_title": {
+                "ja": "普段遣いの延長線上にある授業づくり"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    },
+                    {
+                        "name": "竹内淳一"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "リーディングDXスクール事業冬季学習会"
+            },
+            "publication_date": "2025-12-26",
+            "invited": false,
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51801774",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51801774",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-12-05T14:22:16Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-12-05T14:22:16Z",
+            "presentation_title": {
+                "ja": "子どもとともに考える AIリテラシー"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌市立山鼻小学校校内研修"
+            },
+            "publication_date": "2025-12-05",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51752253",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51752253",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-11-27T10:02:19Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-11-27T10:02:19Z",
+            "presentation_title": {
+                "ja": "実践研究、どう始める？どう進める？"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "パナソニック教育財団 実践研究助成説明セミナー"
+            },
+            "publication_date": "2025-11-27",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false,
+            "identifiers": {
+                "rm:research_project_id": [
+                    "49901001",
+                    "49901000"
+                ]
+            },
+            "see_also": [
+                {
+                    "@id": "https://api.researchmap.jp/naka_sato/research_projects/49901001",
+                    "label": "rm:research_project_id"
+                },
+                {
+                    "@id": "https://api.researchmap.jp/naka_sato/research_projects/49901000",
+                    "label": "rm:research_project_id"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51752224",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51752224",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-11-27T09:59:32Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-11-27T09:59:32Z",
+            "presentation_title": {
+                "ja": "VR・ARを用いた教育実践の分析"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌国際芸術祭SIAFスクール教育喫茶第3回ICTでひろがる学びの未来 -VR・ARがもたらす教育の新展開-"
+            },
+            "publication_date": "2025-11-22",
+            "invited": true,
+            "promoter": {
+                "ja": "札幌国際芸術祭"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51584122",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51584122",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-11-03T12:28:13Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-11-03T12:28:13Z",
+            "presentation_title": {
+                "ja": "先生のための生成AI講座"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌市立八軒西小学校校内研修"
+            },
+            "publication_date": "2025-10-31",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51527827",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51527827",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-10-24T11:32:47Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-10-24T11:32:47Z",
+            "presentation_title": {
+                "ja": "小学校における普段遣いの生成AI ～よりよき使い手の育成に向けて～"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "GIGAスクール構想第2期 ICT機器の整備・活用/校務の情報化の推進 【第125回教育委員会対象セミナー】＜札幌開催＞"
+            },
+            "publication_date": "2025-10-24",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "invited_oral_presentation",
+            "promoter": {
+                "ja": "教育家庭新聞社"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50972606",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50972606",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-08-27T14:02:26Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-08-27T14:11:19Z",
+            "presentation_title": {
+                "ja": "教育・校務における ICT・生成AIの活用"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌市立百合が原小学校校内研修"
+            },
+            "publication_date": "2025-08-27",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50972600",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50972600",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-08-27T14:01:24Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-08-27T14:01:24Z",
+            "presentation_title": {
+                "ja": "授業におけるICT活用"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌市立信濃小学校校内研修"
+            },
+            "publication_date": "2025-08-26",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50755268",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50755268",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-08-01T07:41:54Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-08-01T07:41:54Z",
+            "presentation_title": {
+                "ja": "小学校におけるICTと生成AIの利活用"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "現代社会の情報活用(北海道教育大学)"
+            },
+            "publication_date": "2025-08-01",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50755256",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50755256",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-08-01T07:40:31Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-08-01T07:40:31Z",
+            "presentation_title": {
+                "ja": "生成AIの教育利用の可能性"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌市立清田小学校校内研修"
+            },
+            "publication_date": "2025-07-31",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50755246",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50755246",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-08-01T07:39:20Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-08-01T07:39:20Z",
+            "presentation_title": {
+                "ja": "カスタムAIボットで校務DX"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌市立清田小学校校内研修"
+            },
+            "publication_date": "2025-07-31",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50708810",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50708810",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-07-26T08:49:53Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-07-26T08:51:18Z",
+            "presentation_title": {
+                "ja": "札幌国際芸術祭2027 「PLANET SNOW」から考える、 これからの教育―STEAMでひらく、創造的なまなびの可能性―"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "令和7年度 第1回 教育喫茶 SIAF2027「PLANET SNOW」から考える、これからの教育"
+            },
+            "publication_date": "2025-07-26",
+            "from_event_date": "2025-07-26",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "promoter": {
+                "ja": "札幌国際芸術祭実行委員会"
+            },
+            "location": {
+                "ja": "札幌市"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50622967",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50622967",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-07-14T14:51:01Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-07-14T14:51:01Z",
+            "presentation_title": {
+                "ja": "ICTを活用した教育の推進"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌市立新発寒小学校 教員研修"
+            },
+            "publication_date": "2025-07-10",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50442947",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50442947",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-06-21T05:05:47Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-06-21T05:05:47Z",
+            "presentation_title": {
+                "ja": "生成AIの教育利用と人間の認知"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "ニセコスタイルの教育研究会 研修会"
+            },
+            "publication_date": "2025-06-19",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50442884",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50442884",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-06-21T04:52:33Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-06-21T04:52:33Z",
+            "presentation_title": {
+                "ja": "生成AIを教育に活かす ～実践を通じ見えた課題と今後～"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "登本 洋子,中里 彰吾,西﨑 慎也,市川 淳尉"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "NEW EDUCATION EXPO 2025 OSAKA(O28)"
+            },
+            "publication_date": "2025-06-14",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "rm:is_open_access": false,
+            "see_also": [
+                {
+                    "is_downloadable": false,
+                    "@id": "https://edu-expo.org/registration/2025/?hall=O&v_dtl=3642&f_exc=false",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50360740",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50360740",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-06-09T14:49:53Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-06-09T14:49:53Z",
+            "presentation_title": {
+                "ja": "小学校における 機械学習ワークショップ実践報告"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "STEAMers FES 2025"
+            },
+            "publication_date": "2025-06-07",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "invited_oral_presentation",
+            "rm:is_open_access": false,
+            "see_also": [
+                {
+                    "is_downloadable": false,
+                    "@id": "https://senseiportal.com/events/85878",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50360727",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50360727",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-06-09T14:42:18Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-06-09T14:42:46Z",
+            "presentation_title": {
+                "ja": "生成AIを教育に活かす ～実践を通じ見えた課題と今後～"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "吉田塁"
+                    },
+                    {
+                        "name": "中里彰吾"
+                    },
+                    {
+                        "name": "西﨑慎也"
+                    },
+                    {
+                        "name": "市川淳尉"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "NEW EDUCATION EXPO 2025 TOKYO(T65)"
+            },
+            "publication_date": "2025-06-07",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "rm:is_open_access": false,
+            "see_also": [
+                {
+                    "is_downloadable": false,
+                    "@id": "https://edu-expo.org/registration/2025/?hall=T&v_dtl=3549&f_exc=false",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/50181047",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "50181047",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-05-17T04:48:31Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-05-17T04:50:10Z",
+            "presentation_title": {
+                "ja": "機械学習を題材にした学びが促す学習者の変容"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "日本教育工学協会 2025年度第1回「教育の情報化」実践セミナー2025in札幌"
+            },
+            "publication_date": "2025-05",
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "oral_presentation",
+            "promoter": {
+                "ja": "日本教育工学協会"
+            },
+            "location": {
+                "ja": "札幌国際大学"
+            },
+            "address_country": "JPN",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/49444726",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "49444726",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-03-16T01:49:02Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-04-18T15:25:33Z",
+            "presentation_title": {
+                "ja": "画像生成AIで作文に合う画像を作ろう"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "ニセコ高校DXハイスクール事業 親子で学ぶ！生成 AI体験イベント〜AIと仲良くなろう！〜"
+            },
+            "publication_date": "2025-03-15",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "promoter": {
+                "ja": "ニセコ町立ニセコ高等学校"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/49444660",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "49444660",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-03-16T01:45:10Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-03-16T01:46:30Z",
+            "presentation_title": {
+                "ja": "CBT導入による評価の在り方の変容"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "2024年度 第4回北海道エリアコミュニティ〜評価について考える〜"
+            },
+            "publication_date": "2025-02-28",
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "promoter": {
+                "ja": "株式会社ベネッセコーポレーション"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/49124795",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "49124795",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-02-11T14:41:53Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-02-11T14:41:53Z",
+            "presentation_title": {
+                "ja": "「生成AIと教育のこれから」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    },
+                    {
+                        "name": "安井政樹"
+                    },
+                    {
+                        "name": "大橋剛"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌国際芸術祭 SIAFスクール STEAM STUDY DAY 2025 in SCARTS"
+            },
+            "publication_date": "2025-02-09",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "promoter": {
+                "ja": "札幌国際芸術祭実行委員会"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/49124787",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "49124787",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-02-11T14:38:31Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-02-11T14:38:31Z",
+            "presentation_title": {
+                "ja": "「生成AIと人間の思い込み〜知らずに使っているバイアスとは？〜」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌国際芸術祭 SIAFスクール STEAM STUDY DAY 2025 in SCARTS"
+            },
+            "publication_date": "2025-02-09",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "promoter": {
+                "ja": "札幌国際芸術祭実行委員会"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/49124804",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "49124804",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-02-11T14:44:30Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-02-11T14:45:26Z",
+            "presentation_title": {
+                "ja": "文部科学省リーディングDXスクール事業 生成AIパイロット校成果報告会"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "文部科学省リーディングDXスクール事業 生成AIパイロット校成果報告会"
+            },
+            "publication_date": "2025-01-22",
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "poster_presentation",
+            "location": {
+                "ja": "東京大学 伊藤国際学術研究センター"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48977131",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48977131",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-01-21T09:09:16Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-02-11T14:39:33Z",
+            "presentation_title": {
+                "ja": "「親子で学ぶAIリテラシー〜ミライの学び〜」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "北海道教育大学 未来の学び協創研究センター第24回セミナー「生成AI活用の先にある学校教育の未来」"
+            },
+            "publication_date": "2025-01-12",
+            "from_event_date": "2025-01-12",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "promoter": {
+                "ja": "北海道教育大学 未来の学び協創研究センター"
+            },
+            "rm:is_open_access": false,
+            "see_also": [
+                {
+                    "is_downloadable": false,
+                    "@id": "https://www.hokkyodai.ac.jp/info_topics_hue/mri/detail/20204.html",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783560",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783560",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T04:59:31Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T04:59:31Z",
+            "presentation_title": {
+                "ja": "「生成AIと教材〜授業実践への活用の視点から〜」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "日本教材学会 第36回研究発表大会 シンポジウム"
+            },
+            "publication_date": "2024-10",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "oral_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/49136099",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "49136099",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-02-12T13:32:14Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-02-12T13:32:14Z",
+            "presentation_title": {
+                "ja": "STEAM STUDY DAY in SCARTS〜２つのワークショップを通して〜"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌国際芸術祭 SIAFスクール「未来の教育に必要なコミュニティとは!?」"
+            },
+            "publication_date": "2024-07-19",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "invited_oral_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783538",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783538",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T04:56:09Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:29:42Z",
+            "presentation_title": {
+                "ja": "「生成 AIの活用と児童の変容」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "AI時代の教育学会 2024年度第1回研究会"
+            },
+            "publication_date": "2024-07",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "invited_oral_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783898",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783898",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:27:07Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-06-09T14:45:57Z",
+            "presentation_title": {
+                "ja": "生成AIを活用した授業づくり O37"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "小林祐紀,中里彰吾,小池翔太,安藤昇"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "New Education Expo2024大阪 O37"
+            },
+            "publication_date": "2024-06-15",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "rm:is_open_access": false,
+            "see_also": [
+                {
+                    "is_downloadable": false,
+                    "@id": "https://edu-expo.org/registration/2024/index.php?f_exc=true&hall=O&v_dtl=O37&v_tab=tab2",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783907",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783907",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:28:31Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:34:00Z",
+            "presentation_title": {
+                "ja": "「4年社会科『県の地図を広げて』〜アイヌ語地名に見る北海道の地形の特色〜」(模擬授業)"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "2024年度 第1回北海道エリアコミュニティ〜ICT教育の「今」と「これから」〜"
+            },
+            "publication_date": "2024-06",
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783891",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783891",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:26:23Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:26:23Z",
+            "presentation_title": {
+                "ja": "「未来の教室〜生成AIが変える学びのカタチ〜」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "STEMers FES.2024"
+            },
+            "publication_date": "2024-06",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783883",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783883",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:25:28Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-06-09T14:52:56Z",
+            "presentation_title": {
+                "ja": "生成AIを活用した授業づくり T60"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "佐和伸明 中里彰吾 鈴木秀樹 安藤昇"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "New Education Expo2024東京 T60"
+            },
+            "publication_date": "2024-06",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "rm:is_open_access": false,
+            "see_also": [
+                {
+                    "is_downloadable": false,
+                    "@id": "https://edu-expo.org/registration/2024/?f_exc=true&hall=T&v_dtl=T60&v_tab=tab3",
+                    "label": "url"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783872",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783872",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:24:40Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:24:40Z",
+            "presentation_title": {
+                "ja": "「CBTは学校をどう変えるのか？」"
+            },
+            "event": {
+                "ja": "EDIX2024東京 ベネッセブース"
+            },
+            "publication_date": "2024-05",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783974",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783974",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:35:07Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:35:07Z",
+            "presentation_title": {
+                "ja": "「人とつながるプログラミング」ワークショップ形式"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌国際芸術祭SIAF2024 教育喫茶 STEAM STUDY DAY in SCARTS"
+            },
+            "publication_date": "2024-02",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783965",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783965",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:33:45Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:33:45Z",
+            "presentation_title": {
+                "ja": "「センサを使って熱くなろう」ワークショップ形式"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌国際芸術祭SIAF2024 教育喫茶 STEAM STUDY DAY in SCARTS"
+            },
+            "publication_date": "2024-02",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "nominated_symposium",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783858",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783858",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:23:43Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:39:41Z",
+            "presentation_title": {
+                "ja": "文部科学省リーディングDXスクール事業 生成AIパイロット校成果報告会"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "文部科学省リーディングDXスクール事業 生成AIパイロット校成果報告会"
+            },
+            "publication_date": "2024-02",
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "poster_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783831",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783831",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:21:23Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:21:23Z",
+            "presentation_title": {
+                "ja": "「協働的な学びの創出と教育における生成AIの利活用」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "文部科学省委託リーディング DXスクール事業 札幌市リーディングDXスクール冬季学習会"
+            },
+            "publication_date": "2023-12",
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783826",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783826",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:20:34Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:20:34Z",
+            "presentation_title": {
+                "ja": "「空間を超えた協働的な学びの創出〜PBLの可能性の模索〜」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "SIAF2024札幌国際芸術祭教育喫茶非公式企画「教育とアートのこれからを語る会」"
+            },
+            "publication_date": "2023-11",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783795",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783795",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:19:31Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:19:31Z",
+            "presentation_title": {
+                "ja": "「2つの仮説から見る『協働的な学習』へのアプローチ〜5年社会科『水産業がさかんな地域』〜」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "第2回北海道エリアコミュニティ〜ミライシードの使いどころを知る！"
+            },
+            "publication_date": "2023-10",
+            "invited": false,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783722",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783722",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:18:27Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:18:38Z",
+            "presentation_title": {
+                "ja": "「シェアの責任〜フェイク情報を見極めて〜」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "JDiCE リアルゼミ札幌「試される学校〜その先のGIGAとデジタルシティズンシップを構想する〜"
+            },
+            "publication_date": "2023-09",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "oral_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783718",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783718",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:17:21Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:17:21Z",
+            "presentation_title": {
+                "ja": "「空間を超えた協働的な学びの創出〜PBLの可能性の模索〜」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "文部科学省委託リーディングDXスクール事業 札幌市リーディングDXスクール夏季学習会"
+            },
+            "publication_date": "2023-08",
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783707",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783707",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:15:59Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:15:59Z",
+            "presentation_title": {
+                "ja": "「Education×Technologyで何が変わるのか」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "札幌国際芸術祭SIAF 2024プレイベント「教育喫茶はじめます」〜アート・サイエンス・テクノロジー×教育のいま〜"
+            },
+            "publication_date": "2023-02",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "oral_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783699",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783699",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:14:55Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:14:55Z",
+            "presentation_title": {
+                "ja": "「ICTの『より良き使い手』を育成するモデルカリキュラムの開発」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "教育家庭新聞【第93回教育委員会対象セミナー】＜札幌開催＞GIGAスクール構想 ICT機器の整備・活用/校務の情報化の推進"
+            },
+            "publication_date": "2022-11",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48786861",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48786861",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T10:29:18Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T10:29:18Z",
+            "presentation_title": {
+                "ja": "「小学校におけるMinecraft:Education Edition 活用事例」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "気軽に楽しくコンピュータサイエンス！〜小学校、中学校、高校それぞれの取組から〜 口頭発表形式 オンライン (ICT Connect21「GIGAスクール構想推進委員会」研修サブ部会セミナー"
+            },
+            "publication_date": "2022-06",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "invited_oral_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48786856",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48786856",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T10:27:36Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T10:27:36Z",
+            "presentation_title": {
+                "ja": "「札幌市モデル研究校における取組とこれから」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "北海道教育大学未来の学び協創研究センター第9回セミナー「ICT活用の最前線から未来の学びを考える」"
+            },
+            "publication_date": "2022-06",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "invited_oral_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48786849",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48786849",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T10:26:25Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T10:26:25Z",
+            "presentation_title": {
+                "ja": "「札幌市立中央小学校のデジタルシティズンシップ教育と一人一台端末活用モデル研究校としての取組」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "共生と共育ネットワーク ウェビナー"
+            },
+            "publication_date": "2022-02",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "oral_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783692",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783692",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T05:14:06Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T05:14:06Z",
+            "presentation_title": {
+                "ja": "「一歩先のGIGAスクール環境で」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "D-project北海道 セミナー2021"
+            },
+            "publication_date": "2021-01",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51527979",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51527979",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-10-24T12:29:04Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-10-24T12:29:04Z",
+            "presentation_title": {
+                "ja": "札幌市人権教育推進事業「子どもの権利に関わる学習の研究」公開授業:道徳科「わたしの大切なもの」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "publication_date": "2020-02-08",
+            "presentation_type": "public_discourse",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/48783523",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "48783523",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-24T04:54:11Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-24T04:56:47Z",
+            "presentation_title": {
+                "ja": "「北海道農業の原点「暗渠土管」を学ぶ ～ほっかいどう学のトライアル～」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "土木学会 第11回土木と学校教育フォーラム"
+            },
+            "publication_date": "2019-08",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "oral_presentation",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51805362",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51805362",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-12-06T10:55:30Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-12-06T10:56:30Z",
+            "presentation_title": {
+                "ja": "小学校におけるmicro:bit実践報告"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "event": {
+                "ja": "マイクロソフト認定教育イノベーター実践報告会"
+            },
+            "publication_date": "2019-06-23",
+            "invited": true,
+            "languages": [
+                "jpn"
+            ],
+            "presentation_type": "public_discourse",
+            "description": {
+                "ja": "新しい学習指導要領に位置付けられるプログラミング教育を理科と総合的な学習に位置付けたカリキュラムマネジメント実践を発表。"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51527966",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51527966",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-10-24T12:25:56Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-10-24T12:29:59Z",
+            "presentation_title": {
+                "ja": "札幌市人権教育推進事業「子どもの権利に関わる学習の研究」公開授業:社会科「世界の中の日本」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "publication_date": "2019-02-18",
+            "presentation_type": "public_discourse",
+            "promoter": {
+                "ja": "札幌市教育委員会"
+            },
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51527994",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51527994",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-10-24T12:33:08Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-10-24T12:33:08Z",
+            "presentation_title": {
+                "ja": "札幌市教育研究推進事業 公開授業:社会科「明治の国づくりを進めた人々」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "publication_date": "2018-10-16",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/presentations/51528006",
+            "@type": "presentations",
+            "@reverse": "https://api.researchmap.jp/naka_sato/presentations",
+            "rm:id": "51528006",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-10-24T12:40:44Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-10-24T12:40:44Z",
+            "presentation_title": {
+                "ja": "札幌市教育研究推進事業 公開授業:社会科「新しい日本、平和な日本へ」"
+            },
+            "presenters": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "publication_date": "2016-10-12",
+            "rm:is_open_access": false
+        }
+    ]
+}
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/naka_sato/published_papers?limit=100&format=json&start=1",
+    "@type": "published_papers",
+    "@reverse": "https://api.researchmap.jp/naka_sato",
+    "total_items": 6,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/published_papers/54912483",
+            "@type": "published_papers",
+            "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+            "rm:id": "54912483",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-09-11T08:18:43Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-09-11T08:19:15Z",
+            "paper_title": {
+                "ja": "数取りゲームを用いた強化学習のアンプラグド教材の開発と実践"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    },
+                    {
+                        "name": "安藤明伸"
+                    }
+                ]
+            },
+            "published_paper_owner_roles": [
+                "lead"
+            ],
+            "publication_date": "2027",
+            "publication_name": {
+                "ja": "日本教育工学会論文誌"
+            },
+            "volume": "50",
+            "number": "Suppl.",
+            "languages": [
+                "jpn"
+            ],
+            "referee": true,
+            "invited": false,
+            "published_paper_type": "scientific_journal",
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/published_papers/52568928",
+            "@type": "published_papers",
+            "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+            "rm:id": "52568928",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-03-06T15:25:30Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-09-29T05:49:13Z",
+            "paper_title": {
+                "ja": "ニューラルネットワークの概念理解を目指したアンプラグド・ワークショップの開発",
+                "en": "Development of an Unplugged Workshop Aimed at Understanding the Concept of Neural Networks"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    },
+                    {
+                        "name": "安藤明伸"
+                    }
+                ],
+                "en": [
+                    {
+                        "name": "Shogo NakaSato,Akinobu Ando"
+                    }
+                ]
+            },
+            "published_paper_owner_roles": [
+                "lead"
+            ],
+            "publisher": {
+                "ja": "日本教育メディア学会"
+            },
+            "publication_date": "2026-02",
+            "publication_name": {
+                "ja": "日本教育メディア学会研究会論集"
+            },
+            "volume": "60",
+            "starting_page": "321",
+            "ending_page": "326",
+            "rm:is_open_access": true,
+            "identifiers": {
+                "doi": [
+                    "10.24458/jaemsstudy.60.0_321"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "doi",
+                    "@id": "https://doi.org/10.24458/jaemsstudy.60.0_321",
+                    "is_downloadable": false
+                },
+                {
+                    "@id": "https://www.jstage.jst.go.jp/article/jaemsstudy/60/0/60_321/_article/-char/ja",
+                    "label": "url",
+                    "is_downloadable": true
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/published_papers/54912823",
+            "@type": "published_papers",
+            "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+            "rm:id": "54912823",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2026-09-11T08:52:24Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-11-05T08:31:15Z",
+            "paper_title": {
+                "en": "Elementary School Students' Initial Mental Models of Generative AI"
+            },
+            "authors": {
+                "en": [
+                    {
+                        "name": "Shogo NakaSato"
+                    }
+                ]
+            },
+            "published_paper_owner_roles": [
+                "lead"
+            ],
+            "publication_date": "2026",
+            "publication_name": {
+                "en": "International Workshop on Artificial Intelligence and Education"
+            },
+            "languages": [
+                "eng"
+            ],
+            "referee": true,
+            "published_paper_type": "international_conference_proceedings",
+            "dataset": {
+                "dataset_name": "558-562.pdf",
+                "access_url": "https://researchmap.jp/naka_sato/published_papers/54912823/attachment_file.pdf",
+                "rm:media_type": "application/pdf",
+                "rm:use_password": false,
+                "thumbnail_url": "https://researchmap.jp/naka_sato/published_papers/54912823/attachment_file.pdf?thumbnail"
+            },
+            "rm:is_open_access": true
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/published_papers/51527817",
+            "@type": "published_papers",
+            "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+            "rm:id": "51527817",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-10-24T11:27:38Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2026-01-23T14:20:34Z",
+            "paper_title": {
+                "ja": "相補的な指導手法の活用が小学生のプレゼンテーションに与える影響"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "中里彰吾,重田勝介"
+                    }
+                ]
+            },
+            "description": {
+                "ja": "抄録\n小学校6年生を対象に，ルーブリックとダイヤモンドランキングを組み合わせたプレゼンテーション指導において，2つの指導方法の順序の違いが，児童の情報発信能力，特にスライドの質と発表パフォーマンスに与える影響を量的に検証した．その結果，ルーブリックを先行させる指導順序が，児童の学習を効果的に促し，プレゼンテーションの質を向上させる上で有効であると示唆された．また，途中に取り入れるダイヤモンドランキングが学習者の動機付けの向上に役立っていることが示唆された．"
+            },
+            "publisher": {
+                "ja": "一般社団法人 日本教育工学会"
+            },
+            "publication_date": "2025-10",
+            "publication_name": {
+                "ja": "日本教育工学会研究報告集"
+            },
+            "volume": "2025",
+            "number": "3",
+            "starting_page": "46",
+            "ending_page": "51",
+            "languages": [
+                "jpn"
+            ],
+            "rm:is_open_access": false,
+            "identifiers": {
+                "doi": [
+                    "10.15077/jsetstudy.2025.3_46"
+                ],
+                "e_issn": [
+                    "2436-3286"
+                ],
+                "cinii_cr_id": [
+                    "1390024478602578944"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "doi",
+                    "@id": "https://doi.org/10.15077/jsetstudy.2025.3_46",
+                    "is_downloadable": false
+                },
+                {
+                    "label": "cinii_research",
+                    "@id": "https://cir.nii.ac.jp/crid/1390024478602578944?lang=ja",
+                    "is_downloadable": false
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/published_papers/51516881",
+            "@type": "published_papers",
+            "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+            "rm:id": "51516881",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-10-22T14:47:55Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-10-22T14:48:41Z",
+            "paper_title": {
+                "ja": "小学校における生成AIの段階的導入と授業実践"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "中里彰吾"
+                    }
+                ]
+            },
+            "publication_date": "2025-10",
+            "publication_name": {
+                "ja": "学習情報研究"
+            },
+            "volume": "2025",
+            "number": "11",
+            "starting_page": "28",
+            "ending_page": "29",
+            "languages": [
+                "jpn"
+            ],
+            "invited": true,
+            "rm:is_open_access": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/naka_sato/published_papers/50623153",
+            "@type": "published_papers",
+            "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+            "rm:id": "50623153",
+            "rm:user_id": "R000079949",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "R000079949",
+            "rm:creator_type": "myself",
+            "rm:created": "2025-07-14T15:35:56Z",
+            "rm:modifier_id": "R000079949",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2025-07-14T15:35:56Z",
+            "paper_title": {
+                "ja": "親子を対象とした生成AI活用授業に見るAIリテラシー育成と意識の変容"
+            },
+            "authors": {
+                "ja": [
+                    {
+                        "name": "中里 彰吾"
+                    }
+                ]
+            },
+            "description": {
+                "ja": "本研究は小学校の児童とその保護者を対象に実施した「親子生成AI教室」の実践を通して，生成AIに関するリテラシーの育成と意識の変容を検討したものである．アンケート調査の結果，児童の生成AI活用意欲が統計的に有意に向上し，保護者の活用意識も高まったことが示唆された．本実践は，家庭と学校をつなぐ生成AI教育の有効性を示すものであり，今後の継続的な取り組みが求められる．"
+            },
+            "publisher": {
+                "ja": "一般社団法人 日本教育工学会"
+            },
+            "publication_date": "2025-07-05",
+            "publication_name": {
+                "ja": "日本教育工学会研究報告集"
+            },
+            "volume": "2025",
+            "number": "2",
+            "starting_page": "13",
+            "ending_page": "17",
+            "languages": [
+                "jpn"
+            ],
+            "rm:is_open_access": false,
+            "identifiers": {
+                "doi": [
+                    "10.15077/jsetstudy.2025.2_13"
+                ],
+                "e_issn": [
+                    "2436-3286"
+                ],
+                "cinii_cr_id": [
+                    "1390023339315235840"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "doi",
+                    "@id": "https://doi.org/10.15077/jsetstudy.2025.2_13",
+                    "is_downloadable": false
+                },
+                {
+                    "label": "cinii_research",
+                    "@id": "https://cir.nii.ac.jp/crid/1390023339315235840?lang=ja",
+                    "is_downloadable": false
+                }
+            ]
+        }
+    ]
+}
