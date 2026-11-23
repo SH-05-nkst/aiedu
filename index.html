@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中里彰吾:AI教育の教材・実践</title>
+<meta name="description" content="小学生向けのAI教育の教材と授業実践。アンプラグド教材と、コンピュータを使う実践を紹介します。">
+<meta name="theme-color" content="#3b5a6e">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+<header class="site-header">
+  <p class="site-name"><a href="index.html">中里 彰吾</a><small>Shogo Nakazato</small></p>
+</header>
+<nav class="site-nav">
+  <a href="index.html" class="current">教材・実践</a>
+  <a href="works.html">研究業績</a>
+  <a href="#contact">連絡先</a>
+</nav>
+
+<main>
+<h1>AI教育の教材・実践</h1>
+<p>小学校教諭として、子どもがAIのしくみを体験して学べる教材と授業を作っています。まずはコンピュータを使わない「アンプラグド」でしくみを知り、次に実際のAIに触れて確かめる、という流れを考えています。</p>
+<ul class="jump">
+  <li><a href="#unplugged">アンプラグド(コンピュータを使わない)</a>
+    <ul>
+      <li><a href="#papercup">紙コップAI</a></li>
+      <li><a href="#iris">アヤメ分類NN</a></li>
+      <li><a href="#diffusion">拡散モデル</a></li>
+    </ul>
+  </li>
+  <li><a href="#plugged">コンピュータを使う</a>
+    <ul>
+      <li><a href="#localllm">ローカルLLM</a></li>
+    </ul>
+  </li>
+</ul>
+
+<!-- ============ アンプラグド ============ -->
+<h2 id="unplugged">アンプラグド</h2>
+<p class="note">紙コップ、ビーズ、カラータイル、サイコロなど、教室にある物だけで授業ができる教材です。</p>
+
+<!-- 紙コップAI -->
+<div class="item" id="papercup">
+  <div class="showcase">
+    <div class="mark" aria-hidden="true">
+      <span style="background:#b5654a"></span><span style="background:#3b5a6e"></span><span style="background:#b5654a"></span><span style="background:#c9a24a"></span>
+      <span style="background:#3b5a6e"></span><span style="background:#b5654a"></span><span style="background:#c9a24a"></span><span style="background:#b5654a"></span>
+      <span style="background:#c9a24a"></span><span style="background:#b5654a"></span><span style="background:#3b5a6e"></span><span style="background:#b5654a"></span>
+      <span style="background:#b5654a"></span><span style="background:#b5654a"></span><span style="background:#b5654a"></span><span style="background:#3b5a6e"></span>
+    </div>
+    <div>
+      <h3><a href="papercup.html">紙コップAI</a> <span class="tag">強化学習</span></h3>
+      <p>「状態」を表す紙コップから色ビーズを引いて手を決めます。勝てばビーズを増やし、負ければ減らします。対戦をくり返すと、コップの中のビーズのかたよりが変わり、AIが強くなっていくようすが目で見えます。</p>
+      <p class="facts"><b>対象</b>:小学校高学年、親子 / <b>準備物</b>:紙コップ9個、色ビーズ</p>
+    </div>
+  </div>
+  <p><a href="papercup.html">詳しい手順・授業の流れ →</a></p>
+  <p class="note">関連:中里・安藤(2026)日本教育工学会論文誌 ショートレター → <a href="works.html#papers">研究業績</a></p>
+</div>
+
+<!-- アヤメ分類NN -->
+<div class="item" id="iris">
+  <div class="showcase">
+    <div class="mark" aria-hidden="true">
+      <span style="background:#6b7f5a"></span><span></span><span></span><span style="background:#6b7f5a"></span>
+      <span></span><span style="background:#3b5a6e"></span><span style="background:#3b5a6e"></span><span></span>
+      <span></span><span style="background:#3b5a6e"></span><span style="background:#3b5a6e"></span><span></span>
+      <span style="background:#6b7f5a"></span><span></span><span></span><span style="background:#6b7f5a"></span>
+    </div>
+    <div>
+      <h3><a href="iris.html">アヤメ分類NN</a> <span class="tag">ニューラルネットワーク</span></h3>
+      <p>アヤメの花のデータをもとに、子どもたちがニューロンの役になって点数をつけ、花の種類を判定します。まちがえたら点数のつけ方を直し、ニューラルネットワークが学習するしくみを体験します。</p>
+      <p class="facts"><b>対象</b>:小学生(ワークショップ) / <b>準備物</b>:<!-- TODO -->(記入)</p>
+    </div>
+  </div>
+  <p><a href="iris.html">詳しい手順・判定の例 →</a></p>
+</div>
+
+<!-- 拡散モデル -->
+<div class="item" id="diffusion">
+  <div class="showcase">
+    <div class="mark" aria-hidden="true">
+      <span style="background:#7d9bb0"></span><span style="background:#7d9bb0"></span><span style="background:#e9e6df"></span><span style="background:#7d9bb0"></span>
+      <span style="background:#7d9bb0"></span><span style="background:#e9e6df"></span><span style="background:#7d9bb0"></span><span style="background:#7d9bb0"></span>
+      <span style="background:#6b7f5a"></span><span style="background:#6b7f5a"></span><span style="background:#8a6a3d"></span><span style="background:#6b7f5a"></span>
+      <span style="background:#8a6a3d"></span><span style="background:#6b7f5a"></span><span style="background:#8a6a3d"></span><span style="background:#8a6a3d"></span>
+    </div>
+    <div>
+      <h3>拡散モデル <span class="tag">画像生成AI</span><span class="tag wait">準備中</span></h3>
+      <p>みんなで作ったドット絵を学習データにして、サイコロとくじ引きで新しい絵を作ります。できた絵が「平均的」になり、めずらしい特徴が消えていくようすから、画像生成AIの特徴を考えます。</p>
+      <p class="facts"><b>準備物</b>:カラータイル、サイコロ、紙コップ</p>
+    </div>
+  </div>
+  <p class="note">手順は論文の投稿後に公開する予定です。</p>
+</div>
+
+<!-- ============ コンピュータを使う ============ -->
+<h2 id="plugged">コンピュータを使う</h2>
+<p class="note">実際に動くAIに触れて、アンプラグドで学んだしくみを確かめる実践です。</p>
+
+<!-- ローカルLLM -->
+<div class="item" id="localllm">
+  <div class="showcase">
+    <div class="mark mark-board" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span class="chip"></span><span class="chip"></span><span></span>
+      <span></span><span class="chip"></span><span class="chip"></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div>
+      <h3>手のひらの上のAI(ローカルLLM) <span class="tag">生成AI</span><span class="tag wait">準備中</span></h3>
+      <p>小さなコンピュータ(Raspberry Pi)の上で、インターネットにつながずに動く対話AIを使います。ふだん使っているAIとくらべながら、AIがどこで、どのように動いているのかを考えます。</p>
+      <p class="facts"><b>機材</b>:Raspberry Pi、モニター、キーボード</p>
+    </div>
+  </div>
+  <p class="note">授業の様子と分かったことは、実践のあとに公開する予定です。</p>
+</div>
+
+<!-- ============ 連絡先 ============ -->
+<h2 id="contact">連絡先</h2>
+<p>教材を授業やワークショップで使った方は、感想をお寄せいただけるとうれしいです。<br>
+<!-- TODO: メールアドレス、フォームURL、researchmap など -->(連絡先を記入)</p>
+</main>
+
+<footer>
+  <p>教材は教育目的で自由にお使いいただけます。論文などで紹介する場合は、<a href="works.html">研究業績</a>の関連発表をご参照ください。<br>
+  &copy; 中里彰吾 2026</p>
+</footer>
+
+</div>
+</body>
+</html>
