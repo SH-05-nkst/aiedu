@@ -19,7 +19,7 @@ jobs:
           python3 - <<'PY'
           import json, os, urllib.request
           ID = "naka_sato"
-          TYPES = ["published_papers", "presentations", "books_etc", "misc"]
+          TYPES = ["published_papers", "presentations", "books_etc", "misc", "media_coverage"]
           os.makedirs("data", exist_ok=True)
           for t in TYPES:
               items, url = [], f"https://api.researchmap.jp/{ID}/{t}?limit=100"
