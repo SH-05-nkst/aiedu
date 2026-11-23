@@ -1,0 +1,1601 @@
+{
+ "items": [
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/55473636",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "55473636",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-11-13T16:38:37Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-11-13T16:38:37Z",
+   "media_coverage_title": {
+    "ja": "道放送・視聴覚教育合同札幌大会 放送・ＩＣＴで主体的学び 札幌豊平小などで公開授業"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信 日刊教育版"
+   },
+   "publication_date": "2026-11-13",
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "授業の紹介"
+   },
+   "identifiers": {
+    "rm:research_project_id": [
+     "53954774"
+    ]
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/116609",
+     "label": "url"
+    },
+    {
+     "@id": "https://api.researchmap.jp/naka_sato/research_projects/53954774",
+     "label": "rm:research_project_id"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/55473633",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "55473633",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-11-13T16:36:25Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-11-13T16:36:25Z",
+   "media_coverage_title": {
+    "ja": "道放送・視聴覚教育札幌大会 映像から表現探る 札幌豊平小などで公開授業"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信 日刊教育版"
+   },
+   "publication_date": "2026-11-13",
+   "location": {
+    "ja": "p8"
+   },
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "◆落語家らの所作 工夫点など協議\n\n ３年２組（中里彰吾教諭、児童数３２人）では、総合的な学習の時間「豊平Quest」を公開＝写真＝。豊平のまちや川について調べた内容を整理したり発表したりする活動を通して、声の抑揚やスライドの構成、身ぶり手ぶりなど多様な表現の工夫を学び、相手に伝わりやすい発表の在り方を自ら探究することを目指した。\n\n 本時は全６時間扱いの４時間目。児童たちは前時までに作成したスライドを全体で共有し「スライドは見やすいか」「分かりやすい言葉を使っているか」などのチェックリストを活用して、自分の発表に取り入れたい工夫を考えた。"
+   },
+   "identifiers": {
+    "rm:research_project_id": [
+     "53954774"
+    ]
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/116603",
+     "label": "url"
+    },
+    {
+     "@id": "https://api.researchmap.jp/naka_sato/research_projects/53954774",
+     "label": "rm:research_project_id"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/55321637",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "55321637",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-10-24T00:01:58Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-10-24T00:01:58Z",
+   "media_coverage_title": {
+    "ja": "札幌豊平小 SIAF出前授業 学校の風景をアートに プロの機材でデジタル表現"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "北海道通信 日刊教育版"
+   },
+   "publication_date": "2026-09-29",
+   "location": {
+    "ja": "p8"
+   },
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/116246](https://education.dotsu.co.jp/articles/detail/116246",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/54832572",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "54832572",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-09-03T11:48:14Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-09-03T11:48:14Z",
+   "media_coverage_title": {
+    "ja": "地域連携型STEM学習 まちと川の歴史を探究"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信 日刊教育版"
+   },
+   "publication_date": "2026-08-31",
+   "location": {
+    "ja": "p8"
+   },
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/116028",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/52091535",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "52091535",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-01-23T14:08:06Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-01-23T14:08:06Z",
+   "media_coverage_title": {
+    "ja": "家庭と共に「使い手」育成 親子で学ぶ生成AI 札幌中央小が体験教室"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2026-01-23",
+   "location": {
+    "ja": "p8"
+   },
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "掲載箇所：中里彰吾教諭は「ＡＩを賢く育ててみよう」をテーマとする体験学習を行った。１～９までの数字を記載した紙コップと２色のビーズを使ったゲームを行い、勝敗の結果を記録。試行錯誤を繰り返すことで勝率が変化する「強化学習」の仕組みを学んだ。\n\n※本文誤植：正しくは「３色」"
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/113993",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/52041895",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "52041895",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-01-14T13:31:29Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-01-14T13:31:29Z",
+   "media_coverage_title": {
+    "ja": "札幌中央中・中央小が冬季学習会 学びの分岐点見極めを 中川氏ら講演 ＡＩの可能性探る"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信 日刊教育版"
+   },
+   "publication_date": "2026-01-14",
+   "location": {
+    "ja": "p8"
+   },
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/113917",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/51801718",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "51801718",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-12-05T14:17:55Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-12-05T14:17:55Z",
+   "media_coverage_title": {
+    "ja": "パナソニック教育財団がセミナー ICTで未来創る力育成 助成採択校が事例紹介"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2025-12-04",
+   "location": {
+    "ja": "p8"
+   },
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "はじめに中里教諭は「実践研究、どう始める？どう進める？」をテーマに講話。親子向け生成ＡＩ教室の開催など助成を受けて取り組んだ実践をもとに、研究の始め方や計画書などの書類の書き方を解説した。"
+   },
+   "identifiers": {
+    "rm:research_project_id": [
+     "49901001",
+     "49901000"
+    ]
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/113654",
+     "label": "url"
+    },
+    {
+     "@id": "https://api.researchmap.jp/naka_sato/research_projects/49901001",
+     "label": "rm:research_project_id"
+    },
+    {
+     "@id": "https://api.researchmap.jp/naka_sato/research_projects/49901000",
+     "label": "rm:research_project_id"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/51801724",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "51801724",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-12-05T14:19:31Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-12-05T14:19:31Z",
+   "media_coverage_title": {
+    "ja": "中央小の中里教諭ら事例報告 VR・ARの学び探る 札幌国際芸術祭教育喫茶"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2025-12-03",
+   "location": {
+    "ja": "p8"
+   },
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "札幌市立中央小学校の中里彰吾教諭がICT活用の現状について説明。VR・ARの活用事例として・・・"
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/113645",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/51584081",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "51584081",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-11-03T12:20:00Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-11-03T12:20:00Z",
+   "media_coverage_title": {
+    "ja": "パナソニック教育財団研究助成募集 ICTで学校課題改善"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2025-10-20",
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "同財団は、１１月２０、２７日の午後４時から実践研究助成説明セミナーをオンラインで開催。札幌市立中央小学校の中里彰吾教諭をはじめ、全国の実践研究助成経験者による事例紹介やトークセッション、事務局から申請に必要な説明を行う。"
+   },
+   "identifiers": {
+    "rm:research_project_id": [
+     "49901001",
+     "49901000"
+    ]
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/113292",
+     "label": "url"
+    },
+    {
+     "@id": "https://api.researchmap.jp/naka_sato/research_projects/49901001",
+     "label": "rm:research_project_id"
+    },
+    {
+     "@id": "https://api.researchmap.jp/naka_sato/research_projects/49901000",
+     "label": "rm:research_project_id"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/51224383",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "51224383",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-09-21T06:29:13Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-09-21T06:29:13Z",
+   "media_coverage_title": {
+    "ja": "リーディングＤＸの札幌中央小 新しい授業の在り方探る 生成ＡＩ活用で学び深化"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信 日刊教育版"
+   },
+   "publication_date": "2025-09-17",
+   "location": {
+    "ja": "p8"
+   },
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "掲載箇所\n\n６年生の国語「やまなし」を中里彰吾教諭が指導した。デジタル教科書、生成ＡＩ、教育データを活用して情報を整理し、宮澤賢治の豊かな感性や思想、文章表現を読み解く授業を展開した。\n\n 振り返りには、前時の最後に入力したクラス全体の振り返りを可視化する「振り返り用チャットボット」を使用。児童たちは分析班、解析班、発表者と分担して学習内容を確認した。\n\n その後、賢治の世界観を考える調べ学習へ。自然と向き合う姿や「石っこ賢さん」と呼ばれるほど石遊びを好んだ人物像を共有し、それをもとに「やまなし」の色彩語・擬音語・比喩表現に着目しながら表現方法を探った。児童はデジタル教科書の抜き出し機能でキーワードをボード上にコピー＆ペースト。短冊のカードを並び変えて思考を可視化した。\n\n デジタル教科書の活用は任意。紙の教科書に線を引いたり、ノートに書き写したりする姿もあり、それぞれが自分に合った方法で学びを深めた。\n\n 発表では「白いやわらかな丸いし」「水晶」といった鉱物や、「きらきら」「ドボン」など豊かな擬音語が共通して使われていることを確認。「説明文までオノマトペがあるのが珍しい」と児童たちは関心を示した。\n\n 授業の最後には再びチャットボットで振り返りを実施。分かったことや分からなかったことを入力した。「やまなしの表現から賢治は自然のどんな姿を大切にしていたと思いますか？」との問いかけを受け、理解を深めた。\n\n 文章化が難しい児童には、キーワードを並べるだけで文章を作る機能もあり、個に応じた支援が行われた。"
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/112882",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/51151404",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "51151404",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-09-13T06:05:27Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-09-13T06:06:09Z",
+   "media_coverage_title": {
+    "ja": "教師の負担減にも 小学校のデジタルテスト"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "STV札幌テレビ放送"
+   },
+   "event": {
+    "ja": "どさんこワイド179"
+   },
+   "publication_date": "2025-09-12",
+   "location": {
+    "ja": "どさんこ調査隊"
+   },
+   "media_coverage_type": "media_report",
+   "description": {
+    "ja": "授業取材・実践後のインタビュー・コメント"
+   }
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/51035575",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "51035575",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-09-02T13:42:57Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-09-02T13:43:41Z",
+   "media_coverage_title": {
+    "ja": "親子教室で絵本作りや算数課題 活用法の幅広さ実感 中央小"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2025-09-02",
+   "location": {
+    "ja": "8"
+   },
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "（担当箇所の掲載）算数的視点の講座では、ＡからＧまでのルートで最大の数値が得られる通路を探し、試行錯誤の過程や優先順位付けの重要性を体験。ＡＩが脳の神経細胞を模した「ニューロン」を組み合わせて動作する仕組みを説明し、将棋やチェスの初手パターンと関連付けて理解を促した。さらに、アヤメの品種を多い順に点数化する課題を通して、生成ＡＩの理論的背景にも触れた。"
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/112587",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/51035611",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "51035611",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-09-02T13:45:24Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-09-02T13:45:51Z",
+   "media_coverage_title": {
+    "ja": "札幌中央小・中央中が夏季セミナー 他者参照の好事例共有を 中川教授 教育ＤＸの事例共有"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2025-08-29",
+   "location": {
+    "ja": "8"
+   },
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/112527",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/50971869",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "50971869",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-08-27T12:16:25Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-08-27T12:16:25Z",
+   "media_coverage_title": {
+    "ja": "生成ＡＩパイロット校 札幌中央小 AIとの対話力育成へ プロンプト設計能力重点に"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2025-08-08",
+   "location": {
+    "ja": "p8"
+   },
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "中里彰吾教諭は「プロンプトを工夫することで、AIから引き出せる情報が大きく変わることを児童たちは体験的に学んでいる。“どうすればもっと良い答えが返ってくるか”と楽しそうに試行錯誤している。AIをただの道具として使うのではなく、自分の思考を深めるためのパートナーとして活用する力を育んでいきたい」と話している。"
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/112202",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/50622996",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "50622996",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-07-14T15:01:32Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-07-14T15:01:32Z",
+   "media_coverage_title": {
+    "ja": "ニセコスタイル教育研究会 生成AI活用事例学ぶ 札幌中央小の教諭が実践紹介"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2025-07-04",
+   "location": {
+    "ja": "道・道教委"
+   },
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "掲載部分\n 続いて中里教諭が講話。「人間の認知」の観点から基礎知識が不可欠とした上で、人間の能力を拡張・増幅させるものとして生成AIを例える「電動アシスト付き自転車モデル」を提唱した。\n\n 「まずは、補助輪となる教師・親のサポートで一人で乗れるようになることが大切で、ある程度考えがまとまった状態で使うことが効果的になる」などと説いた。\n\n 参加者が実際に画像生成を体験する場面もあり、生成されたイメージの偏りも確認した。中里教諭は、人間の持つ認知バイアスがAIの学習データに影響を与えて「AIバイアス」を生み出すことを解説。AIの出力をうのみにせず、利用者が吟味して責任を持つ「人間中心」の姿勢が重要とし、授業での活用事例を示した。"
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/111351",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/50442955",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "50442955",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-06-21T05:07:18Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-06-21T05:12:53Z",
+   "media_coverage_title": {
+    "ja": "教科等横断でデータ分析"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2025-06-09",
+   "location": {
+    "ja": "8"
+   },
+   "media_coverage_type": "paper"
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/50266061",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "50266061",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-05-28T08:14:16Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-07-14T15:02:46Z",
+   "media_coverage_title": {
+    "ja": "パナソニック教育財団助成 札幌中央小が優秀賞 生成AI活用 親子で学ぶ"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2025-05-28",
+   "media_coverage_type": "paper",
+   "description": {
+    "ja": "掲載部分\n 同校研究推進担当の中里彰吾教諭は「本校の取組が高く評価されうれしい。今後もプロンプトエンジニアリングや機械学習の仕組みなど、幅広くＡＩリテラシーを学べる場を設け、子どもたちがよりよく学び、より良く生きるための支援を続けていきたい」と話した。"
+   },
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/110426",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/50232431",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "50232431",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-05-23T14:02:06Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-05-23T14:02:31Z",
+   "media_coverage_title": {
+    "ja": "日本教材学会通信 第36回研究大会報告"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "日本教材学会"
+   },
+   "event": {
+    "ja": "日本教材学会通信"
+   },
+   "publication_date": "2025-03",
+   "location": {
+    "ja": "第52号"
+   },
+   "see_also": [
+    {
+     "@id": "https://kyozai-gakkai.jp/wp-content/uploads/2025/03/日本教材学会通信_52号完成.pdf",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/49207702",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "49207702",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-02-20T14:49:21Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-02-20T14:49:21Z",
+   "media_coverage_title": {
+    "ja": "生成AIパイロット校成果報告会"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "教育家庭新聞"
+   },
+   "publication_date": "2025-02-05",
+   "media_coverage_type": "paper"
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/49221740",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "49221740",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-02-22T13:01:02Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-02-22T13:02:48Z",
+   "media_coverage_title": {
+    "ja": "再考！自由進度学習"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "教育情報ONLINE"
+   },
+   "publication_date": "2024-12-26",
+   "media_coverage_type": "internet",
+   "see_also": [
+    {
+     "@id": "https://bso.benesse.ne.jp/miraiseed/fansite/info/1189377_1506.html",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784421",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784421",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T06:14:23Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T06:14:23Z",
+   "media_coverage_title": {
+    "ja": "授業に生成AI 現場模索"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道新聞"
+   },
+   "publication_date": "2024-12-24",
+   "location": {
+    "ja": "朝刊P14"
+   },
+   "media_coverage_type": "paper"
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48843151",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48843151",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-01-02T01:43:39Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-01-02T01:43:39Z",
+   "media_coverage_title": {
+    "ja": "道教大未来学び協創研究センター 1月12日にセミナー 生成AIの実践事例発表等"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信 日刊教育版"
+   },
+   "publication_date": "2024-12-16",
+   "media_coverage_type": "paper"
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48805755",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48805755",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-26T14:34:44Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-26T14:34:44Z",
+   "media_coverage_title": {
+    "ja": "生成AIの「よりよき使い手」を育成（後編）"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "学びの場.com"
+   },
+   "publication_date": "2024-12-09",
+   "media_coverage_type": "internet",
+   "see_also": [
+    {
+     "@id": "https://www.manabinoba.com/class_reports/023510.html",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48805752",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48805752",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-26T14:33:49Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-26T14:33:49Z",
+   "media_coverage_title": {
+    "ja": "生成AIの「よりよき使い手」を育成（前編）"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "学びの場.com"
+   },
+   "publication_date": "2024-12-09",
+   "media_coverage_type": "internet",
+   "see_also": [
+    {
+     "@id": "https://www.manabinoba.com/class_reports/023509.html",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784435",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784435",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T06:15:58Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T06:15:58Z",
+   "media_coverage_title": {
+    "ja": "ベネッセのテストパーク試験導入 ４～６年算数・理科 テストＣＢＴ移行 採点時間削減など負担軽減 札幌中央小"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2024-09-20",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/104699",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/49221743",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "49221743",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-02-22T13:04:26Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-02-22T13:04:26Z",
+   "media_coverage_title": {
+    "ja": "「オクリンクプラス」活用法"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "教育情報ONLINE"
+   },
+   "publication_date": "2024-08-30",
+   "media_coverage_type": "internet",
+   "see_also": [
+    {
+     "@id": "https://bso.benesse.ne.jp/miraiseed/fansite/info/1189012_1506.html",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784453",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784453",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T06:16:43Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T06:16:43Z",
+   "media_coverage_title": {
+    "ja": "札幌中央小 ＬＤＸサマーセミナー “ズレ”を自覚させて 生成ＡＩ活用で実践発表や講演"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2024-08-22",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/104039",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/49221733",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "49221733",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-02-22T12:56:36Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-02-22T12:56:36Z",
+   "media_coverage_title": {
+    "ja": "テストパークが導く、学びのミライ"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "日本教育新聞"
+   },
+   "publication_date": "2024-08-04",
+   "location": {
+    "ja": "8面"
+   },
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://www.kyoiku-press.com/post-288676/",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/49221736",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "49221736",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-02-22T12:59:04Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-02-22T12:59:04Z",
+   "media_coverage_title": {
+    "ja": "AI時代の教育学会2024年度第1回研究会報告"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "AI時代の教育学会"
+   },
+   "publication_date": "2024-07-22",
+   "location": {
+    "ja": "AI時代の教育学会Webサイト"
+   },
+   "media_coverage_type": "internet",
+   "see_also": [
+    {
+     "@id": "https://eduaiera.org/202407kenkyuhoukoku/",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784483",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784483",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T06:18:53Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T06:18:53Z",
+   "media_coverage_title": {
+    "ja": "＜学びｅｙｅ＞生成AI 真偽見極め使う力を＊児童生徒の思考深める 教員の報告書作成支援＊回答に誤りも＊批判的な読み解きが大切"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道新聞"
+   },
+   "publication_date": "2024-07-22",
+   "media_coverage_type": "paper"
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/49221741",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "49221741",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-02-22T13:02:30Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-02-22T13:02:30Z",
+   "media_coverage_title": {
+    "ja": "ICT教育の「今」と「これから」を探る"
+   },
+   "publisher": {
+    "ja": "教育情報ONLINE"
+   },
+   "publication_date": "2024-06-28",
+   "media_coverage_type": "internet",
+   "see_also": [
+    {
+     "@id": "https://bso.benesse.ne.jp/miraiseed/fansite/info/1188932_1506.html",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784263",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784263",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T06:00:42Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T06:00:42Z",
+   "media_coverage_title": {
+    "ja": "生成AI、小学校の授業にも 使い方学びトラブル防ぐ"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "日本経済新聞"
+   },
+   "publication_date": "2024-06-05",
+   "location": {
+    "ja": "朝刊P33"
+   },
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://www.nikkei.com/article/DGXZQOUE25BM30V20C24A4000000/",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48805744",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48805744",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-26T14:30:55Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-26T14:30:55Z",
+   "media_coverage_title": {
+    "ja": "クラスメイトの気づきから知識を習得 国土の地形の特色を空間的にまとめる"
+   },
+   "writer_myself": "myself",
+   "publisher": {
+    "ja": "教育情報ONLINE"
+   },
+   "publication_date": "2024-06",
+   "media_coverage_type": "internet",
+   "see_also": [
+    {
+     "@id": "https://bso.benesse.ne.jp/miraiseed/fansite/usecase/1188812_1503.html",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784211",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784211",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:59:35Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:59:35Z",
+   "media_coverage_title": {
+    "ja": "リーディングＤＸ指定校冬季研修会 生成ＡＩ等の活用探る 札幌中央小と中央中が実践発表"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2024-01-18",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/99138",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784201",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784201",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:58:38Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:58:38Z",
+   "media_coverage_title": {
+    "ja": "生成AI 情報活用能力重要 Pick Up2023 No.３ 札幌市①"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2023-12-11",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/98371",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784189",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784189",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:57:02Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:57:02Z",
+   "media_coverage_title": {
+    "ja": "「学校でのICT習熟度『見える化』端末活用、小学校から中学へ『橋渡し』"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道新聞"
+   },
+   "publication_date": "2023-09-15",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://www.hokkaido-np.co.jp/article/908916/",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784179",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784179",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:55:48Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:55:48Z",
+   "media_coverage_title": {
+    "ja": "リーディングＤＸスクール学習会 ＩＣＴ活用の実践発表 ポートフォリオ活用など 札幌市教委など"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2023-08-22",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/95825",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784103",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784103",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:49:39Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-11-03T12:38:03Z",
+   "media_coverage_title": {
+    "ja": "デジタルシティズンシップ教育 ＩＣＴの善き使い手育成 札幌中央小 教育課程開発など"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2023-03-30",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/92552",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784082",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784082",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:48:01Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:48:01Z",
+   "media_coverage_title": {
+    "ja": "ICTのより良き使い手を育成するモデルカリキュラム 情報モラル教育を全学年で展開＜札幌市立中央小学校 教諭 中里彰吾氏＞"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "教育家庭新聞"
+   },
+   "publication_date": "2022-12",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://www.kknews.co.jp/post_ict/20221205_6f",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48805800",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48805800",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-26T15:00:18Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-26T15:00:18Z",
+   "media_coverage_title": {
+    "ja": "リスクと向き合うデジタル市民"
+   },
+   "writer_myself": "other_than_myself",
+   "publisher": {
+    "ja": "NHK"
+   },
+   "event": {
+    "ja": "NHKニュース おはよう北海道"
+   },
+   "publication_date": "2022-11-17",
+   "location": {
+    "ja": "シリーズ教育"
+   },
+   "media_coverage_type": "media_report",
+   "see_also": [
+    {
+     "@id": "https://www.nhk.jp/p/ts/M7PPXYXGY9/episode/te/GJWVPRJRM8/",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784501",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784501",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T06:19:49Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T06:19:49Z",
+   "media_coverage_title": {
+    "ja": "＜学びｅｙｅ 先生十色＞札幌市立中央小教諭 中里彰吾さん（３４）＊ＩＣＴ活用 学ぶ力伸ばす"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道新聞"
+   },
+   "publication_date": "2022-06-22",
+   "media_coverage_type": "paper"
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48805761",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48805761",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-26T14:38:06Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-26T14:38:06Z",
+   "media_coverage_title": {
+    "ja": "端末持ち帰りで授業デザイン見直し＆デジタルシティズンシップ教材を活用 札幌市立中央小学校"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "教育家庭新聞"
+   },
+   "publication_date": "2022-03-08",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://www.kknews.co.jp/post_ict/20220307_7b",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784508",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784508",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T06:20:54Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T06:20:54Z",
+   "media_coverage_title": {
+    "ja": "＜ＮＩＥ・教育に新聞を ＮＩＥ２０２１ ＳＡＰＰＯＲＯ＞新しいＮＩＥ感じた＊全国大会の配信終了"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道新聞"
+   },
+   "publication_date": "2021-12-27",
+   "location": {
+    "ja": "朝刊P15"
+   },
+   "media_coverage_type": "paper"
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784511",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784511",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T06:21:46Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T06:21:46Z",
+   "media_coverage_title": {
+    "ja": "＜ＮＩＥ・教育に新聞を ＮＩＥ２０２１ ＳＡＰＰＯＲＯ＞全国大会札幌大会＊ＮＩＥ 成果と課題共有"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道新聞"
+   },
+   "publication_date": "2021-10-25",
+   "media_coverage_type": "paper"
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48805787",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48805787",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-26T14:55:06Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-26T14:55:06Z",
+   "media_coverage_title": {
+    "ja": "学べるのは論理的思考だけじゃない、ロボットやゲームを活用するプログラミング教育 「失敗してもよい、それがプログラミング」"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "日経クロステック／日経NETWORK"
+   },
+   "publication_date": "2021-09-07",
+   "media_coverage_type": "internet",
+   "see_also": [
+    {
+     "@id": "https://xtech.nikkei.com/atcl/nxt/column/18/01759/090300003/?P=2",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784069",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784069",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:46:51Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:46:51Z",
+   "media_coverage_title": {
+    "ja": "タブレット1人1台 新しい学び、広がる"
+   },
+   "event": {
+    "ja": "東京新聞"
+   },
+   "publication_date": "2021-08-31",
+   "location": {
+    "ja": "<ぱらぱらじっくり 教育に新聞を>"
+   },
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://www.tokyo-np.co.jp/article/127930",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784050",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784050",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:44:46Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:45:49Z",
+   "media_coverage_title": {
+    "ja": "8月16日から全国NIE札幌大会"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2021-07-16",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/78236",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784517",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784517",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T06:22:29Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T06:22:29Z",
+   "media_coverage_title": {
+    "ja": "＜学びｅｙｅ＞情報端末 授業でどう活用＊「１人１台」道内小中校など配備進む＊モデル校や教員研修／個人差が課題"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道新聞"
+   },
+   "publication_date": "2021-01-04",
+   "location": {
+    "ja": "朝刊P15"
+   },
+   "media_coverage_type": "paper"
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784044",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784044",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:43:39Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:43:39Z",
+   "media_coverage_title": {
+    "ja": "デジタルノートに情報収集 最終まとめはテキストで"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "教育家庭新聞"
+   },
+   "publication_date": "2020-03-04",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://www.kknews.co.jp/post_ict/20200302_6c",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/media_coverage/48784034",
+   "@type": "media_coverage",
+   "@reverse": "https://api.researchmap.jp/naka_sato/media_coverage",
+   "rm:id": "48784034",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:42:12Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:42:40Z",
+   "media_coverage_title": {
+    "ja": "札教研事業秋の研究集会―札幌市教委④ 自ら考える授業を展開"
+   },
+   "writer_myself": "other_than_myself",
+   "event": {
+    "ja": "北海道通信日刊教育版"
+   },
+   "publication_date": "2018-10-18",
+   "media_coverage_type": "paper",
+   "see_also": [
+    {
+     "@id": "https://education.dotsu.co.jp/articles/detail/52000",
+     "label": "url"
+    }
+   ]
+  }
+ ]
+}
