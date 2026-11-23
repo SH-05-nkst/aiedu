@@ -1,0 +1,328 @@
+{
+ "items": [
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/published_papers/54912483",
+   "@type": "published_papers",
+   "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+   "rm:id": "54912483",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-09-11T08:18:43Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-09-11T08:19:15Z",
+   "paper_title": {
+    "ja": "数取りゲームを用いた強化学習のアンプラグド教材の開発と実践"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "中里彰吾"
+     },
+     {
+      "name": "安藤明伸"
+     }
+    ]
+   },
+   "published_paper_owner_roles": [
+    "lead"
+   ],
+   "publication_date": "2027",
+   "publication_name": {
+    "ja": "日本教育工学会論文誌"
+   },
+   "volume": "50",
+   "number": "Suppl.",
+   "languages": [
+    "jpn"
+   ],
+   "referee": true,
+   "invited": false,
+   "published_paper_type": "scientific_journal",
+   "rm:is_open_access": false
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/published_papers/52568928",
+   "@type": "published_papers",
+   "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+   "rm:id": "52568928",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-03-06T15:25:30Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-09-29T05:49:13Z",
+   "paper_title": {
+    "ja": "ニューラルネットワークの概念理解を目指したアンプラグド・ワークショップの開発",
+    "en": "Development of an Unplugged Workshop Aimed at Understanding the Concept of Neural Networks"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "中里彰吾"
+     },
+     {
+      "name": "安藤明伸"
+     }
+    ],
+    "en": [
+     {
+      "name": "Shogo NakaSato,Akinobu Ando"
+     }
+    ]
+   },
+   "published_paper_owner_roles": [
+    "lead"
+   ],
+   "publisher": {
+    "ja": "日本教育メディア学会"
+   },
+   "publication_date": "2026-02",
+   "publication_name": {
+    "ja": "日本教育メディア学会研究会論集"
+   },
+   "volume": "60",
+   "starting_page": "321",
+   "ending_page": "326",
+   "rm:is_open_access": true,
+   "identifiers": {
+    "doi": [
+     "10.24458/jaemsstudy.60.0_321"
+    ]
+   },
+   "see_also": [
+    {
+     "label": "doi",
+     "@id": "https://doi.org/10.24458/jaemsstudy.60.0_321",
+     "is_downloadable": false
+    },
+    {
+     "@id": "https://www.jstage.jst.go.jp/article/jaemsstudy/60/0/60_321/_article/-char/ja",
+     "label": "url",
+     "is_downloadable": true
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/published_papers/54912823",
+   "@type": "published_papers",
+   "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+   "rm:id": "54912823",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-09-11T08:52:24Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-11-05T08:31:15Z",
+   "paper_title": {
+    "en": "Elementary School Students' Initial Mental Models of Generative AI"
+   },
+   "authors": {
+    "en": [
+     {
+      "name": "Shogo NakaSato"
+     }
+    ]
+   },
+   "published_paper_owner_roles": [
+    "lead"
+   ],
+   "publication_date": "2026",
+   "publication_name": {
+    "en": "International Workshop on Artificial Intelligence and Education"
+   },
+   "languages": [
+    "eng"
+   ],
+   "referee": true,
+   "published_paper_type": "international_conference_proceedings",
+   "dataset": {
+    "dataset_name": "558-562.pdf",
+    "access_url": "https://researchmap.jp/naka_sato/published_papers/54912823/attachment_file.pdf",
+    "rm:media_type": "application/pdf",
+    "rm:use_password": false,
+    "thumbnail_url": "https://researchmap.jp/naka_sato/published_papers/54912823/attachment_file.pdf?thumbnail"
+   },
+   "rm:is_open_access": true
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/published_papers/51527817",
+   "@type": "published_papers",
+   "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+   "rm:id": "51527817",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-10-24T11:27:38Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-01-23T14:20:34Z",
+   "paper_title": {
+    "ja": "相補的な指導手法の活用が小学生のプレゼンテーションに与える影響"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "中里彰吾,重田勝介"
+     }
+    ]
+   },
+   "description": {
+    "ja": "抄録\n小学校6年生を対象に，ルーブリックとダイヤモンドランキングを組み合わせたプレゼンテーション指導において，2つの指導方法の順序の違いが，児童の情報発信能力，特にスライドの質と発表パフォーマンスに与える影響を量的に検証した．その結果，ルーブリックを先行させる指導順序が，児童の学習を効果的に促し，プレゼンテーションの質を向上させる上で有効であると示唆された．また，途中に取り入れるダイヤモンドランキングが学習者の動機付けの向上に役立っていることが示唆された．"
+   },
+   "publisher": {
+    "ja": "一般社団法人 日本教育工学会"
+   },
+   "publication_date": "2025-10",
+   "publication_name": {
+    "ja": "日本教育工学会研究報告集"
+   },
+   "volume": "2025",
+   "number": "3",
+   "starting_page": "46",
+   "ending_page": "51",
+   "languages": [
+    "jpn"
+   ],
+   "rm:is_open_access": false,
+   "identifiers": {
+    "doi": [
+     "10.15077/jsetstudy.2025.3_46"
+    ],
+    "e_issn": [
+     "2436-3286"
+    ],
+    "cinii_cr_id": [
+     "1390024478602578944"
+    ]
+   },
+   "see_also": [
+    {
+     "label": "doi",
+     "@id": "https://doi.org/10.15077/jsetstudy.2025.3_46",
+     "is_downloadable": false
+    },
+    {
+     "label": "cinii_research",
+     "@id": "https://cir.nii.ac.jp/crid/1390024478602578944?lang=ja",
+     "is_downloadable": false
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/published_papers/51516881",
+   "@type": "published_papers",
+   "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+   "rm:id": "51516881",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-10-22T14:47:55Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-10-22T14:48:41Z",
+   "paper_title": {
+    "ja": "小学校における生成AIの段階的導入と授業実践"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "中里彰吾"
+     }
+    ]
+   },
+   "publication_date": "2025-10",
+   "publication_name": {
+    "ja": "学習情報研究"
+   },
+   "volume": "2025",
+   "number": "11",
+   "starting_page": "28",
+   "ending_page": "29",
+   "languages": [
+    "jpn"
+   ],
+   "invited": true,
+   "rm:is_open_access": false
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/published_papers/50623153",
+   "@type": "published_papers",
+   "@reverse": "https://api.researchmap.jp/naka_sato/published_papers",
+   "rm:id": "50623153",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-07-14T15:35:56Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-07-14T15:35:56Z",
+   "paper_title": {
+    "ja": "親子を対象とした生成AI活用授業に見るAIリテラシー育成と意識の変容"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "中里 彰吾"
+     }
+    ]
+   },
+   "description": {
+    "ja": "本研究は小学校の児童とその保護者を対象に実施した「親子生成AI教室」の実践を通して，生成AIに関するリテラシーの育成と意識の変容を検討したものである．アンケート調査の結果，児童の生成AI活用意欲が統計的に有意に向上し，保護者の活用意識も高まったことが示唆された．本実践は，家庭と学校をつなぐ生成AI教育の有効性を示すものであり，今後の継続的な取り組みが求められる．"
+   },
+   "publisher": {
+    "ja": "一般社団法人 日本教育工学会"
+   },
+   "publication_date": "2025-07-05",
+   "publication_name": {
+    "ja": "日本教育工学会研究報告集"
+   },
+   "volume": "2025",
+   "number": "2",
+   "starting_page": "13",
+   "ending_page": "17",
+   "languages": [
+    "jpn"
+   ],
+   "rm:is_open_access": false,
+   "identifiers": {
+    "doi": [
+     "10.15077/jsetstudy.2025.2_13"
+    ],
+    "e_issn": [
+     "2436-3286"
+    ],
+    "cinii_cr_id": [
+     "1390023339315235840"
+    ]
+   },
+   "see_also": [
+    {
+     "label": "doi",
+     "@id": "https://doi.org/10.15077/jsetstudy.2025.2_13",
+     "is_downloadable": false
+    },
+    {
+     "label": "cinii_research",
+     "@id": "https://cir.nii.ac.jp/crid/1390023339315235840?lang=ja",
+     "is_downloadable": false
+    }
+   ]
+  }
+ ]
+}

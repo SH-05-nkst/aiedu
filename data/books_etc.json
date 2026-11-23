@@ -1,0 +1,394 @@
+{
+ "items": [
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/books_etc/54912584",
+   "@type": "books_etc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+   "rm:id": "54912584",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-09-11T08:29:16Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-09-11T08:29:16Z",
+   "book_title": {
+    "ja": "実践国語研究 国語授業AIでできること✖️できないこと"
+   },
+   "book_owner_role": "joint_work",
+   "book_owner_range": {
+    "ja": "読むこと 古典"
+   },
+   "publisher": {
+    "ja": "明治図書出版"
+   },
+   "publication_date": "2026-09-11",
+   "rep_page": "40-43",
+   "referee": false
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/books_etc/50971889",
+   "@type": "books_etc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+   "rm:id": "50971889",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-08-27T12:23:26Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-08-27T12:23:26Z",
+   "book_title": {
+    "ja": "教室ツーウェイNEXT vol.25"
+   },
+   "book_owner_role": "contributor",
+   "book_owner_range": {
+    "ja": "92-95 マルチモーダル時代の「読む力」AI・SNS・フェイクニュースへの対応力を育む"
+   },
+   "publisher": {
+    "ja": "学芸みらい社"
+   },
+   "publication_date": "2025-08",
+   "identifiers": {
+    "isbn": [
+     "9784867570890"
+    ]
+   }
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783374",
+   "@type": "books_etc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+   "rm:id": "48783374",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T04:36:39Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T04:36:39Z",
+   "book_title": {
+    "ja": "明日から使えるミライシード : 35の実践事例 : 子ども主体の学びを実現!"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "青木, 秀夫"
+     },
+     {
+      "name": "浅見, 拓真"
+     },
+     {
+      "name": "岩本, 紅葉"
+     },
+     {
+      "name": "金原, 洋輔"
+     },
+     {
+      "name": "佐納, 達平"
+     },
+     {
+      "name": "高橋, 蔵匡"
+     },
+     {
+      "name": "たのけん"
+     },
+     {
+      "name": "津田, 信"
+     },
+     {
+      "name": "中里, 彰吾"
+     },
+     {
+      "name": "西村, 知夏"
+     },
+     {
+      "name": "二川, 佳祐"
+     },
+     {
+      "name": "福住, 里絵"
+     },
+     {
+      "name": "水谷, 智明"
+     },
+     {
+      "name": "吉田, 沙也加"
+     },
+     {
+      "name": "ベネッセコーポレーション"
+     }
+    ]
+   },
+   "publisher": {
+    "ja": "時事通信出版局,時事通信社(発売)"
+   },
+   "publication_date": "2024-07",
+   "total_page": "142p",
+   "languages": [
+    "jpn"
+   ],
+   "identifiers": {
+    "cinii_nc_id": [
+     "BD0780581X"
+    ],
+    "isbn": [
+     "9784788719149"
+    ]
+   },
+   "see_also": [
+    {
+     "label": "cinii_books",
+     "@id": "http://ci.nii.ac.jp/ncid/BD0780581X",
+     "is_downloadable": false
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783485",
+   "@type": "books_etc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+   "rm:id": "48783485",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T04:50:11Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T04:50:11Z",
+   "book_title": {
+    "ja": "教室ツーウェイNEXT vol.21"
+   },
+   "book_owner_role": "contributor",
+   "book_owner_range": {
+    "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ"
+   },
+   "publisher": {
+    "ja": "学芸みらい社"
+   },
+   "description": {
+    "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ\n「三学期は学びの集大成！教科横断的な活動へ」"
+   },
+   "publication_date": "2024-01",
+   "rep_page": "106-109頁",
+   "identifiers": {
+    "isbn": [
+     "9784867570432"
+    ]
+   },
+   "see_also": [
+    {
+     "is_downloadable": false,
+     "@id": "https://www.gakugeimirai.jp/archives/54172",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783463",
+   "@type": "books_etc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+   "rm:id": "48783463",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T04:48:13Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T04:48:13Z",
+   "book_title": {
+    "ja": "教室ツーウェイNEXT vol.20"
+   },
+   "book_owner_role": "contributor",
+   "book_owner_range": {
+    "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ"
+   },
+   "publisher": {
+    "ja": "学芸みらい社"
+   },
+   "description": {
+    "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ\n「活用はシンプルに 学習展開をルーチン化」"
+   },
+   "publication_date": "2023-09",
+   "rep_page": "118-121頁",
+   "identifiers": {
+    "isbn": [
+     "9784867570326"
+    ]
+   },
+   "see_also": [
+    {
+     "is_downloadable": false,
+     "@id": "https://www.gakugeimirai.jp/archives/53685",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783397",
+   "@type": "books_etc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+   "rm:id": "48783397",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T04:41:41Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T04:41:41Z",
+   "book_title": {
+    "ja": "社会科プロ発!“ICT活用\"ヒント事典 : 授業アップデートのアイデア50"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "佐々木, 英明"
+     },
+     {
+      "name": "山方, 貴順"
+     }
+    ]
+   },
+   "publisher": {
+    "ja": "学芸みらい社"
+   },
+   "publication_date": "2023-07",
+   "total_page": "135p",
+   "rep_page": "42-45,86-87,94-95100-101,114-117,122,124-127,130,132 頁",
+   "languages": [
+    "jpn"
+   ],
+   "identifiers": {
+    "cinii_nc_id": [
+     "BD0256327X"
+    ],
+    "isbn": [
+     "9784867570296"
+    ]
+   },
+   "see_also": [
+    {
+     "label": "cinii_books",
+     "@id": "http://ci.nii.ac.jp/ncid/BD0256327X",
+     "is_downloadable": false
+    },
+    {
+     "is_downloadable": false,
+     "@id": "https://www.gakugeimirai.jp/archives/53659",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783429",
+   "@type": "books_etc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+   "rm:id": "48783429",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T04:46:07Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T04:46:07Z",
+   "book_title": {
+    "ja": "教室ツーウェイNEXT vol.19"
+   },
+   "book_owner_role": "contributor",
+   "book_owner_range": {
+    "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ"
+   },
+   "description": {
+    "ja": "連載:プロは使っている社会科授業必携ICT活用ワザ\n「世界に一つだけの地図づくり」"
+   },
+   "publication_date": "2023-05",
+   "rep_page": "126-129頁",
+   "identifiers": {
+    "isbn": [
+     "9784867570258"
+    ]
+   },
+   "see_also": [
+    {
+     "is_downloadable": false,
+     "@id": "https://www.gakugeimirai.jp/archives/53223",
+     "label": "url"
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/books_etc/48783379",
+   "@type": "books_etc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/books_etc",
+   "rm:id": "48783379",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T04:37:50Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T04:51:30Z",
+   "book_title": {
+    "ja": "社会科教科書のわかる教え方 : 学習者端末活用事例付"
+   },
+   "book_owner_role": "contributor",
+   "authors": {
+    "ja": [
+     {
+      "name": "峯, 明秀"
+     },
+     {
+      "name": "佐々木, 英明"
+     }
+    ]
+   },
+   "book_owner_range": {
+    "ja": "34-45頁"
+   },
+   "publisher": {
+    "ja": "学芸みらい社"
+   },
+   "publication_date": "2022-11",
+   "total_page": "158p",
+   "rep_page": "34-45頁",
+   "languages": [
+    "jpn"
+   ],
+   "identifiers": {
+    "cinii_nc_id": [
+     "BC17393278"
+    ],
+    "isbn": [
+     "9784867570128"
+    ]
+   },
+   "see_also": [
+    {
+     "label": "cinii_books",
+     "@id": "http://ci.nii.ac.jp/ncid/BC17393278",
+     "is_downloadable": false
+    },
+    {
+     "is_downloadable": false,
+     "@id": "https://www.gakugeimirai.jp/archives/52166",
+     "label": "url"
+    }
+   ]
+  }
+ ]
+}

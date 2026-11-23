@@ -1,0 +1,372 @@
+{
+ "items": [
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/misc/55063854",
+   "@type": "misc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+   "rm:id": "55063854",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2026-09-28T10:29:06Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2026-09-28T10:29:06Z",
+   "paper_title": {
+    "ja": "強化学習アンプラグド教材「紙コップAI」の開発とデータ収束の検証"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "中里彰吾"
+     }
+    ]
+   },
+   "publication_date": "2026-09",
+   "publication_name": {
+    "ja": "日本教育工学会 全国大会（第49回大会）講演論文集"
+   },
+   "starting_page": "977",
+   "ending_page": "978",
+   "languages": [
+    "jpn"
+   ],
+   "rm:is_open_access": false
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/misc/51674327",
+   "@type": "misc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+   "rm:id": "51674327",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-11-17T09:04:58Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-11-19T11:57:40Z",
+   "paper_title": {
+    "ja": "学校現場における生成AI利用の利用状況、潜在ニーズ、協働形態の事例と傾向"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "佐藤悠"
+     },
+     {
+      "name": "横嶋幸成"
+     },
+     {
+      "name": "岡本美佳"
+     },
+     {
+      "name": "住川泰希"
+     },
+     {
+      "name": "田中啓介"
+     },
+     {
+      "name": "中里彰吾"
+     },
+     {
+      "name": "半澤亮"
+     },
+     {
+      "name": "渡邉優太"
+     },
+     {
+      "name": "板垣翔大"
+     },
+     {
+      "name": "岡本恭介"
+     },
+     {
+      "name": "安藤明伸"
+     }
+    ]
+   },
+   "publication_date": "2025-11-15",
+   "publication_name": {
+    "ja": "全日本教育工学研究協議会全国大会論文集"
+   },
+   "starting_page": "233",
+   "ending_page": "236",
+   "languages": [
+    "jpn"
+   ],
+   "referee": false,
+   "invited": false,
+   "misc_type": "summary_national_conference",
+   "rm:is_open_access": false
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/misc/50181035",
+   "@type": "misc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+   "rm:id": "50181035",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-05-17T04:44:49Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-08-27T14:09:54Z",
+   "paper_title": {
+    "ja": "機械学習を題材にした学びが促す学習者の変容"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "中里彰吾"
+     }
+    ]
+   },
+   "publisher": {
+    "ja": "日本教育工学協会"
+   },
+   "publication_date": "2025-05",
+   "publication_name": {
+    "ja": "日本教育工学協会"
+   },
+   "languages": [
+    "jpn"
+   ],
+   "misc_type": "summary_national_conference",
+   "rm:is_open_access": true,
+   "see_also": [
+    {
+     "@id": "https://jaet.jp/wp-jaet/wp-content/uploads/2025/05/db117e0cba3f293ea7b79d31c1fe8f4f.pdf",
+     "label": "url",
+     "is_downloadable": true
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/misc/49900955",
+   "@type": "misc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+   "rm:id": "49900955",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-04-18T15:21:02Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-04-18T15:24:01Z",
+   "paper_title": {
+    "ja": "生成AI の「よりよき使い手」となる子の育成 ～「学び」の再構築と可能性の拡大のための授業改善～"
+   },
+   "published_paper_owner_roles": [
+    "corresponding"
+   ],
+   "publisher": {
+    "ja": "公益財団法人パナソニック教育財団"
+   },
+   "publication_date": "2025-04",
+   "publication_name": {
+    "ja": "パナソニック教育財団 実践研究助成 研究成果報告書(2024 第50回)"
+   },
+   "starting_page": "1",
+   "ending_page": "7",
+   "languages": [
+    "jpn"
+   ],
+   "referee": true,
+   "rm:is_open_access": true,
+   "see_also": [
+    {
+     "@id": "https://www.pef.or.jp/db/pdf/2024/2024_04.pdf",
+     "label": "url",
+     "is_downloadable": true
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/misc/48783675",
+   "@type": "misc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+   "rm:id": "48783675",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:11:45Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:11:45Z",
+   "paper_title": {
+    "ja": "「ICTの『よりよき使い手』の育成を目指したモデルカリキュラムの作成」"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "中里 彰吾"
+     }
+    ]
+   },
+   "published_paper_owner_roles": [
+    "lead"
+   ],
+   "publication_date": "2023-06",
+   "publication_name": {
+    "ja": "日本LD学会会報125号 連載講座2"
+   },
+   "languages": [
+    "jpn"
+   ],
+   "invited": true,
+   "rm:is_open_access": false
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/misc/50259937",
+   "@type": "misc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+   "rm:id": "50259937",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-05-27T15:14:22Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-05-27T15:15:28Z",
+   "paper_title": {
+    "ja": "小学校中・高学年向け観光副教材「みんなでSAPPORO観光大志！」教師向け資料"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "札幌市経済観光局 観光・MICE推進部"
+     },
+     {
+      "name": "観光・MICE推進課"
+     }
+    ]
+   },
+   "publisher": {
+    "ja": "札幌市経済観光局観光・MICE推進部 観光・MICE推進課"
+   },
+   "publication_date": "2023-04",
+   "languages": [
+    "jpn"
+   ],
+   "rm:is_open_access": true,
+   "see_also": [
+    {
+     "@id": "https://www.city.sapporo.jp/keizai/kanko/tourist/documents/fukukyozai_kyosi.pdf",
+     "label": "url",
+     "is_downloadable": true
+    }
+   ]
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/misc/49207691",
+   "@type": "misc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+   "rm:id": "49207691",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-02-20T14:38:51Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-02-20T14:38:51Z",
+   "paper_title": {
+    "ja": "ICT の「よりよき使い手」となる子の育成に向けたモデルカリキュラムの開発"
+   },
+   "published_paper_owner_roles": [
+    "corresponding"
+   ],
+   "publication_date": "2023-03",
+   "publication_name": {
+    "ja": "パナソニック教育財団 実践研究助成 研究成果報告書(2022 第48回)"
+   },
+   "starting_page": "1",
+   "ending_page": "6",
+   "languages": [
+    "jpn"
+   ],
+   "misc_type": "introduction_other",
+   "rm:is_open_access": false
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/misc/50015362",
+   "@type": "misc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+   "rm:id": "50015362",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2025-04-29T11:57:08Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2025-04-29T11:57:08Z",
+   "paper_title": {
+    "ja": "社会科「武士の世の中へ」"
+   },
+   "publication_date": "2021-08-16",
+   "publication_name": {
+    "ja": "NIE全国大会2021札幌大会資料集 新しい学びを創るNIE"
+   },
+   "starting_page": "10",
+   "ending_page": "13",
+   "languages": [
+    "jpn"
+   ],
+   "rm:is_open_access": false
+  },
+  {
+   "@id": "https://api.researchmap.jp/naka_sato/misc/48783662",
+   "@type": "misc",
+   "@reverse": "https://api.researchmap.jp/naka_sato/misc",
+   "rm:id": "48783662",
+   "rm:user_id": "R000079949",
+   "display": "disclosed",
+   "major_achievement": false,
+   "rm:creator_id": "R000079949",
+   "rm:creator_type": "myself",
+   "rm:created": "2024-12-24T05:10:31Z",
+   "rm:modifier_id": "R000079949",
+   "rm:modifier_type": "myself",
+   "rm:modified": "2024-12-24T05:10:31Z",
+   "paper_title": {
+    "ja": "普段使いのChromebook活用事例~今すぐやりたい8つのこと~"
+   },
+   "authors": {
+    "ja": [
+     {
+      "name": "中里 彰吾"
+     }
+    ]
+   },
+   "published_paper_owner_roles": [
+    "lead"
+   ],
+   "publication_date": "2021-07",
+   "publication_name": {
+    "ja": "「教室の窓 北海道版~これからのICT活用~」東京書籍"
+   },
+   "starting_page": "10",
+   "ending_page": "13",
+   "languages": [
+    "jpn"
+   ],
+   "invited": true,
+   "rm:is_open_access": false
+  }
+ ]
+}
