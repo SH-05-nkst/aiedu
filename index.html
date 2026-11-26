@@ -3,101 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI教育の教材・実践</title>
-<meta name="description" content="小学生向けのAI教育の教材と授業実践。アンプラグド教材と、コンピュータを使う実践を紹介します。">
+<title>NakaSato:小学生のためのAI教育</title>
+<meta name="description" content="小学生のAIリテラシー教育のための教材と授業実践、研究業績。Teaching materials and research on AI literacy education for elementary school children.">
 <meta name="theme-color" content="#3b5a6e">
 <link rel="stylesheet" href="style.css">
+<style>
+  .guide { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: .8rem; }
+  .guide li { border: 1px solid var(--line); background: #fff; padding: .9rem 1.1rem; }
+  .guide a.go { font-family: Georgia, "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: 1.15rem; text-decoration: none; }
+  .guide a.go:hover { text-decoration: underline; }
+  .guide p { margin: .3rem 0 0; color: var(--sub); font-size: .93rem; }
+  .en { margin-top: 2.6rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+  .en > h2:first-child { margin-top: 0; }
+</style>
 </head>
 <body>
 <div class="page">
 
 <header class="site-header">
-  <p class="site-name"><a href="index.html">中里 彰吾</a><small>Shogo NakaSato</small></p>
+  <p class="site-name"><a href="index.html">小学生のためのAI教育</a></p>
 </header>
 <nav class="site-nav">
-  <a href="index.html" class="current">教材・実践</a>
-  <a href="works.html">研究業績</a>
+  <a href="materials.html">教材・実践</a>
+  <a href="#works">研究業績</a>
   <a href="#contact">連絡先</a>
+  <a href="#en" lang="en">English</a>
 </nav>
 
 <main>
-<h1>AI教育の教材・実践</h1>
-<p>小学校教諭として、子どもがAIのしくみを体験して学べる教材と授業を作っています。まずはコンピュータを使わない「アンプラグド」でしくみを知り、次に実際のAIに触れて確かめる、という流れを考えています。</p>
-<ul class="jump">
-  <li><a href="#unplugged">アンプラグド(コンピュータを使わない)</a>
-    <ul>
-      <li><a href="#papercup">紙コップAI</a></li>
-      <li><a href="#iris">アヤメ分類NN</a></li>
-      <li><a href="#diffusion">拡散モデル</a></li>
-    </ul>
-  </li>
-  <li><a href="#plugged">コンピュータを使う</a>
-    <ul>
-      <li><a href="#localllm">ローカルLLM</a></li>
-    </ul>
+
+<!-- ============ 日本語 ============ -->
+<h1>このサイトについて</h1>
+<p>小学生がAIのしくみを体験して学ぶための、教材と授業実践を紹介するサイトです。</p>
+<p>中心は、コンピュータを使わない「アンプラグド」の教材です。紙コップやビーズなど、教室にある物を使って、AIが学ぶしくみを手と目で確かめます。あわせて、教材のもとになった研究の成果も載せています。</p>
+<p>教材は、授業やワークショップで自由にお使いいただけます。</p>
+
+<ul class="guide">
+  <li>
+    <a class="go" href="materials.html">教材・実践 →</a>
+    <p>紙コップAI、ニューラルネットワークなどのアンプラグド教材。手順、授業の流れ、ブラウザで試せるデジタル版があります。</p>
   </li>
 </ul>
 
-<!-- ============ アンプラグド ============ -->
-<h2 id="unplugged">アンプラグド</h2>
-<p class="note">紙コップ、ビーズ、カラータイル、サイコロなど、教室にある物だけで授業ができる教材です。</p>
-
-<!-- 紙コップAI -->
-<div class="item" id="papercup">
-  <div class="showcase">
-    <div class="mark" aria-hidden="true">
-      <span style="background:#b5654a"></span><span style="background:#3b5a6e"></span><span style="background:#b5654a"></span><span style="background:#c9a24a"></span>
-      <span style="background:#3b5a6e"></span><span style="background:#b5654a"></span><span style="background:#c9a24a"></span><span style="background:#b5654a"></span>
-      <span style="background:#c9a24a"></span><span style="background:#b5654a"></span><span style="background:#3b5a6e"></span><span style="background:#b5654a"></span>
-      <span style="background:#b5654a"></span><span style="background:#b5654a"></span><span style="background:#b5654a"></span><span style="background:#3b5a6e"></span>
-    </div>
-    <div>
-      <h3><a href="papercup.html">紙コップAI</a> <span class="tag">強化学習</span></h3>
-      <p>「状態」を表す紙コップから色ビーズを引いて手を決めます。勝てばビーズを増やし、負ければ減らします。対戦をくり返すと、コップの中のビーズのかたよりが変わり、AIが強くなっていくようすが目で見えます。</p>
-      <p class="facts"><b>対象</b>:小学校高学年、親子 / <b>準備物</b>:紙コップ9個、色ビーズ</p>
-    </div>
-  </div>
-  <p><a href="papercup.html">詳しい手順・授業の流れ →</a></p>
-  <p class="note">関連:中里・安藤(2026)日本教育工学会論文誌 ショートレター → <a href="works.html#papers">研究業績</a></p>
-</div>
-
-<!-- アヤメ分類NN -->
-<div class="item" id="iris">
-  <div class="showcase">
-    <div class="mark" aria-hidden="true">
-      <span style="background:#6b7f5a"></span><span></span><span></span><span style="background:#6b7f5a"></span>
-      <span></span><span style="background:#3b5a6e"></span><span style="background:#3b5a6e"></span><span></span>
-      <span></span><span style="background:#3b5a6e"></span><span style="background:#3b5a6e"></span><span></span>
-      <span style="background:#6b7f5a"></span><span></span><span></span><span style="background:#6b7f5a"></span>
-    </div>
-    <div>
-      <h3><a href="iris.html">アヤメ分類NN</a> <span class="tag">ニューラルネットワーク</span></h3>
-      <p>アヤメの花のデータをもとに、子どもたちがニューロンの役になって点数をつけ、花の種類を判定します。まちがえたら点数のつけ方を直し、ニューラルネットワークが学習するしくみを体験します。</p>
-      <p class="facts"><b>対象</b>:小学生(ワークショップ) / <b>準備物</b>:<!-- TODO -->(記入)</p>
-    </div>
-  </div>
-  <p><a href="iris.html">詳しい手順・判定の例 →</a></p>
-</div>
-
-<!
-
-<!-- ============ コンピュータを使う ============ -->
-<h2 id="plugged">コンピュータを使う</h2>
-<p class="note">実際に動くAIに触れて、アンプラグドで学んだしくみを確かめる実践です。</p>
-
-
-  <p class="note">授業の様子と分かったことは、実践のあとに公開する予定です。</p>
-</div>
-
-<!-- ============ 連絡先 ============ -->
 <h2 id="contact">連絡先</h2>
-<p>教材を授業やワークショップで使った方は、感想をお寄せいただけるとうれしいです。<br>
-<!-- TODO: メールアドレス、フォームURL、researchmap など -->(連絡先を記入)</p>
+<p>教材を授業やワークショップで使った方は、感想をお寄せいただけるとうれしいです。共同研究などのご相談もこちらからどうぞ。</p>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdalbUT1UZa99IJ8Yav4xQROPSCM1LvM7u8Ym3Py8HeASlijw/viewform">お問い合わせフォームを開く →</a></p>
+<p class="note">送信された内容は、返信のためだけに使います。</p>
+
+<!-- ============ English ============ -->
+<section class="en" id="en" lang="en">
+<h2>About this site</h2>
+<p>This site shares teaching materials and lessons that help elementary school children learn how AI works through hands-on activities.</p>
+<p>Most of the materials are "unplugged." Children use things found in a classroom, such as paper cups and beads, to see how AI learns. The site also shows the research behind the materials.</p>
+<p>You may use the materials freely in your classes and workshops.</p>
+
+<ul class="guide">
+  <li>
+    <a class="go" href="materials-en.html">Teaching Materials →</a>
+    <p>Unplugged materials such as Paper Cup AI and the neural network activity, with steps and digital versions.</p>
+  </li>
+</ul>
+
+<h2 id="contact-en">Contact</h2>
+<p>If you used these materials in your class or workshop, I would be happy to hear from you. Please use the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdalbUT1UZa99IJ8Yav4xQROPSCM1LvM7u8Ym3Py8HeASlijw/viewform">contact form</a>. You can write in English.</p>
+<p class="note">Your message is used only to reply to you.</p>
+</section>
+
+<!-- ============ 業績 / Publications ============ -->
+<section class="en" id="works">
+<ul class="guide">
+  <li>
+    <a class="go" href="works.html">中里彰吾 研究業績 →</a>
+    <p>論文、学会発表、講演、メディア。researchmap の内容を週に1回取り込んで表示しています。</p>
+  </li>
+  <li lang="en">
+    <a class="go" href="works.html">Shogo NakaSato — Publications →</a>
+    <p>Papers, presentations, talks and media (mostly in Japanese). Updated weekly from <a href="https://researchmap.jp/naka_sato?lang=en">researchmap</a>.</p>
+  </li>
+</ul>
+</section>
+
 </main>
 
 <footer>
-  <p>教材は教育目的で自由にお使いいただけます。論文などで紹介する場合は、<a href="works.html">研究業績</a>の関連発表をご参照ください。<br>
-  &copy; 中里彰吾 2026</p>
+  <p>&copy; NakaSato 2026</p>
 </footer>
 
 </div>
